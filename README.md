@@ -1,4 +1,5 @@
 # ARCH Btrfs
+It is worth noting that the pictures take up a lot of space.
 
 (VB name Disk)
 ```shell
