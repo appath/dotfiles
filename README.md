@@ -34,13 +34,13 @@ Compression (lzo), gives an increase in space saving plus improves performance, 
 We mount:
 ```shell
 $ umount /mnt
-$ mount -o subvol=root,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda1 /mnt
+$ mount -o subvol=root,noatime,space_cache,compress=lzo,autodefrag /dev/sda1 /mnt
 ```
 Same
 ```shell
 $ mkdir /mnt/{boot,home,.snapshots}
-$ mount -o subvol=home,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda1 /mnt/home
-$ mount -o subvol=snapshots,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda1 /mnt/.snapshots
+$ mount -o subvol=home,noatime,space_cache,compress=lzo /dev/sda1 /mnt/home
+$ mount -o subvol=snapshots,noatime,space_cache,compress=lzo /dev/sda1 /mnt/.snapshots
 ```
 * ssd 
 
