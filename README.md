@@ -7,12 +7,12 @@ It is worth noting that the pictures take up a lot of space.
 
 (VB name Disk)
 ```shell
-$ mkfs.btrfs -f -L VB /dev/sda 
+$ mkfs.btrfs -f -L VB /dev/sda1 
 ```
 
 We mount:
 ```shell
-$ mount /dev/sda /mnt
+$ mount /dev/sda1 /mnt
 ```
 
 Create a subtotal:
@@ -28,13 +28,13 @@ Compression (lzo), gives an increase in space saving plus improves performance, 
 We mount:
 ```shell
 $ umount /mnt
-$ mount -o subvol=root,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda /mnt
+$ mount -o subvol=root,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda1 /mnt
 ```
 Same
 ```shell
 $ mkdir /mnt/{boot,home,.snapshots}
-$ mount -o subvol=home,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda /mnt/home
-$ mount -o subvol=snapshots,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda /mnt/.snapshots
+$ mount -o subvol=home,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda1 /mnt/home
+$ mount -o subvol=snapshots,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda1 /mnt/.snapshots
 ```
 * ssd 
 
