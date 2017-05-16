@@ -132,7 +132,7 @@ $ systemctl start dhcpcd
 
 Creating snapshots
 ```shell
-$ btrfs subvolume snapshot -r / /.snapshots/root-`date +%F-%R`
+$ btrfs subvolume snapshot -r / /.snapshots/home-`date +%F-%R`
 ```
 To check the dump
 ```shell
@@ -143,8 +143,8 @@ Note that each subsection has its own ID number.
 And recover from the snapshot
 ```shell
 $ mount /dev/sda2 /mnt
-$ btrfs subvolume delete /mnt/root`
-$ brtfs subvolume snapshot /mnt/snapshots/root-2017-05-16-20:19 /mnt/root
+$ btrfs subvolume delete /mnt/home
+$ brtfs subvolume snapshot /mnt/snapshots/home-2017-05-16-20:19 /mnt/home
 ```
 Restart the machine 20.5500
 
