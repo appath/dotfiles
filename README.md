@@ -88,7 +88,9 @@ To check the dump
 $ btrfs subvolume list -p .
 ```
 Note that each subsection has its own ID number.
-
+```shell
+../..
+```
 And recover from the snapshot
 ```shell
 $ mount /dev/sda1 /mnt
