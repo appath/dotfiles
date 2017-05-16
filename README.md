@@ -7,10 +7,6 @@ It is worth noting that the pictures take up a lot of space.
 
 You can use BTRFS for the root file system with the exception of / boot, which must be formatted in a traditional journaling file system.
 
-One for Boot and the other one will be a btrfs partition with subvolumes.
-```shell
-$ mkfs.btrfs -f -L PC /dev/sda
-```
 (VB name Disk)
 ```shell
 $ mkfs.btrfs -f -L VB /dev/sda1 
