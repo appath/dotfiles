@@ -71,8 +71,6 @@ into old kernels.
 
 Mount a subvolume instead of the root subvolume.
 
-Installing ArchLinux, Basic Packages:
-
 Successfully...
 
 Creating snapshots
