@@ -94,7 +94,7 @@ $ vim /etc/mkinitcpio.conf
 ```
 HOOKS="keymap, remove fsck"
 
-![scrot](http://i.imgur.com/.png)
+![scrot](https://raw.githubusercontent.com/appath/ARCH-Dotfiles/master/HOOKS.png)
 
 ```shell
 $ mkinitcpio -p linux
