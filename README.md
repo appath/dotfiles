@@ -142,7 +142,7 @@ Note that each subsection has its own ID number.
 
 And recover from the snapshot
 ```shell
-$ mount /dev/sda2 /mnt
+$ mount /dev/sda1 /mnt
 $ btrfs subvolume delete /mnt/home
 $ brtfs subvolume snapshot /mnt/snapshots/home-2017-05-16-20:19 /mnt/home
 ```
