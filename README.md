@@ -1,7 +1,8 @@
 # ARCH Btrfs
 
+(VB name Disk)
 ```shell
-$ mkfs.btrfs -f -L VB /dev/sda (VB name Disk)
+$ mkfs.btrfs -f -L VB /dev/sda 
 ```
 
 We mount:
