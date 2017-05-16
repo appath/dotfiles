@@ -108,3 +108,4 @@ $ passwd root
 $ exit
 $ reboot
 ```
+successfully...
