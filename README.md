@@ -102,4 +102,4 @@ Restart the machine 20.5500
 
 The function of creating snapshots in BTRFS is implemented quite accurately, and its use does not present any difficulties.
 
-ArchWiki [Wiki](https://wiki.archlinux.org/index.php/Btrfs) | Tool helps with sub-volumes and thin LVM volumes [Snapper Utility](https://wiki.archlinux.org/index.php/Snapper)
+ArchWiki [Btrfs](https://wiki.archlinux.org/index.php/Btrfs) | Tool helps with sub-volumes and thin LVM volumes [Snapper Utility](https://wiki.archlinux.org/index.php/Snapper)
