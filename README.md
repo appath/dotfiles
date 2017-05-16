@@ -136,7 +136,7 @@ $ btrfs subvolume snapshot -r / /.snapshots/home-`date +%F-%R`
 ```
 To check the dump
 ```shell
-$ btrfs subvolume list
+$ btrfs subvolume list -p .
 ```
 Note that each subsection has its own ID number.
 
