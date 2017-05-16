@@ -92,4 +92,19 @@ Ram-Disc
 ```shell
 $ vim /etc/mkinitcpio.conf
 ```
-HOOKS, keymap, remove fsck
+HOOKS="keymap, remove fsck"
+
+```shell
+$ mkinitcpio -p linux
+```
+Select the time zone
+```shell
+ln -sf /usr/share/zoneinfo/** /etc/localtime
+```
+```shell
+$ grub-install /dev/sda
+$ grub-mkconfig -o /boot/grub/grub.cfg
+$ passwd root
+$ exit
+$ reboot
+```
