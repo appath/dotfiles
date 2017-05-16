@@ -5,6 +5,10 @@ Hungry Pacman, trough
 
 It is worth noting that the pictures take up a lot of space.
 
+One for Boot and the other one will be a btrfs partition with subvolumes.
+```shell
+$ mkfs.btrfs -f -L PC /dev/sda
+```
 (VB name Disk)
 ```shell
 $ mkfs.btrfs -f -L VB /dev/sda1 
