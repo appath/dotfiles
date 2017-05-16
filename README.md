@@ -70,3 +70,8 @@ Checking cat
 ```shell
 $ cat /mnt/etc/fstab
 ```
+We enter
+```shell
+$ arch-chroot /mnt
+$ echo machine_name > / etc / hostname
+```
