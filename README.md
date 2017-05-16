@@ -81,7 +81,7 @@ Successfully...
 
 Creating snapshots
 ```shell
-$ btrfs subvolume snapshot -r / /.snapshots/home-`date +%F-%R`
+$ btrfs subvolume snapshot -r / /.snapshots/@home-`date +%F-%R`
 ```
 To check the dump
 ```shell
