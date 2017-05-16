@@ -89,7 +89,7 @@ $ btrfs subvolume list -p .
 ```
 Note that each subsection has its own ID number.
 ```shell
-cd ../..
+$ cd ../..
 $ rm -rf *
 ```
 And recover from the snapshot
