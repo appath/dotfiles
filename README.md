@@ -35,6 +35,7 @@ $ mount -o subvol=snapshots,noatime,space_cache,clear_cache,compress=lzo,autodef
 Turn on some of the SSD optimized behaviour within btrfs.
 
 * autodefrag
+
 Will detect random writes into existing files and kick off background defragging.
 
 * noatime
