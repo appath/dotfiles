@@ -128,6 +128,12 @@ Creating snapshots
 ```shell
 $ btrfs subvolume snapshot -r / /.snapshots/root-`date +%F-%R`
 ```
+To check the dump
+```shell
+$ btrfs subvolume list
+```
+Note that each subsection has its own ID number.
+
 And recover from the snapshot
 ```shell
 $ mount /dev/sda2 /mnt
@@ -135,5 +141,7 @@ $ btrfs subvolume delete /mnt/root`
 $ brtfs subvolume snapshot /mnt/snapshots/root-2017-05-16-20:19 /mnt/root
 ```
 Restart the machine 20.5500
+
+The function of creating snapshots in BTRFS is implemented quite accurately, and its use does not present any difficulties.
 
 ArchWiki [Snapper](https://wiki.archlinux.org/index.php/Snapper)
