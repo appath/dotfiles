@@ -15,7 +15,21 @@ $ btrfs subvolume create /mnt/root
 $ btrfs subvolume create /mnt/home
 $ btrfs subvolume create /mnt/snapshots
 ```
+Unmount:
 
+Compression (lzo), gives an increase in space saving plus improves performance, and defragmetation in the background.
+
+We mount:
+```shell
+$ umount /mnt
+$ mount -o subvol=root,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda /mnt
+```
+Same
+```shell
+$ mkdir /mnt/{boot,home,.snapshots}
+$ mount -o subvol=home,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda /mnt/home
+$ mount -o subvol=snapshots,noatime,space_cache,clear_cache,compress=lzo,autodefrag /dev/sda /mnt/.snapshots
+```
 * ssd 
 
 Turn on some of the SSD optimized behaviour within btrfs.
@@ -42,3 +56,9 @@ into old kernels.
 * subvol
 
 Mount a subvolume instead of the root subvolume.
+
+Install Basic Packages:
+For example
+```shell
+$ pacstrap /mnt base-devel grub zsh vim git
+```
