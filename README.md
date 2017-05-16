@@ -83,7 +83,7 @@ Creating snapshots
 ```shell
 $ btrfs subvolume snapshot -r / /.snapshots/@home-`date +%F-%R`
 ```
-To check the dump
+To check the dump (/ . -p)
 ```shell
 $ btrfs subvolume list -p .
 ```
