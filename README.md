@@ -109,9 +109,10 @@ $ exit
 $ reboot
 ```
 Successfully...
-On the run (
+
+On the run {
 ```shell
 $ systemctl enable dhcpcd
 $ systemctl start dhcpcd
 ```
-)
+}
