@@ -131,4 +131,4 @@ $ brtfs subvolume snapshot /mnt/snapshots/root-2017-05-16-20:19 /mnt/root
 ```
 Restart the machine 20.5500
 
-[Snapper](https://wiki.archlinux.org/index.php/Snapper)
+ArchWiki [Snapper](https://wiki.archlinux.org/index.php/Snapper)
