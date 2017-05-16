@@ -64,7 +64,7 @@ Mount a subvolume instead of the root subvolume.
 Install Basic Packages:
 For example
 ```shell
-$ pacstrap /mnt base-devel grub zsh vim git
+$ pacstrap /mnt base base-devel grub zsh vim git
 ```
 Checking cat
 ```shell
@@ -76,3 +76,19 @@ We enter
 $ arch-chroot /mnt
 $ echo machine_name > /etc/hostname
 ```
+Edit Locals
+(#Uncomment.)
+```shell
+$ vim /etc/locale.gen
+```
+en_US.UTF-8 UTF-8
+
+Generate locales:
+```shell
+$ locale-gen
+```
+Ram-Disc
+```shell
+$ vim /etc/mkinitcpio.conf
+```
+HOOKS, keymap, remove fsck
