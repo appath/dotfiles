@@ -71,7 +71,8 @@ Checking cat
 $ cat /mnt/etc/fstab
 ```
 We enter
+(machine_name - Name of your machine)
 ```shell
 $ arch-chroot /mnt
-$ echo machine_name > / etc / hostname
+$ echo machine_name > /etc/hostname
 ```
