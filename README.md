@@ -62,3 +62,7 @@ For example
 ```shell
 $ pacstrap /mnt base-devel grub zsh vim git
 ```
+Checking cat
+```shell
+$ cat /mnt/etc/fstab
+```
