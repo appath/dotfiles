@@ -108,4 +108,10 @@ $ passwd root
 $ exit
 $ reboot
 ```
-successfully...
+Successfully...
+On the run (
+```shell
+$ systemctl enable dhcpcd
+$ systemctl start dhcpcd
+```
+)
