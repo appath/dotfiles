@@ -9,6 +9,13 @@ We mount:
 $ mount /dev/sda /mnt
 ```
 
+Create a subtotal:
+```shell
+$ btrfs subvolume create /mnt/root
+$ btrfs subvolume create /mnt/home
+$ btrfs subvolume create /mnt/snapshots
+```
+
 * ssd 
 
 Turn on some of the SSD optimized behaviour within btrfs.
