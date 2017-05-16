@@ -93,6 +93,7 @@ Ram-Disc
 $ vim /etc/mkinitcpio.conf
 ```
 HOOKS="keymap, remove fsck"
+
 ![scrot](http://i.imgur.com/.png)
 
 ```shell
@@ -129,4 +130,5 @@ $ btrfs subvolume delete /mnt/root`
 $ brtfs subvolume snapshot /mnt/snapshots/root-2017-05-16-20:19 /mnt/root
 ```
 Restart the machine 20.5500
-[![GitHub](https://wiki.archlinux.org/index.php/Snapper) Snapper 
+
+[Snapper](https://wiki.archlinux.org/index.php/Snapper)
