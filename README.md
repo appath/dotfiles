@@ -93,6 +93,7 @@ Ram-Disc
 $ vim /etc/mkinitcpio.conf
 ```
 HOOKS="keymap, remove fsck"
+![scrot](http://i.imgur.com/.png)
 
 ```shell
 $ mkinitcpio -p linux
@@ -116,3 +117,16 @@ $ systemctl enable dhcpcd
 $ systemctl start dhcpcd
 ```
 }
+
+Creating snapshots
+```shell
+$ btrfs subvolume snapshot -r / /.snapshots/root-`date +%F-%R`
+```
+And recover from the snapshot
+```shell
+$ mount /dev/sda2 /mnt
+$ btrfs subvolume delete /mnt/root`
+$ brtfs subvolume snapshot /mnt/snapshots/root-2017-05-16-20:19 /mnt/root
+```
+Restart the machine 20.5500
+[![GitHub](https://wiki.archlinux.org/index.php/Snapper) Snapper 
