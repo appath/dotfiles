@@ -1,4 +1,4 @@
-# ARCH Btrfs
+# ARCH Btrfs Snapshots
 Elevator
 
 Hungry Pacman, trough
