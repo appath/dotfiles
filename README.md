@@ -23,6 +23,7 @@ $ mount /dev/sda1 /mnt
 
 Create a subtotal:
 ```shell
+$ btrfs subvolume create /mnt/@BUILD
 $ btrfs subvolume create /mnt/@root
 $ btrfs subvolume create /mnt/@home
 $ btrfs subvolume create /mnt/@snapshots
@@ -38,7 +39,8 @@ $ mount -o subvol=@root,noatime,space_cache,compress=lzo /dev/sda1 /mnt
 ```
 Same
 ```shell
-$ mkdir /mnt/{home,.snapshots}
+$ mkdir /mnt/{BUILD,home,.snapshots}
+$ mount -o subvol=@BUILD,noatime,space_cache,compress=lzo /dev/sda1 /mnt/@BUILD
 $ mount -o subvol=@home,noatime,space_cache,compress=lzo /dev/sda1 /mnt/home
 $ mount -o subvol=@snapshots,noatime,space_cache,compress=lzo /dev/sda1 /mnt/.snapshots
 ```
