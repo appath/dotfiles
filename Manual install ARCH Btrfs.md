@@ -1,0 +1,91 @@
+ARCH|Linux BTRFS SPEED --
+
+Creating a partition and sub-sections
+$ mkfs.btrfs -f -L VB /dev/sda (VB name Disk)
+
+We mount:
+$ mount /dev/sda /mnt
+
+We create two subtopics
+$ btrfs subvolume create /mnt/root
+$ btrfs subvolume create /mnt/home
+
+Unmount:
+$ umount /mnt
+
+Compression (lzo), gives an increase in space saving plus improves performance, and defragmetation in the background.
+We mount:
+$ mount -o subvol=root,compress=lzo,autodefrag /dev/sda /mnt
+Same
+$ mkdir /mnt/home
+$ mount -o subvol=home,compress=lzo,autodefrag /dev/sda /mnt/home
+
+Mirror
+	/etc/pacman.d/mirrorlist
+##
+## Arch Linux repository mirrorlist
+## Generated on 2017-05-17
+##
+
+## Worldwide
+Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
+
+Install basic packages
+$ pacstrap /mnt base grub zsh vim git
+
+Generate fstab
+$ genfstab -p /mnt >> /mnt/etc/fstab
+
+Checking the cat
+$ cat /mnt/etc/fstab
+
+We enter
+$ arch-chroot /mnt
+
+Machine name
+$ echo machine_name > /etc/hostname
+
+Locals
+$ nano /etc/locale.gen
+# Uncomment.
+en_US.UTF-8 UTF-8
+To generate
+$ locale-gen
+
+Ram-Disc
+	/etc/mkinitcpio.conf
+HOOKS= keymap, Remove fsck 
+$ mkinitcpio -p linux
+$ passwd root
+	*****
+	*****
+Repository
+	/etc/pacman.conf
+# Uncomment.
+[multilib]
+Include = /etc/pacman.d/mirrorlist
+
+Boot Loader
+$ grub-install /dev/sda
+$ grub-mkconfig -o /boot/grub/grub.cfg
+
+Select the time zone
+$ ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+
+Exit
+$ exit
+$ reboot
+
+####
+##	The Internet
+####
+
+$ systemctl enable dhcpcd
+$ systemctl start dhcpcd
+
+####
+##	New user
+####
+
+$ useradd -m -g users -G audio,lp,optical,power,scanner,storage,video,wheel -s /bin/zsh (user name)
+$ passwd (user name)
