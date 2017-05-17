@@ -16,3 +16,5 @@ setopt share_history
 alias ping='ping -c5'
 # From an excess of intelligence.
 unsetopt correct_all
+# UTF-8 character tmux.
+alias tmux='tmux -u'
