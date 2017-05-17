@@ -51,6 +51,9 @@ $ nano /etc/locale.gen
 en_US.UTF-8 UTF-8
 To generate
 $ locale-gen
+Check locale
+$ locale
+$ locale -a
 
 Ram-Disc
 	/etc/mkinitcpio.conf
