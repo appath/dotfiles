@@ -38,7 +38,7 @@ $ mount -o subvol=@root,noatime,space_cache,compress=lzo /dev/sda1 /mnt
 Same
 ```shell
 $ mkdir /mnt/{BUILD,home,.snapshots}
-$ mount -o subvol=@BUILD,noatime,space_cache,compress=lzo /dev/sda1 /mnt/@BUILD
+$ mount -o subvol=@BUILD,noatime,space_cache,compress=lzo /dev/sda1 /mnt/BUILD
 $ mount -o subvol=@home,noatime,space_cache,compress=lzo /dev/sda1 /mnt/home
 $ mount -o subvol=@snapshots,noatime,space_cache,compress=lzo /dev/sda1 /mnt/.snapshots
 ```
