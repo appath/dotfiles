@@ -1,6 +1,8 @@
 # Notes ARCH Btrfs Snapshots
 Elevator
 
+Installing the btrfs-progs package.
+
 Hungry Pacman, trough
 
 It is worth noting that the pictures take up a lot of space.
