@@ -22,6 +22,7 @@ $ mount -o subvol=home,compress=lzo,autodefrag /dev/sda /mnt/home
 
 Mirror
 	/etc/pacman.d/mirrorlist
+
 ##
 ## Arch Linux repository mirrorlist
 ## Generated on 2017-05-17
