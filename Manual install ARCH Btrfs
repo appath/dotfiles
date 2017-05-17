@@ -55,14 +55,14 @@ Check locale
 $ locale
 $ locale -a
 
-Ram-Disc
+Ram-Disc (nano, vi or vim)
 	/etc/mkinitcpio.conf
 HOOKS= keymap, Remove fsck 
 $ mkinitcpio -p linux
 $ passwd root
 	*****
 	*****
-Repository
+Repository (nano, vi or vim)
 	/etc/pacman.conf
 # Uncomment.
 [multilib]
