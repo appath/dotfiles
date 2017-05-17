@@ -1,10 +1,3 @@
-# Enable the required plugins
-plugins=(git)
-source $ZSH/myzsh
-# Path to your myzsh
-export ZSH=$HOME/.oh-my-zsh
-# Set name of the theme to load.
-ZSH_THEME="blinks"
 # Editor
 export EDITOR="vim"
 # You can enter comments beginning with #.
