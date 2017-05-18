@@ -12,7 +12,7 @@ Packages:
 * git
 
 ( 
-mkdir github # Create a folder on disk
+mkdir github/ "Create a folder on disk
 
 git clone https://github.com/** "Copy your repository to your computer
 
