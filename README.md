@@ -8,6 +8,7 @@ ArchLinux Btrfs SSD
 
 Packages:
 
+* tmux (https://github.com/tmux/tmux)
 * git-cal (https://github.com/k4rthik/git-cal)
 * neofetch (https://github.com/dylanaraps/neofetch)
 * conky 3 (conky_arch, conky_rss, conky_cc_gitstat)
