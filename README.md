@@ -1,7 +1,6 @@
 ![GitHub](https://raw.githubusercontent.com/appath/bin/master/favicons.png) 
 
-Git 
-@Cat
+Git @Cat master
 
 ![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0001_18_05_2017_13_55_02.png)
 
