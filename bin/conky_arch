@@ -1,0 +1,71 @@
+## Conky ARCH
+## Update interval window conky in seconds. Not recommended use less than 1 second.
+update_interval 1,0
+## Force utf8 requires xft.
+override_utf8_locale yes
+## Use [yes] buffering, [no] no. Using own_window yes it is recommended to use buffer.
+double_buffer yes
+## Subtract (file system) buffer from used memory.
+no_buffers yes
+## The size bufffer for text. Default 256 byte.
+text_buffer_size 2048
+## Imlib2 image cache size, in bytes. Defaults to 4Mib.
+#  Increase this value if you use $image lots. Set to 0 to disable the image cache.
+imlib_cache_size 0
+## It [yes] is drawn in a separate window, [no] Data is output directly to the worker table.
+own_window yes
+## Manually set the wm_class name. Defaults to Conky.
+own_windows_class Conky
+## Window type:
+#	 normal (Accepted by default),
+#	 desktop (A special window that does not have decorations frames),
+#	 panel (The window fitted under the panel),
+#	 dock (A window fitted to the dock),
+#	 override (Not controlled. Decorator (you do not see anything for Window except for a piece of wallpaper))
+own_window_type desktop
+## Transparency of the window [yes] transparent, [no] not transparent. 
+own_window_transparent yes
+## Allows you to set window displays conky set separated by commans:
+#	 undecorated - without borders,
+#	 below - under the other window,
+#	 skip_taskbar - do not display conky in the list of window,
+#	 skip_pager - do not display the window thumbnail in the workstation switch,
+#	 sticky - display on all desktops.
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager,below
+## The maximum width of the window.
+maximum_width 500
+## The minimum window size.
+minimum_size 300 100
+## Indent screen edges horiontally.
+gap_x 100
+## Offset from the edge of the screen vertically.
+gap_y -400
+## Draw [yes] shadows, [no] no.
+draw_shades no
+## Encircle [yes] the font, [no] no.
+draw_outline no
+## Draw [yes] border, [no] no.
+draw_borders no
+## Draw [yes] border around graphs, [no] no.
+draw_graph_borders no
+## Use [yes] own font, [no] no.
+use_xft yes
+## Asks font parameters.
+xftfont Droid Sans:size=7
+## The opacity of the font stroke (value from 0 to 1).
+xftalpha 0,1
+## Boolean value, if true, text is rendered in upper case.
+uppercase no
+## Color predestination for use in the text.
+default_color 9ea19d
+color1 BBBCBD
+color2 696C6B
+color3 525555
+color4 9ea19d
+color5 2756c2
+## After this begins text to be formatted on screen. Backslash (\) escapes newlines in the text section.
+TEXT
+${offset 3}${voffset -2}${color}${time %I:%M}${voffset 2}
+${offset 3}${voffset -2}${color5}Arch Linux ${color}${kernel}${voffset 2}
+${cpugraph cpu0 28,84 4E4F4D 3D3E40}${downspeedgraph enp0s3 28,86 3D3E40 2C2E32}${upspeedgraph enp0s3 28,87 2C2E32 1B1D25}
+${offset 4}${voffset -2}${color1}cpu${offset 6}${color4}${hwmon 0 temp 1} °C${offset 43}${color2}down${offset 63}${color3}up
