@@ -1,6 +1,6 @@
 ![GitHub](https://raw.githubusercontent.com/appath/bin/master/favicons.png) 
 
-Git @Caţ masteẛ̣
+Git @Caţ masẛ̣er...
 
 ![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0001_18_05_2017_13_55_02.png)
 
