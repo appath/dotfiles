@@ -2,11 +2,14 @@
 
 Git @Cat
 
+![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0001_18_05_2017_13_55_02.png)
+
+Packages:
+
+* conky (conky_arch, conky_rss, conky_cc_gitstat)
 * putty
 * xterm
 * git
-
-![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0001_18_05_2017_13_55_02.png)
 
 # Notes ARCH Btrfs Snapshots
 Elevator
