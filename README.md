@@ -1,5 +1,3 @@
-![GitHub](https://raw.githubusercontent.com/appath/bin/master/favicons.png) 
-
 Git @Caţ masẛ̣er ...
 
 ArchLinux Btrfs SSD 
