@@ -1,6 +1,6 @@
 ![GitHub](https://raw.githubusercontent.com/appath/bin/master/favicons.png) 
 
-Git @Caţ masteẛ
+Git @Caţ masteẛ̣
 
 ![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0001_18_05_2017_13_55_02.png)
 
@@ -14,7 +14,7 @@ Packages:
 ( 
 mkdir github # Create a folder on disk
 
-git clone https://github.com/** " Copy your repository to your computer
+git clone https://github.com/** "Copy your repository to your computer
 
 "Make changes
 
