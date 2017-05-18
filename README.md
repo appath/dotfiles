@@ -34,7 +34,7 @@ git add . "Indexing files for changes in them
 
 git commit -m "update" "Fix the publication, comment on the changes
 
-git push -f "Send to the GitHub server
+git push -f "Send to the GitHub server)
 
 
 # Notes ARCH Btrfs Snapshots
