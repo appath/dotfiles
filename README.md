@@ -4,7 +4,7 @@ Git @Caţ masẛ̣er ...
 
 ArchLinux Btrfs SSD 
 
-Lorry * m-mrr 🐈
+@Lorry*m-mrr 🐈
 
 ![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0001_18_05_2017_13_55_02.png)
 
