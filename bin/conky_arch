@@ -68,4 +68,4 @@ TEXT
 ${offset 3}${voffset -2}${color}${time %I:%M}${voffset 2}
 ${offset 3}${voffset -2}${color5}Arch Linux ${color}${kernel}${voffset 2}
 ${cpugraph cpu0 28,84 4E4F4D 3D3E40}${downspeedgraph enp0s3 28,86 3D3E40 2C2E32}${upspeedgraph enp0s3 28,87 2C2E32 1B1D25}
-${offset 4}${voffset -2}${color1}cpu${offset 6}${color4}${hwmon 0 temp 1} °C${offset 43}${color2}down${offset 63}${color3}up
+${offset 4}${voffset -2}${color1}cpu${offset 6}${color4}${hwmon 0 temp 1} °F${offset 43}${color2}down${offset 63}${color3}up
