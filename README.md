@@ -11,6 +11,32 @@ Packages:
 * xterm
 * git
 
+( 
+mkdir github # Create a folder on disk
+
+git clone https://github.com/** " Copy your repository to your computer
+
+"Make changes
+
+"Git only tracks changes to files
+
+"(Create, delete, edit)
+
+"Git does not see created empty directories
+
+"So that directories are stored on the server
+
+"In empty directories you need the presence
+
+"New, created or moved files in them
+
+git add . "Indexing files for changes in them
+
+git commit -m "update" "Fix the publication, comment on the changes
+
+git push -f "Send to the GitHub server
+
+
 # Notes ARCH Btrfs Snapshots
 Elevator
 
