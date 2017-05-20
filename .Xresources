@@ -1,0 +1,11 @@
+
+*utf8Title:		true
+*scrollBar:		false
+*geometry:		116x24
+*saveLines:		4096
+*termName:		xterm-256color
+*internalBorder:	10
+
+*colorBD:		#e6d51d
+*background:		#111111
+*foreground:		#b4b4b4
