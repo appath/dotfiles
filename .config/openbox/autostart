@@ -13,4 +13,4 @@
 #fi
 
 sh ~/.fehbg &
-conky -c bin/conky_freebsd &
+conky -c bin/conky_arch &
