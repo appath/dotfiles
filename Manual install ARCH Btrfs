@@ -35,6 +35,7 @@ $ pacstrap /mnt base grub zsh vim git
 
 Generate fstab
 $ genfstab -p /mnt >> /mnt/etc/fstab
+$ lsblk
 
 Checking the cat
 $ cat /mnt/etc/fstab
