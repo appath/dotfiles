@@ -16,7 +16,7 @@ Packages:
 * xterm
 * git
 
-.zsh
+.zsh color
 
 ![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/256color.png)
 
