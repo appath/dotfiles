@@ -52,6 +52,9 @@ $ nano /etc/locale.gen
 en_US.UTF-8 UTF-8
 To generate
 $ locale-gen
+$ locale-gen
+$ echo 'LANG="en_US.UTF-8' > /etc/locale.conf 	# $HOME/.config/locale.conf
+$ echo 'LC_COLLATE=C' > /etc/locale.conf	# $HOME/.config/locale.conf
 Check locale
 $ locale
 $ locale -a
