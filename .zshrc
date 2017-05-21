@@ -1,5 +1,5 @@
 # ZSH
-# XTerm 256color
+# XTerm, Tmux 256color
 [[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
 #[[ $TMUX = "" ]] && export TERM="xterm-256color"
 # You can enter comments beginning with #.
