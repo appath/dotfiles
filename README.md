@@ -1,14 +1,14 @@
+![Image](https://raw.githubusercontent.com/appath/dotfiles/master/disambig.png)
+
 Git @Caţ masẛ̣er ...
 
 ArchLinux Btrfs SSD 
 
 @Lorry*m-mrr 🐈
 
-![Image](https://raw.githubusercontent.com/appath/dotfiles/master/disambig.png)
+:: Manual Install ARCH Btrfs [https://github.com/appath/dotfiles/blob/master/Manual]
 
-![Manual Install ARCH](https://github.com/appath/dotfiles/blob/master/Manual)
-
-![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0000_18_05_2017_20_01_32.png)
+![Image](https://raw.githubusercontent.com/appath/dotfiles/master/GitBox_0000_18_05_2017_20_01_32.png)
 
 Packages:
 
