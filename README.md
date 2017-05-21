@@ -1,6 +1,4 @@
-![Image](https://raw.githubusercontent.com/appath/dotfiles/master/disambig.png)
-
-Git @Caţ masẛ̣er ...
+![Image](https://raw.githubusercontent.com/appath/dotfiles/master/disambig.png) Git @Caţ masẛ̣er ...
 
 ArchLinux Btrfs SSD 
 
