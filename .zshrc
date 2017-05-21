@@ -1,6 +1,7 @@
 # ZSH
 # XTerm 256color
-export TERM='xterm-256color'
+[[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
+#[[ $TMUX = "" ]] && export TERM="xterm-256color"
 # You can enter comments beginning with #.
 setopt interactive_comments
 # Add the execution time of the command to the history.
