@@ -16,6 +16,9 @@ Packages:
 * xterm
 * git
 
+.zsh
+![GitHub](https://raw.githubusercontent.com/appath/dotfiles/master/256color.png)
+
 ( 
 mkdir github/ "Create a folder on disk
 
