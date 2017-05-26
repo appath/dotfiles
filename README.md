@@ -17,7 +17,7 @@ Packages:
 * putty
 * xterm
 * git
-* scrots
+* scrot
 
 .zsh color
 
