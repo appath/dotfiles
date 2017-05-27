@@ -18,6 +18,7 @@ Packages:
 * xterm
 * git
 * scrot
+* unixbench
 
 .zsh color
 
