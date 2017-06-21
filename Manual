@@ -87,6 +87,7 @@ $ reboot
 ##	The Internet
 ####
 
+$ ls /sys/class/net
 $ systemctl enable dhcpcd
 $ systemctl start dhcpcd
 
