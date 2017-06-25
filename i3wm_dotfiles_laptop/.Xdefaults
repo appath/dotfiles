@@ -1,0 +1,29 @@
+# Xdefaults
+#include "/home/user/bin/colors/theme00.colors"
+*scrollBar:		true
+*scrollBar_right:	true
+*scrollstyle:		plain
+*scrollColor:		#fcc100
+*geometry:		116x24
+*internalBorder: 	5
+*font:			xft:gmnterm
+*boldFont:		xft:gmnterm
+*.perl-ext-common:	...,tabbed,...
+*.tabbed.tabbar-fg:	2
+*.tabbed.tabbar-bg:	0
+*.tabbed.tab-fg:	3
+*.tabbed.tab-bg:	0
+
+# Rofi run
+# use extended color schem
+fori.color-enabled:	true
+# color scheme normal
+rofi.color-normal:	argb:00000000, #d8dee9, argb:00000000, #ffa200, #000000
+# color scheme urgent
+rofi.color-urgent:	argb:00000000, #ffc100, argb:00000000, #ffc100, #000000
+# color scheme active
+rofi.color-active:	argb:00000000, #000000, argb:00000000, #000000, #000000
+# color scheme window
+rofi.color-window:	argb:ee222222, #ab7100, #ab7100
+# separator style
+rofi.separator-style:	dash
