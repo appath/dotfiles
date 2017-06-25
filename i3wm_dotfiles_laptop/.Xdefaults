@@ -16,7 +16,7 @@
 
 # Rofi run
 # use extended color schem
-fori.color-enabled:	true
+rofi.color-enabled:	true
 # color scheme normal
 rofi.color-normal:	argb:00000000, #d8dee9, argb:00000000, #ffa200, #000000
 # color scheme urgent
