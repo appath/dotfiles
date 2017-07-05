@@ -72,6 +72,12 @@ Repository (nano, vi or vim)
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 
+# Yaourt
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/$arch
+$ pacman -Sy yaourt
+
 Boot Loader
 $ grub-install /dev/sda
 $ grub-mkconfig -o /boot/grub/grub.cfg
