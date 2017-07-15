@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://s3.amazonaws.com/ohmyzsh/oh-my-zsh-logo.png" alt="Oh My Zsh">
+</p>
+
 ## Installation
 Install bspwm and sxhkd...
 
@@ -44,4 +48,6 @@ chmod +x ~/.config/bspwm/bspwmrc
 
 ...rxvr-unicode
 
-...
+... luakit-git
+
+![Cyber Pank](https://raw.githubusercontent.com/appath/dotfiles/master/bspwm_dotfiles_laptop/bspwm_dotfiles_laptop.png)
