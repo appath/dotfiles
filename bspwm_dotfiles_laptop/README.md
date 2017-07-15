@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="" alt="Cyber Punk">
-</p>
-
 ## Installation
 Install bspwm and sxhkd...
 
@@ -53,3 +49,6 @@ chmod +x ~/.config/bspwm/bspwmrc
 ... luakit-git
 
 ![Cyber Pank](https://raw.githubusercontent.com/appath/dotfiles/master/bspwm_dotfiles_laptop/bspwm_dotfiles_laptop.png)
+
+## License
+[License](LICENSE).
