@@ -42,6 +42,8 @@ chmod +x ~/.config/bspwm/bspwmrc
 
 ...ncmpcpp
 
+...compton
+
 ...imagemagick
 
 ...rxvr-unicode
