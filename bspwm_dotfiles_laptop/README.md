@@ -30,6 +30,8 @@ chmod +x ~/.config/bspwm/bspwmrc
 
 ...feh
 
+...vim
+
 ...mpd
 
 ...tmux
