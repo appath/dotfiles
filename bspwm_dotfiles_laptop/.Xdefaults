@@ -1,0 +1,13 @@
+#include "/home/user/.colors/theme00.colors"
+*termName:			rxvt-256color
+*saveLines:			2000
+*scrollBar:			false
+*geometry:			116x22
+*internalBorder:		5
+*font:				xft:gmnterm		
+*boldFont:			xft:gmnterm
+*internalBorder:		10
+*shading:			12
+*transparent:			true
+*loginShell:			true
+*scrollBar:			false
