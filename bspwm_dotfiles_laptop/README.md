@@ -53,7 +53,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 ## Social
 
 * [Boris241](http://boris241.deviantart.com/) Here I post different topics.
-** [sharegame](https://plus.google.com/u/0/106782122945207734872) //
+* [sharegame](https://plus.google.com/u/0/106782122945207734872) //
 
 ## License
 [License](LICENSE).
