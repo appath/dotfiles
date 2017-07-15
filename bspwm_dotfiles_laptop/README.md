@@ -23,14 +23,25 @@ chmod +x ~/.config/bspwm/bspwmrc
 ```
 ## There were installed packages
 ...mc
+
 ...feh
+
 ...mpd
+
 ...tmux
+
 ...htop
+
 ...unzip
+
 ...tint2
+
 ...dmenu
+
 ...ncmpcpp
+
 ...imagemagick
+
 ...rxvr-unicode
+
 ...
