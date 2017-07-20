@@ -16,8 +16,8 @@ I decided to install, the installation's input decided to change it, not signifi
 - polybar-git
 - mc
 - tmux
-- zsh <oh-my-zsh>
-- Theme zsh <Ra>
+- zsh (oh-my-zsh)
+- Theme zsh (Ra)
 - Cursor Default X11
 Colors `TERM Mono`
 
