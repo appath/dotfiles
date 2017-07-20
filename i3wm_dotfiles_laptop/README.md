@@ -29,10 +29,14 @@ FiraMono and gmnterm
 
 #### Key: 
 Mod1+F5 > Rofi
+
 Mod1+F6 > Luakit
+
 Mod1+Return > Rxvt
 
-I do not know whether it's worth it or not. But how to install the fonts is so
+I do not know whether it's worth it or not. 
+
+But how to install the fonts is so
 ```shell
 $ mkdir ~/.fonts
 $ cp .... ~/.fonts
