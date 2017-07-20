@@ -21,7 +21,7 @@ reset=`tput sgr0`
 
 clear
 echo && echo
-toilet -F metal -f sblood -w 100 "    Updates"
+toilet -F metal -f future -w 100 "    Updates"
 echo && echo
 echo "${green} "
 center_text ":: Retrieving Pacman Package Update List ::"
