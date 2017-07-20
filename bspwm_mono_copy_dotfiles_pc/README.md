@@ -6,6 +6,7 @@ I decided to install, the installation's input decided to change it, not signifi
 
 #### Packages
 - toilet
+- feh
 - pacaur
 - cower-git
 - rxvt-unicode-patched
