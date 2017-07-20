@@ -9,6 +9,10 @@ super + Return
 # program launcher
 super + @space
 	dmenu_run
+	
+# web
+super + w
+	luakit
 
 # make sxhkd reload its configuration files:
 super + Escape
