@@ -1,0 +1,88 @@
+#!/bin/bash
+
+green=`tput setaf 2`
+magenta=`tput setaf 5`
+white=`tput setaf 7`
+blue=`tput setaf 4`
+reset=`tput sgr0`
+
+clear
+echo && echo
+toilet -f future --gay "  ARCH Updates x86_64"
+echo && echo
+pacaur -Su
+echo && echo 
+
+columns=$(tput cols)
+text="Press [Enter]"
+printf "%*s\n" $(((${#text}+$columns)/2)) "$text"
+read -p " "
+
+continuedevel ()
+{
+    clear
+    echo && echo
+    toilet -f sblood --gay "   devpkgs"
+    echo && echo
+    pacaur --noconfirm --needed --update --devel
+    echo && echo
+    columns=$(tput cols)
+    text="Press [Enter]"
+    printf "%*s\n" $(((${#text}+$columns)/2)) "$text"
+    read -p " "
+    rungems
+}
+
+rundevel ()
+{
+    clear
+    echo && echo
+    toilet -f sblood --gay "   devpkgs"
+    echo & echo
+    columns=$(tput cols)
+    text=">> Upgrade git/development packages? <<"
+    printf "%*s\n" $(((${#text}+$columns)/2)) "$text"
+    local yn
+    read -p " " yn
+    case $yn in
+        [Yy]* ) continuedevel;;
+        [Nn]* ) rungems;;
+        * ) echo "Please answer yes or no. ";;
+    esac
+}
+
+rungems ()
+{
+    clear
+    echo && echo
+    toilet -f sblood --gay " rubygems"
+    echo && echo
+    columns=$(tput cols)
+    text=">> Upgrade Ruby GEM packages? <<"
+    printf "%*s\n" $(((${#text}+$columns)/2)) "$text"
+    local yn
+    read -p " " yn
+    case $yn in
+        [Yy]* ) continuegem;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no. ";;
+    esac
+}
+
+continuegem ()
+{
+    clear
+    echo && echo
+    toilet -f sblood --gay " rubygems"
+    echo && echo
+    echo "${white}:: ${magenta}local gems ${white}:: ${green} "
+    gem update
+    echo && echo "${white}:: ${magenta}system-wide gems ${white}:: ${blue}"
+    sudo gem update
+    echo && read -p "Press [Enter]"
+    echo "${reset}"
+    exit 
+}
+clear
+rundevel
+echo $yn
