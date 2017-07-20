@@ -23,3 +23,21 @@ exec i3 -V >> ~/.i3/i3log 2>&1
 - i3wm 
 - i3status
 - vim
+
+#### Fonts:
+FiraMono and gmnterm
+
+#### Key: 
+Mod1+F5 > Rofi
+Mod1+F6 > Luakit
+Mod1+Return > Rxvt
+
+I do not know whether it's worth it or not. But how to install the fonts is so
+```shell
+$ mkdir ~/.fonts
+$ cp .... ~/.fonts
+$ cd ~/.fonts
+$ mkfontscale
+$ mkfontdir
+$ fc-cache -fv
+```
