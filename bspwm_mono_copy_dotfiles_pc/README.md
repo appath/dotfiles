@@ -19,7 +19,8 @@ I decided to install, the installation's input decided to change it, not signifi
 - zsh <oh-my-zsh>
 - Theme zsh <Ra>
 - Cursor Default X11
-Colors TERM Mono
+
+Colors `TERM Mono`
 
 ![Cu](https://github.com/appath/dotfiles/blob/master/bspwm_mono_copy_dotfiles_pc/cursors.jpg)
 
