@@ -1,4 +1,4 @@
-## Installation
+#### Installation
 Install bspwm and sxhkd...
 
 Create
@@ -21,7 +21,7 @@ Make bspwmrc executable with
 ```shell
 chmod +x ~/.config/bspwm/bspwmrc
 ```
-## There were installed packages
+#### There were installed packages
 ...mc
 
 ...feh
@@ -52,7 +52,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 
 ![Cyber Pank](https://raw.githubusercontent.com/appath/dotfiles/master/bspwm_dotfiles_laptop/bspwm_dotfiles_laptop.png)
 
-## Social
+#### Social
 
 * [DeviantArt](http://boris241.deviantart.com/) Here I post different topics.
 * [Google+](https://plus.google.com/u/0/106782122945207734872) //
