@@ -22,7 +22,7 @@ continuedevel ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay "   devpkgs"
+    toilet -f future --gay "   devpkgs"
     echo && echo
     pacaur --noconfirm --needed --update --devel
     echo && echo
@@ -37,7 +37,7 @@ rundevel ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay "   devpkgs"
+    toilet -f future --gay "   devpkgs"
     echo & echo
     columns=$(tput cols)
     text=">> Upgrade git/development packages? <<"
@@ -55,7 +55,7 @@ rungems ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay " rubygems"
+    toilet -f future --gay " rubygems"
     echo && echo
     columns=$(tput cols)
     text=">> Upgrade Ruby GEM packages? <<"
@@ -73,7 +73,7 @@ continuegem ()
 {
     clear
     echo && echo
-    toilet -f sblood --gay " rubygems"
+    toilet -f future --gay " rubygems"
     echo && echo
     echo "${white}:: ${magenta}local gems ${white}:: ${green} "
     gem update
