@@ -21,6 +21,8 @@ I decided to install, the installation's input decided to change it, not signifi
 - Cursor Default X11
 Colors TERM Mono
 
+![Cu](https://github.com/appath/dotfiles/blob/master/bspwm_mono_copy_dotfiles_pc/cursors.jpg)
+
 #### exhaust
 ![Mono:a](https://github.com/appath/dotfiles/blob/master/bspwm_mono_copy_dotfiles_pc/1.png)
 ![Mono:b](https://github.com/appath/dotfiles/blob/master/bspwm_mono_copy_dotfiles_pc/2.png)
