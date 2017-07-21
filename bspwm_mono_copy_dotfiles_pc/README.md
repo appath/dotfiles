@@ -10,7 +10,6 @@ I decided to install, the installation's input decided to change it, not signifi
 - pacaur
 - cower-git
 - rxvt-unicode-patched
-- pulsemixer
 - pulseaudio
 - htop
 - polybar-git
