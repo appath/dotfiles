@@ -1,6 +1,6 @@
 # Xdefaults [Mono] Colors
 *.foreground:		#ecedee
-*.background:		#121212
+*.background:		[97]#121212
 *.cursorColor:		#c2c2b1
 
 #Black
