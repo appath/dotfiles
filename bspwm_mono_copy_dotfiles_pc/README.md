@@ -15,6 +15,7 @@ I decided to install, the installation's input decided to change it, not signifi
 - polybar-git
 - mc
 - tmux
+- pulsemixer
 - zsh (oh-my-zsh)
 - Theme zsh (Ra)
 - Cursor Default X11
