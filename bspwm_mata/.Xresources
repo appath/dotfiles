@@ -1,0 +1,19 @@
+! /---------------------------\
+! | .Xresources by appath     |
+! | mata theme colors         |
+! | https://github.com/appath |
+! | 2017                      |
+! \---------------------------/
+
+#include </home/user/.themecolors/mata>
+*.dpi:			77
+*termName:		rxvt-256color
+*font:			xft:gmnterm:size=8
+*fontBold:		xft:gmnterm:size=8
+*.depth:		32
+*lineSpace:		1
+*letterSpace:		0
+*geometry:		116x22
+*.scrollBar:		false
+*loginShell:		true
+*.internalBorder:	25
