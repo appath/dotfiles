@@ -1,0 +1,26 @@
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+format_human_readable
+use_xft yes
+xftfont PragmataPro:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+own_window_class Conky
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+alignment top_center
+gap_x 5
+gap_y 5
+minimum_size 617
+draw_shades yes
+default_color b0b0b0
+
+TEXT
+${voffset 150}${image bin/.conky/bg.png -p 0,0 -s 617x107}
