@@ -11,6 +11,9 @@ Rainbow of flowers (funny cats)
 
 I just wanted to be simple, without any problems, etc.﻿
 
+#### HTML5 Playback Luakit...
+luakit-git, gst-plugins-base, gst-plugins-good and gst-libav.
+
 #### exhaust
 ![Mata:a](https://github.com/appath/dotfiles/blob/master/bspwm_mata/VirtualBox_5555_22_07_2017_23_17_03.png)
 
