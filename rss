@@ -18,9 +18,9 @@ own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 alignment top_center
 gap_x 5
 gap_y 5
-minimum_size 617
+minimum_size 557
 draw_shades yes
 default_color b0b0b0
 
 TEXT
-${voffset 150}${image bin/.conky/bg.png -p 0,0 -s 617x107}
+${voffset 150}${image bin/.conky/bg.png -p 0,0 -s 557x101}
