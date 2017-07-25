@@ -1,0 +1,30 @@
+update_interval 1
+total_run_times 0
+net_avg_samples 1
+cpu_avg_samples 1
+imlib_cache_size 0
+double_buffer yes
+no_buffers yes
+format_human_readable
+use_xft yes
+xftfont PragmataProMono:bold:size=8
+override_utf8_locale yes
+text_buffer_size 2048
+own_window_class Conky
+own_window yes
+own_window_type override
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+alignment top_left
+gap_x 12
+gap_y 5
+minimum_size 557
+draw_shades yes
+default_color 000000
+color1 214a61
+color2 de0d4d
+
+TEXT
+${voffset 2}  +${color2}+${color}
+${voffset 25}${rss https://www.linux.com/feeds/rss 1 item_titles 12}
+${voffset 2}${mem} + ${color1}${exec date +"%H:%M"}${color}

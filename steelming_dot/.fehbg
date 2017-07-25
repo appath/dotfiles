@@ -1,0 +1,2 @@
+#!/bin/sh
+feh  --bg-fill '/home/user/wal/x-0.png' 
