@@ -10,6 +10,10 @@ super + Return
 super + i
 	luakit
 
+# editor brackets
+super + b
+	brackets
+
 # program launcher
 super + @space
 	dmenu_run
