@@ -7,6 +7,7 @@ default
 Brackers [error]
 
 Got an "error launching browser". Chrome already installed.
+
 `% sudo ln -s /bin/google-chrome-stable/ bin/google-chrome`
 
 #### This
