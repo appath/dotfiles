@@ -8,16 +8,15 @@ super + Return
 
 # web https
 super + i
-	luakit
+	google-chrome
 
 # editor brackets
 super + b
 	brackets
 
 # program launcher
-super + @space
-	dmenu_run
-
+#super + @space
+	
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd

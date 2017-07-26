@@ -17,8 +17,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Blender desktop='^4' state=floating follow=on
-bspc rule -a Brackets desktop='^3' state=floating follow=off
-bspc rule -a Luakit desktop='^2'
+bspc rule -a Brackets desktop="^3" follow=off
+bspc rule -a Google Chrome state=floating private=on
 bspc rule -a URxvt state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
