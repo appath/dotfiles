@@ -2,7 +2,12 @@ pkg &&
 
 default
 
-[ brackets-bin, lxappearance, lolcat, feh, mc, htop, ncmcpp, mpd, conky, compton, gst-plugins-base, gst-plugins-good, gst-libav, tmux, rxvt-unicode-patched, vpn, luakit-git, yaourt ]
+[ brackets-bin, lxappearance, lolcat, feh, mc, htop, ncmcpp, mpd, conky, compton, google-chrome, tmux, rxvt-unicode-patched, vpn, yaourt ]
+
+Brackers [error]
+
+Got an "error launching browser". Chrome already installed.
+`% sudo ln -s /bin/google-chrome-stable/ bin/google-chrome`
 
 #### This
 ![steel](https://github.com/appath/dotfiles/blob/master/steelming_dot/shot_steel_by_boris241-dbhnc8l.png)
