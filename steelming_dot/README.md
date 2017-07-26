@@ -4,7 +4,7 @@ default
 
 [ brackets-bin, lxappearance, lolcat, feh, mc, htop, ncmcpp, mpd, conky, compton, google-chrome, tmux, rxvt-unicode-patched, vpn, yaourt ]
 
-Brackers [error]
+Brackets [error launching]...
 
 Got an "error launching browser". Chrome already installed.
 
