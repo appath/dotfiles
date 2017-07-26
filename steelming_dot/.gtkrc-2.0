@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/user/.gtkrc-2.0.mine"
-gtk-theme-name="Raleigh"
-gtk-icon-theme-name="Adwaita"
+gtk-theme-name="Dark"
+gtk-icon-theme-name="Dark"
 gtk-font-name="PragmataPro 12"
 gtk-cursor-theme-name="pixelfun3"
 gtk-cursor-theme-size=0
