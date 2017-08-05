@@ -2,7 +2,6 @@
 
 sxhkd &
 ~/.fehbg &
-polybar example &
 compton -c -t-5 -l-5 -r3 -C &
 $HOME/.config/polybar/launch &
 
