@@ -13,7 +13,7 @@ I did not try this design on a stationary PC, but I tried an interesting solutio
 * polybar
 * feh
 * compton
-* rxvt-unicode-patched and cool lolcat сheerful cat 😀
+* rxvt-unicode-patched and cool lolcat сheerful cat ☻
 
 ![Pussh](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_pussh/0_21_58.png)
 
