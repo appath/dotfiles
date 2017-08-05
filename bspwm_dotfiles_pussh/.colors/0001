@@ -1,0 +1,27 @@
+*.foreground:			#9c9a97
+*.background:			#0b0d09
+
+! Black
+*.color0:			#161719
+*.color8:			#282a2e
+! Red
+*.color1:			#853535
+*.color9:			#853535
+! Green
+*.color2:			#757c36
+*.color10:			#757c36
+! Yellow
+*.color3:			#b16226
+*.color11:			#b16226
+! Blue
+*.color4:			#465b77
+*.color12:			#465b77
+! Magenta
+*.color5:			#5d4465
+*.color13:			#5d4465
+! Cyan
+*.color6:			#446d68
+*.color14:			#466d68
+! White
+*.color7:			#383838
+*.color15:			#383838

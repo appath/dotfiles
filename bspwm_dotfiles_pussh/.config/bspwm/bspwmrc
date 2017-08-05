@@ -1,0 +1,37 @@
+#! /bin/sh
+
+sxhkd &
+~/.fehbg &
+polybar example &
+compton -c -t-5 -l-5 -r3 -C &
+$HOME/.config/polybar/launch &
+
+bspc monitor -d I II III IV
+
+bspc config border_width         	1
+bspc config window_gap		 	4
+
+bspc config split_ratio          	0.50
+bspc config borderless_monocle   	true
+bspc config gapless_monocle      	true
+
+bspc config focus_follows_pointer	true
+bspc config auto_alternate		true
+bspc config auto_cancel		 	true
+
+bspc config normal_borde_color		"#0b0d09"
+bspc config active_border_color 	"#0b0d09"
+bspc config focused_border_color	"#0b0d09"
+bspc config presel_border_color		"#0b0d09"
+bspc config urgent_border_color		"#0b0d09"
+bspc config focused_locked_border_color "#0b0d09"
+
+bspc config normal_frame_opacity	0.0
+bspc config focused_frame_opacity	0.1
+
+bspc rule -a Gimp desktop='^4' state=floating follow=on
+bspc rule -a Brackets desktop='^2'
+bspc rule -a Spotify pseudo_tiled=on
+bspc rule -a ncmpcpp state=floating
+bspc rule -a Google Chrome state=floating private=on
+bspc rule -a URxvt state=floating

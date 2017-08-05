@@ -1,0 +1,11 @@
+#include "/home/user/.colors/0001"
+*termName:		rxvt-256color
+*font:			xft:gmnterm:size=8
+*fontBold:		xft:gmnterm:size=8
+*geometry:		116x22
+*scrollBar:		true
+*scrollBar_right:	true
+*scrollstyle:		plain
+*scrollColor:		#e993ae
+*loginShell:		true
+*internalBorder:	15
