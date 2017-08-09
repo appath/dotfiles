@@ -69,7 +69,7 @@ Here are my default settings.
 
 #### Used packages
 
-compton, rxvt-patch, lolcat...
+compton, rxvt-patch, lolcat, feh...
 
 #### Screenshot
 
