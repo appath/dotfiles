@@ -15,9 +15,9 @@ So I attached the fonts in the folder default
 
 Let's now scan to the specified directory on your hard disk. Example
 
-```cp -p github/dotfiles/dwm_custom /home/user/build/dwm```
+```cp -p github/dotfiles/dwm_google_laptop/dwm_custom /home/user/build/dwm```
 
-```cp -p github/dotfiles/dmenu_custom /home/user/build/dmenu```
+```cp -p github/dotfiles/dwm_google_laptop/dmenu_custom /home/user/build/dmenu```
 
 Now let's move to the directory dwm
 
