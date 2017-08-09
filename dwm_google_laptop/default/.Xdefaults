@@ -1,0 +1,7 @@
+#include </home/user/.colors/dwm.color_0>
+*termName:			rxvt-256color
+*geometry:			116x22
+*scrollBar:			false
+*internalBorder:		22
+*font:				xft:gmnterm:size=8
+*fontBold:			xft:gmnterm:size=8

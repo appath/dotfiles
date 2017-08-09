@@ -1,0 +1,8 @@
+#!/bin/bash
+## BAT  menu  internet  KeyMap en,ru.
+~/.fehbg &
+compton -c -t-5 -l-5 -r3 -C &
+while true; do
+	xsetroot -name " $( date +"%a %d, %b %H:%M %p " )"
+sleep 12s
+done &
