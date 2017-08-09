@@ -50,8 +50,8 @@ static const char *tags[] = { "\ue240", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", 
 
 static const Rule rules[] = {
 	/* class	instance	title		tags mask	isfloating	monitor */
-	{ "Luakit",	NULL,		NULL,		1 << 5,		1,		-1 },
-	{ "URxvt",	NULL,		NULL,		1 << 3,	        0,		-1 },
+	{ "Luakit",	NULL,		NULL,		1 << 5,		0,		-1 },
+	{ "URxvt",	NULL,		NULL,		1 << 3,	        1,		-1 },
 };
 
 /* layout(s) */
