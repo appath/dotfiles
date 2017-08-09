@@ -67,7 +67,7 @@ alt + shift + p = open dmenu.
 
 #### Running on the working window
 
-alt + [1-6]
+alt + [1-7]
 
 Here are my default settings.
 
