@@ -37,6 +37,18 @@ We installed a window manager and search for applications with you.
 
 You can use my files, I added them as well, you will find them in folders default~
 
+#### How to install fonts
+
+```cd .fonts/```
+
+```mkfontscale```
+
+```mkfontdir```
+
+```fc-cache -fv```
+
+All fonts installed!
+
 Now just run the command
 
 ```startx```
