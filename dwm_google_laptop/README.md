@@ -65,6 +65,10 @@ alt + shift + q = Kill the window manager
 
 alt + shift + p = open dmenu.
 
+#### Running on the working window
+
+alt + [1-6]
+
 Here are my default settings.
 
 #### Used packages
