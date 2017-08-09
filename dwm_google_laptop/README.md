@@ -81,7 +81,7 @@ dwm:.
 
 ```cd build/dwm/```
 
-```sudo make uninstall``
+```sudo make uninstall```
 
 dmenu:.
 
