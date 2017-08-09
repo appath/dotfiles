@@ -39,7 +39,7 @@ You can use my files, I added them as well, you will find them in folders defaul
 
 Now just run the command
 
-```startx``
+```startx```
 
 You are in the window manager's environment.
 
@@ -62,6 +62,20 @@ compton, rxvt-patch, lolcat...
 #### Screenshot
 
 ![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
+
+#### Uninstall
+
+dwm:.
+
+```cd build/dwm/```
+
+```sudo make uninstall``
+
+dmenu:.
+
+```cd build/dmenu/```
+
+```sudo make uninstall```
 
 #### Social
 
