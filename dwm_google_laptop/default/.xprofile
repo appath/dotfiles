@@ -3,6 +3,12 @@
 ~/.fehbg &
 compton -c -t-5 -l-5 -r3 -C &
 while true; do
-	xsetroot -name " $( date +"%a %d, %b %H:%M %p " )"
-sleep 12s
+	if [ "$( xset -q | awk -F \" \" '/Group 2/ {print($4)}' )" = "on" ]; then
+		LAYOUT="RU";
+	else
+		LAYOUT="EN";
+	fi;
+
+	xsetroot -name "$LAYOUT  $( date +"%a %d, %b %H:%M %p " )"
+sleep 15s
 done &
