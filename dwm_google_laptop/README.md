@@ -6,7 +6,7 @@ In honor of the search engine made a topic for the medganger icon.
 
 You will need to install two packages with dependencies!
 
-* dmenu, dwm, xorg-xsetroot, freetype2, libx11, libxft, libxinerama, feh.
+* xorg-xsetroot, freetype2, libx11, libxft, libxinerama, feh.
 
 So I attached the fonts in the folder default
 
