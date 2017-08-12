@@ -12,6 +12,8 @@ dwm and dmenu
 
 So I attached the fonts in the folder default
 
+#### dmenu Only you will need to fix to your screen resolution!
+
 #### Installation
 ```git clone https://github.com/appath/dotfiles```
 
