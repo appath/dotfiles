@@ -52,6 +52,7 @@ static const Rule rules[] = {
 	/* class	instance	title		tags mask	isfloating	monitor */
 	{ "Luakit",	NULL,		NULL,		1 << 5,		0,		-1 },
 	{ "URxvt",	NULL,		NULL,		1 << 3,	        0,		-1 },
+	{ "vlc",	NULL,		NULL,		1 << 6,	        0,		-1 },
 };
 
 /* layout(s) */
