@@ -77,7 +77,7 @@ Here are my default settings.
 
 #### Used packages
 
-compton, rxvt-patched, lolcat, feh...
+compton, rxvt-unicode-patched, lolcat, feh...
 
 #### Screenshot
 
