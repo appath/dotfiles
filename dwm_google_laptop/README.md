@@ -82,7 +82,7 @@ compton, rxvt-unicode-patched, lolcat, feh...
 #### Screenshot
 ![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
 
-Edit
+New
 ![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm.png)
 
 
