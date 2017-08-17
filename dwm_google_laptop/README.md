@@ -37,6 +37,14 @@ and
 
 ```make && sudo make clean install```
 
+Added by dwmstatus 17.08.2017
+
+![dwmstatus](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwmstatus.jpg)
+
+``` cd build/dwmstatus/```
+
+```make && sudo make clean install```
+
 We installed a window manager and search for applications with you.
 
 You can use my files, I added them as well, you will find them in folders default~
@@ -96,6 +104,12 @@ dwm:.
 dmenu:.
 
 ```cd build/dmenu/```
+
+```sudo make uninstall```
+
+dwmstatus:.
+
+```cd build/dwmstatus/```
 
 ```sudo make uninstall```
 
