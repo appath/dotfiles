@@ -90,7 +90,7 @@ compton, rxvt-unicode-patched, lolcat, feh...
 #### Screenshot
 ![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
 
-![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm.png)
+![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/20_35_35.png)
 
 
 #### Uninstall
