@@ -121,11 +121,12 @@ static int fetch_battery_info(char *bat_str) {
     case DISCHARGING :
       	if(bat_percent > 56) {
         len += snprintf(bat_str, STRSZ, "\ue238");
-      }
-	else if(bat_percent > 24) {
+      } else if(bat_percent > 24) {
         len += snprintf(bat_str, STRSZ, "\ue237");
-      } else if(bat_percent > 11) {
+      } else if(bat_percent > 12) {
         len += snprintf(bat_str, STRSZ, "\ue239");
+      } else if(bat_percent > 4) {
+	len += snprintf(bat_str, STRSZ, "\ue0a7");
       }
       break;
     default:
