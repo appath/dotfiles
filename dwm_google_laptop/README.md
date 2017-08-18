@@ -94,6 +94,9 @@ compton, rxvt-unicode-patched, lolcat, feh...
 
 ![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/20_35_35.png)
 
+#### Video 
+
+* [Video](https://www.youtube.com/watch?v=ReY9AS5zlz8) DWM:...
 
 #### Uninstall
 
