@@ -1,7 +1,6 @@
+# Customize
 NAME = dwmstatus
-VERSION = 1.2
-
-# Customize below to fit your system
+VERSION = 1.2a
 
 # paths
 PREFIX = /usr/local
