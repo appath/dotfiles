@@ -23,6 +23,8 @@ Let's now scan to the specified directory on your hard disk. Example
 
 ```cp -p github/dotfiles/dwm_google_laptop/dmenu_custom /home/user/build/dmenu```
 
+```cp -p github/dotfiles/dwm_google_laptop/dwmstatus_custom /home/user/build/dwmstatus```
+
 Now let's move to the directory dwm
 
 ```cd build/dwm/```
