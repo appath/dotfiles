@@ -124,8 +124,6 @@ static int fetch_battery_info(char *bat_str) {
       }
 	else if(bat_percent > 24) {
         len += snprintf(bat_str, STRSZ, "\ue237");
-      } else if(bat_percent > 17) {
-        len += snprintf(bat_str, STRSZ, "\ue236");
       } else if(bat_percent > 11) {
         len += snprintf(bat_str, STRSZ, "\ue239");
       }
