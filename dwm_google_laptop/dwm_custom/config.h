@@ -53,6 +53,7 @@ static const Rule rules[] = {
 	{ "Luakit",	NULL,		NULL,	    1 << 5,	 0,    		0,	       -1 },
 	{ "URxvt",	NULL,		NULL,	    1 << 3,	 1,		0,	       -1 },
 	{ "Vlc",	NULL,		NULL,	    1 << 6,	 1,    		1,	       -1 },
+	{ "Steam",	NULL,		NULL,	    1 << 4,      1,		1,	       -1 },
 };
 
 /* layout(s) */
