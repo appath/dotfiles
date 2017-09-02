@@ -87,7 +87,7 @@ Here are my default settings.
 
 #### Used packages
 
-compton, rxvt-unicode-patched, lolcat, feh...
+tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
 
 #### Screenshot
 ![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
