@@ -1,28 +1,29 @@
 ! color config
-*foreground: #D7D0C7
+! TERM stack
+*foreground: #d7d0c7
 *background: #0c0c0c
 
 !black
 *color0:     #0c0c0c
 *color8:     #404040
 !red
-*color1:     #E84F4F
-*color9:     #D23D3D
+*color1:     #e84f4f
+*color9:     #d23d3d
 !green
-*color2:     #B8D68C
-*color10:    #A0CF5D
+*color2:     #b8d68c
+*color10:    #a0cf5d
 !yellow
-*color3:     #E1AA5D
-*color11:    #F39D21
+*color3:     #e1aa5d
+*color11:    #f39d21
 !blue
-*color4:     #7DC1CF
-*color12:    #4E9FB1
+*color4:     #7dc1cf
+*color12:    #4e9fb1
 !magenta
-*color5:     #9B64FB
-*color13:    #8542FF
+*color5:     #9b64fb
+*color13:    #8542ff
 !cyan
-*color6:     #6D878D
-*color14:    #42717B
+*color6:     #6d878d
+*color14:    #42717b
 !white
 *color7:     #dddddd
 *color15:    #dddddd
@@ -37,7 +38,7 @@ URxvt.iso14755: False
 URxvt.geometry: 116x22
 URxvt.saveLines: 3000
 URxvt.cursorBlink: true
-URxvt.foreground: #BFBFBF
+URxvt.foreground: #bfbfbf
 URxvt.background: #0c0c0c
 URxvt.cursorColor: #e0e080
 URxvt.highlightColor: #343434
