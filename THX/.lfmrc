@@ -1,0 +1,111 @@
+########## lfm - Last File Manager Configuration File ##########
+
+[Programs]
+audio: cmuss
+ebook: FBReader
+editor: vi
+graphics: gthumb
+pager: pyview
+pdf: evince
+shell: bash
+video: mplayer
+web: links
+
+[File Types]
+audio: ogg, flac, mp3, wav, au, midi
+ebook: epub, chm, mobi, prc, azw, lit, fb2
+graphics: png, jpeg, jpg, gif, tiff, tif, xpm, svg
+pdf: pdf, ps
+video: mpeg, mpg, avi, asf, ogv, flv, mkv
+web: html, htm
+
+[Bookmarks]
+0: /
+1: /
+2: /
+3: /
+4: /
+5: /
+6: /
+7: /
+8: /
+9: /
+
+[PowerCLI commands]
+0: mv "$f" "{$f.replace('', '')}"
+1: pyview "$f" %
+2: find "$d" -name "*" -print0 | xargs --null grep -EHcni "TODO|WARNING|FIXME|BUG"
+3: find "$d" -name "*" -print0 | xargs --null grep -EHcni "TODO|WARNING|FIXME|BUG" >output.txt &
+4: cp $s "$o"
+5: 
+6: 
+7: 
+8: 
+9: 
+
+[Colors]
+archive_files: yellow black
+buttons: yellow red
+cli_prompt: blue black
+cli_text: white black
+current_file: blue cyan
+current_file_otherpane: black white
+current_selected_file: yellow cyan
+current_selected_file_otherpane: yellow white
+data_files: white black
+directories: green black
+document_files: blue black
+error_messages1: white red
+error_messages2: black red
+exe_files: red black
+file_info: red black
+files: white black
+graphics_files: magenta black
+help: green black
+media_files: blue black
+messages: magenta cyan
+selected_file: green black
+source_files: cyan black
+tabs: white green
+temp_files: white black
+title: white black
+
+[Options]
+# automatic_file_encoding_conversion: never = -1, ask = 0, always = 1
+# sort:	None = 0, byName = 1, byName_rev = 2, bySize = 3,
+# 	bySize_rev = 4, byDate = 5, byDate_rev = 6
+automatic_file_encoding_conversion: 0
+color_files: 1
+detach_terminal_at_exec: 1
+grep_ignorecase: 1
+grep_regex: 1
+manage_otherpane: 0
+num_panes: 2
+rebuild_vfs: 0
+save_conf_at_exit: 1
+save_history_at_exit: 1
+show_dotfiles: 1
+show_output_after_exec: 1
+sort: 1
+sort_mix_cases: 1
+sort_mix_dirs: 0
+
+[Misc]
+# diff_type: context, unified, ndiff
+backup_extension: .bak
+diff_type: unified
+
+[Confirmations]
+ask_rebuild_vfs: 1
+delete: 1
+overwrite: 1
+quit: 1
+
+[Files]
+archive_files: .gz, .bz2, .xz, .tar, .tgz, .Z, .zip, .rar, .7z, .arj, .cab, .lzh, .lha, .zoo, .arc, .ark, .rpm, .deb
+data_files: .dta, .nc, .dbf, .mdn, .db, .mdb, .dat, .fox, .dbx, .mdx, .sql, .mssql, .msql, .ssql, .pgsql, .cdx, .dbi, .sqlite
+document_files: .txt, .text, .rtf, .odt, .odc, .odp, .abw, .gnumeric, .sxw, .sxc, .sxp, .sdw, .sdc, .sdp, .ps, .pdf, .djvu, .dvi, .bib, .tex, .epub, .chm, .prc, .mobi, .azw, .lit, .imp.fb2, .xml, .xsd, .xslt, .sgml, .dtd, .html, .shtml, .htm, .css, .mail, .msg, .letter, .ics, .vcs, .vcard, .lsm, .po, .man, .1, .info, .doc, .xls, .ppt, .pps, .docx, .xlsx, .pptx
+graphics_files: .jpg, .jpeg, .gif, .png, .tif, .tiff, .pcx, .bmp, .xpm, .xbm, .eps, .pic, .rle, .ico, .wmf, .omf, .ai, .cdr, .xcf, .dwb, .dwg, .dxf, .svg, .dia
+media_files: .mp2, .mp3, .mpg, .ogg, .flac, .mpeg, .wav, .avi, .asf, .mov, .mol, .mpl, .xm, .med, .mid, .midi, .umx, .wma, .acc, .wmv, .swf, .flv, .ogv, .mkv
+source_files: .c, .h, .cc, .hh, .cpp, .hpp, .py, .pyw, .lua, .pl, .pm, .inc, .rb, .asm, .pas, .f, .f90, .pov, .m, .pas, .cgi, .php, .phps, .tcl, .tk, .js, .java, .jav, .jasm, .vala, .glade, .ui, .diff, .patch, .sh, .bash, .awk, .m4, .el, .st, .mak, .sl, .ada, .caml, .ml, .mli, .mly, .mll, .mlp, .prg
+temp_files: .tmp, .$$$, ~, .bak

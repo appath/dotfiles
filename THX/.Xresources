@@ -1,0 +1,65 @@
+*foreground: #D7D0C7
+*background: #0c0c0c
+
+!black
+*color0:     #0c0c0c
+*color8:     #404040
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!green
+*color2:     #B8D68C
+*color10:    #A0CF5D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #7DC1CF
+*color12:    #4E9FB1
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!white
+*color7:     #dddddd
+*color15:    #dddddd
+
+! urxvt config
+URxvt.termName: rxvt-unicode
+URxvt.perl-lib: /root/.urxvt/urxvt-perls 
+URxvt.perl-ext-common: default,matcher,clipboard,url-select
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.geometry: 116x22
+URxvt.saveLines: 3000
+URxvt.cursorBlink: true
+URxvt.foreground: #BFBFBF
+URxvt.background: #0c0c0c
+URxvt.cursorColor: #e0e080
+URxvt.highlightColor: #343434
+URxvt.fadecolor: #0c0c0c
+URxvt.internalBorder: 22
+URxvt.fading: 40
+URxvt.transparent: true
+URxvt.tintColor: #0c0c0c
+URxvt.visualBell: false
+URxvt.urgentOnBell: true
+URxvt.scrollBar: true
+URxvt.scrollBar_right: true
+URxvt.url-select.launcher: links 
+URxvt.url-select.underline: true
+URxvt.urlLauncher: "links -g"
+URxvt.matcher.button: 1
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 7
+URxvt.tabbed.tab-bg: 4
+
+! font config
+URxvt*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*bolditalicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
