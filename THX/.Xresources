@@ -1,4 +1,3 @@
-! color config
 ! TERM stack
 *foreground: #d7d0c7
 *background: #0c0c0c
@@ -59,5 +58,3 @@ URxvt.tabbed.tabbar-fg: 4
 URxvt.tabbed.tabbar-bg: 0
 URxvt.tabbed.tab-fg: 7
 URxvt.tabbed.tab-bg: 4
-
-! font config
