@@ -34,7 +34,7 @@ URxvt.perl-ext-common: default,matcher,clipboard,url-select
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.geometry: 116x22
-URxvt.saveLines: 3000
+URxvt.saveLines: 3700
 URxvt.cursorBlink: true
 URxvt.foreground: #bfbfbf
 URxvt.background: #0c0c0c
@@ -42,7 +42,7 @@ URxvt.cursorColor: #e0e080
 URxvt.highlightColor: #343434
 URxvt.fadecolor: #0c0c0c
 URxvt.internalBorder: 22
-URxvt.fading: 40
+URxvt.fading: 33
 URxvt.transparent: true
 URxvt.tintColor: #0c0c0c
 URxvt.visualBell: false
