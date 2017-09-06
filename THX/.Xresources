@@ -30,11 +30,10 @@
 
 ! urxvt config
 URxvt.termName: rxvt-unicode
-URxvt.perl-lib: /root/.urxvt/urxvt-perls 
+URxvt.perl-lib: /home/user/.urxvt/urxvt-perls 
 URxvt.perl-ext-common: default,matcher,clipboard,url-select
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
 URxvt.geometry: 116x22
 URxvt.saveLines: 3000
 URxvt.cursorBlink: true
@@ -51,6 +50,7 @@ URxvt.visualBell: false
 URxvt.urgentOnBell: true
 URxvt.scrollBar: true
 URxvt.scrollBar_right: true
+URxvt.scrollstyle: plain
 URxvt.url-select.launcher: links 
 URxvt.url-select.underline: true
 URxvt.urlLauncher: "links -g"
@@ -61,7 +61,3 @@ URxvt.tabbed.tab-fg: 7
 URxvt.tabbed.tab-bg: 4
 
 ! font config
-URxvt*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
-URxvt*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
-URxvt*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
-URxvt*bolditalicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
