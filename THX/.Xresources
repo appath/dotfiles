@@ -1,4 +1,5 @@
 ! font config
+URxvt.iso14755: False
 URxvt*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
