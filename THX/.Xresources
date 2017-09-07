@@ -36,7 +36,7 @@ URxvt*bolditalicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 
 ! urxvt config
 URxvt.termName: rxvt-unicode
-URxvt.loginShell:
+URxvt.loginShell: true
 URxvt.perl-lib: /home/user/.urxvt/urxvt-perls 
 URxvt.perl-ext-common: default,matcher,clipboard,url-select
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
