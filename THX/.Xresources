@@ -1,4 +1,10 @@
-! TERM stack
+! font config
+URxvt*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+URxvt*bolditalicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+
+! stack
 *foreground: #d7d0c7
 *background: #0c0c0c
 
