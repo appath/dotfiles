@@ -1,3 +1,7 @@
+#################
+## monkey real ##
+#################
+
 ! font config
 URxvt.iso14755: false
 !URxvt*font: xft:gmnterm:size=8
