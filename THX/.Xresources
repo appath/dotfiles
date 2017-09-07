@@ -1,5 +1,5 @@
 ! font config
-URxvt.iso14755: False
+URxvt.iso14755: false
 URxvt*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
@@ -36,6 +36,7 @@ URxvt*bolditalicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 
 ! urxvt config
 URxvt.termName: rxvt-unicode
+URxvt.loginShell:	true
 URxvt.perl-lib: /home/user/.urxvt/urxvt-perls 
 URxvt.perl-ext-common: default,matcher,clipboard,url-select
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
