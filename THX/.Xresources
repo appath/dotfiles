@@ -1,5 +1,9 @@
 ! font config
 URxvt.iso14755: false
+!URxvt*font: xft:gmnterm:size=8
+!URxvt*fontBold: xft:gmnterm:size=8
+!URxvt*font: xft:PragmataPro:size=8
+!URxvt*fontBold: xft:PragmataPro:size=8
 URxvt*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
 URxvt*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
@@ -46,7 +50,7 @@ URxvt.saveLines: 3700
 URxvt.cursorBlink: true
 URxvt.foreground: #bfbfbf
 URxvt.background: #0c0c0c
-URxvt.cursorColor: #e0e080
+URxvt.cursorColor: #70449f
 URxvt.highlightColor: #343434
 URxvt.fadecolor: #0c0c0c
 URxvt.internalBorder: 22
