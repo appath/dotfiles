@@ -73,7 +73,10 @@ LAN,VM
 eth0 -LAN
 enp0s3 -VM
 
+pass
+# passwd root
+
 # exit
 # umount -l /mnt/gentoo/dev
-# umount /mnt/gentoo{/boot,/proc,}
+# umount /mnt/gentoo/{/boot,/proc,}
 # poweroff & reboot
