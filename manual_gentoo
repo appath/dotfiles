@@ -49,4 +49,14 @@ kernel
 http://www.unix-lab.org/posts/kernel-v3/ -ru_RU Докс.
 
 # make && make modules_install
+# make install
 # cp arch/x86/boot/bzImage /boot/ -[x86,x86_64]
+
+grub
+# nano -w /etc/portage/make.conf
+GRUB_PLATFORMS="pc"
+# emerge grub sys-boot/os-prober
+# grub-install /dev/sda
+# grub-mkconfig -o /boot/grub/grub.cfg
+
+fstab
