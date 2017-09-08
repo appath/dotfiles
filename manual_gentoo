@@ -60,3 +60,15 @@ GRUB_PLATFORMS="pc"
 # grub-mkconfig -o /boot/grub/grub.cfg
 
 fstab
+# nano /etc/fstab
+#/dev/BOOT   /boot          ext2    noauto,noatime      1 2
+#/dev/ROOT   /              ext3    noatime             0 1
+#/dev/SWAP   none           swap    sw                  0 0
+/dev/sda1 -boot
+/dev/sda3 -/
+/dev/sda2 -swap
+
+# exit
+# umount -l /mnt/gentoo/dev
+# umount /mnt/gentoo{/boot,/proc,}
+# poweroff & reboot
