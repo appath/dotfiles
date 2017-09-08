@@ -76,6 +76,7 @@ eth0 -LAN
 enp0s3 -VM
 
 # exit
+# umount /dev/sda2
 # umount -l /mnt/gentoo/dev
 # umount /mnt/gentoo{/boot,/proc,}
 # poweroff & reboot
