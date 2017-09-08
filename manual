@@ -1,0 +1,52 @@
+# gentoo
+# /sbin/ifconfig
+# dhcpcd eth0
+# /sbin/ifconfig
+# ping -c2 google.com
+
+hdd
+/ -корневой каталог & root directory
+/boot -загрузочные файлы & boot files
+# cfdisk /dev/sda -dos
+150mb -boot
+2g -swap
+.. -/
+
+# mkfs.ext2 /dev/sda1
+# mkfs.ext4 /dev/sda3
+# mkswap /dev/sda2
+# swapon /dev/sda2
+# mount /dev/sda3 /mnt/gentoo/
+# mkdir /mnt/gentoo/boot/
+# mount /dev/sda1 /mnt/gentoo/boot/
+
+# cd /mnt/gentoo
+
+down
+# links mirror.yandex.ru
+Index of /gentoo-distfiles/snapshots/
+portage-latest.tar.bz2   
+Index of /gentoo-distfiles/releases/x86/autobuilds/20170411/
+stage3-i686-20170411.tar.bz2
+
+tar
+# tar -xjvf portage-latest.tar.bz2 -C /mnt/gentoo/usr/
+# tar -pxjvf stage3-i686-20170411.tar.bz2 -C /mnt/gentoo/
+
+/proc & /dev
+# mount -t proc none /mnt/gentoo/proc/
+# mount -o bind /dev/ /mnt/gentoo/dev/
+
+dns
+# cp /etc/resolv.conf /mnt/gentoo/etc/
+
+# chroot /mnt/gentoo
+# emerge gentoo-sources
+# cd /usr/src/linux/
+# make menuconfig
+
+kernel
+http://www.unix-lab.org/posts/kernel-v3/
+
+# make && make modules_install
+# cp arch/x86/boot/bzImage /boot/ -[x86,x86_64]
