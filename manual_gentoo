@@ -46,7 +46,7 @@ dns
 # make menuconfig
 
 kernel
-http://www.unix-lab.org/posts/kernel-v3/
+http://www.unix-lab.org/posts/kernel-v3/ -ru_RU Докс.
 
 # make && make modules_install
 # cp arch/x86/boot/bzImage /boot/ -[x86,x86_64]
