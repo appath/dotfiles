@@ -9,5 +9,6 @@ xset fp rehash
 ~/.fehbg &
 ssat $BOTS 'BUS_BB'
 .BOTS &
+urxvt &
 =========
 exec dwm
