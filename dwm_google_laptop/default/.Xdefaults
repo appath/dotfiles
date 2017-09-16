@@ -3,7 +3,6 @@
 *geometry:			116x22
 *scrollBar:			false
 *internalBorder:		22
-*cursorBlink:       true
 
 !PowerLine (xft:PragmataPro:size=8)
 !Default (xft:gmterm:size=8)
