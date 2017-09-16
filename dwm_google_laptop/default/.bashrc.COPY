@@ -11,4 +11,4 @@ PS1='[\u@\h \W]\$ '
 export NORM="\[$(tput sgr0)\]"
 export BOLD="\[\$(tput bold)\]"
 export COLOR="\[\033[38;5;1m\]"
-export PS1="$COLOR█$NORM pentest $BOLD\W $BOLD$COLOR$ $NORM"
+export PS1="pentest $BOLD\W $BOLD$COLOR$ $NORM"
