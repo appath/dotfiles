@@ -149,7 +149,6 @@ static Key keys[] = {
 	TAGKEYS(			XK_5,						4)
 	TAGKEYS(			XK_6,						5)
 	TAGKEYS(			XK_7,						6)
-	TAGKEYS(			XK_8,						7)
 	{ MODKEY|ShiftMask,		XK_q,			quit,			{0} },
 	{ MODKEY|ShiftMask,		XK_r,			self_restart,		{0} },
 	{ 0,				XF86AudioRaiseVolume,	spawn,			{.v = vol_up } },
