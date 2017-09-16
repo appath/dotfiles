@@ -1,3 +1,4 @@
+/* UPDATE */
 /* GitHub COPY Custom 16.09.2017 */
 /* by https://github.com/appath/ */
 /* See LICENSE file for copyright and license details. */
