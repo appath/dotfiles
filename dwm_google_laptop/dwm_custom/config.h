@@ -52,6 +52,7 @@ static const char *tags[] = { "\ue240", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", 
 static const Rule rules[] = {
 	/* class	instance	title	              tags mask    iscentered     isfloating     monitor */
 	{ NULL,         NULL,           "Total Commander",    0,           1,             0,             -1 },
+	{ NULL,         NULL,           "irb",                1 << 2,      1,             0,             -1 },
 	{ "Luakit",	NULL,		NULL,	              1 << 5,	   0,    	  0,	         -1 },
 	{ "URxvt",	NULL,		NULL,	              0,	   1,		  0,	         -1 },
 	{ "Vlc",	NULL,		NULL,	              1 << 6,	   1,    	  1,	         -1 },
@@ -89,6 +90,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", "-fn", "PragmataPro:size=8", "-w", "320", "-h", "20", "-x", "70", "-y", "750", "-dim", "0.4", NULL };
 static const char *termcmd[] 		= { "urxvt", NULL, };
+static const char *rybucmd[] 		= { "urxvt", "-name", "Rybu", "-geometry", "122x55", "-e", "irb", NULL, };
 static const char *lfmcmd[] 		= { "urxvt", "-name", "Total Commander", "-geometry", "95x45", "-e", "lfm", NULL, };
 static const char *vol_up[] 	        = { "pulseaudio-ctl", "up", NULL };
 static const char *vol_down[] 		= { "pulseaudio-ctl", "down", NULL };
@@ -100,6 +102,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_p,			spawn,			{.v = dmenucmd } },
 	{ MODKEY,	         	XK_Return,		spawn,			{.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_m,                   spawn,                  {.v = lfmcmd } },
+	{ MODKEY,			XK_r,			spawn,			{.v = rybucmd } },
 	{ MODKEY|ShiftMask,		XK_b,			togglebar,		{0} },
 	{ MODKEY,			XK_Right,		focusstack,		{.i = +1 } },
 	{ MODKEY,			XK_Left,		focusstack,		{.i = -1 } },
