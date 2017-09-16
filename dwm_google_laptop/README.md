@@ -90,9 +90,9 @@ Here are my default settings.
 
 #### Used packages
 
-lfm, tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
+rybu, visual studio code, lfm, tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
 
-#### Screenshot
+#### Sc reensh code, ot
 ![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
 
 ![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/20_35_35.png)
