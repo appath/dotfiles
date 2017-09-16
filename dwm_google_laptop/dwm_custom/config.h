@@ -1,12 +1,12 @@
-/* GitHub COPY Custom 8.8.2017 */
+/* GitHub COPY Custom 16.09.2017 */
 /* by https://github.com/appath/ */
 /* See LICENSE file for copyright and license details. */
 
-/* include modu */
-#include "selfrestart.c"
-#include "moveresize.c"
-#include "gaplessgrid.c"
-#include "zoomswap.c"
+/* include modules */
+#include "patch/selfrestart.c"
+#include "patch/moveresize.c"
+#include "patch/gaplessgrid.c"
+#include "patch/zoomswap.c"
 
 /* mappings */
 #define XF86AudioMute			0x1008ff12
@@ -21,8 +21,8 @@ static const char *fonts[] = {
 
 static const unsigned int borderpx 		= 1;	/* border pixel of windows */
 static const unsigned int snap 			= 10;	/* snap pixel */
-static const unsigned int tagpadding 		= 13;	
-static const unsigned int tagspacing 		= 5;	
+static const unsigned int tagpadding 		= 13;	/* allows you to set the field value */
+static const unsigned int tagspacing 		= 5;	/* the rule checks the spaces inside and around the syntax elements */
 static const unsigned int gappx			= 12;	/* gap pixel between windows */
 static const unsigned int systraypinning 	= 0;	/* 1: sloppy systray follows selected monitor, >0: pin systray to monitor X */
 static const unsigned int systrayspacing 	= 2;	/* systray spacing */
@@ -49,11 +49,12 @@ static const char colors[NUMCOLORS][MAXCOLORS][9] = {
 static const char *tags[] = { "\ue240", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", "\ue26d", "\ue1dd" };
 
 static const Rule rules[] = {
-	/* class	instance	title	    tags mask    iscentered     isfloating     monitor */
-	{ "Luakit",	NULL,		NULL,	    1 << 5,	 0,    		0,	       -1 },
-	{ "URxvt",	NULL,		NULL,	    1 << 3,	 1,		0,	       -1 },
-	{ "Vlc",	NULL,		NULL,	    1 << 6,	 1,    		1,	       -1 },
-	{ "Steam",	NULL,		NULL,	    1 << 4,      1,		1,	       -1 },
+	/* class	instance	title	              tags mask    iscentered     isfloating     monitor */
+	{ NULL,         NULL,           "Total Commander",    0,           1,             0,             -1 },
+	{ "Luakit",	NULL,		NULL,	              1 << 5,	   0,    	  0,	         -1 },
+	{ "URxvt",	NULL,		NULL,	              0,	   1,		  0,	         -1 },
+	{ "Vlc",	NULL,		NULL,	              1 << 6,	   1,    	  1,	         -1 },
+	{ "Steam",	NULL,		NULL,	              1 << 4,      1,		  1,	         -1 },
 };
 
 /* layout(s) */
@@ -64,11 +65,11 @@ static const int resizehints = 0;	/* 1 means respect size hints in tiled resizal
 /* tagging */
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "\ue002",   tile },   	/* first entry is default */
-	{ "\ue006",   NULL },    	/* no layout function means floating behavior */
-	{ "\ue000",   monocle },
-	{ "\ue003",   htile },
-	{ "\ue00a",   gaplessgrid },
+	{ "\ue006",   NULL },   	/* no layout function means floating behavior */
+	{ "\ue002",   tile },    	/* first entry is default */
+	{ "\ue000",   monocle },        /* monocle is good for maximizing the preservation and focusing of the window */
+	{ "\ue003",   htile },          /* first entry is default */
+	{ "\ue00a",   gaplessgrid },    /* organizes windows in the grid /*
 };
 
 /* key definitions */
@@ -86,7 +87,8 @@ static const Layout layouts[] = {
 /* dmenu custom */
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", "-fn", "PragmataPro:size=8", "-w", "320", "-h", "20", "-x", "70", "-y", "750", "-dim", "0.4", NULL };
-static const char *termcmd[] 		= { "urxvt", NULL, "URxvt" };
+static const char *termcmd[] 		= { "urxvt", NULL, };
+static const char *lfmcmd[] 		= { "urxvt", "-name", "Total Commander", "-geometry", "95x45", "-e", "lfm", NULL, };
 static const char *vol_up[] 	        = { "pulseaudio-ctl", "up", NULL };
 static const char *vol_down[] 		= { "pulseaudio-ctl", "down", NULL };
 static const char *vol_toggle[]  	= { "pulseaudio-ctl", "mute", NULL };
@@ -96,6 +98,7 @@ static Key keys[] = {
 	/* modifier			key			function		argument */
 	{ MODKEY|ShiftMask,		XK_p,			spawn,			{.v = dmenucmd } },
 	{ MODKEY,	         	XK_Return,		spawn,			{.v = termcmd } },
+	{ MODKEY|ShiftMask,             XK_m,                   spawn,                  {.v = lfmcmd } },
 	{ MODKEY|ShiftMask,		XK_b,			togglebar,		{0} },
 	{ MODKEY,			XK_Right,		focusstack,		{.i = +1 } },
 	{ MODKEY,			XK_Left,		focusstack,		{.i = -1 } },
@@ -111,8 +114,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_Return,		zoom,			{0} },
 	{ MODKEY,			XK_Tab,			view,			{0} },
 	{ MODKEY|ShiftMask,		XK_c,			killclient,		{0} },
-	{ MODKEY,			XK_t,			setlayout,		{.v = &layouts[0]} },
-	{ MODKEY,			XK_f,			setlayout,		{.v = &layouts[1]} },
+	{ MODKEY,			XK_t,			setlayout,		{.v = &layouts[1]} },
+	{ MODKEY,			XK_f,			setlayout,		{.v = &layouts[0]} },
 	{ MODKEY,			XK_m,			setlayout,		{.v = &layouts[2]} },
 	{ MODKEY,			XK_b,			setlayout,		{.v = &layouts[3]} },
 	{ MODKEY,			XK_g,			setlayout,		{.v = &layouts[4]} },
@@ -141,7 +144,6 @@ static Key keys[] = {
 	TAGKEYS(			XK_6,						5)
 	TAGKEYS(			XK_7,						6)
 	TAGKEYS(			XK_8,						7)
-	TAGKEYS(			XK_9,						8)
 	{ MODKEY|ShiftMask,		XK_q,			quit,			{0} },
 	{ MODKEY|ShiftMask,		XK_r,			self_restart,		{0} },
 	{ 0,				XF86AudioRaiseVolume,	spawn,			{.v = vol_up } },
