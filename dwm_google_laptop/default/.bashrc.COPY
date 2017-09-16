@@ -1,0 +1,14 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+
+PS1='[\u@\h \W]\$ '
+export NORM="\[$(tput sgr0)\]"
+export BOLD="\[\$(tput bold)\]"
+export COLOR="\[\033[38;5;1m\]"
+export PS1="$COLOR█$NORM pentest $BOLD\W $BOLD$COLOR$ $NORM"

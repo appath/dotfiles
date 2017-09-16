@@ -2,7 +2,7 @@
 /* by https://github.com/appath/ */
 /* See LICENSE file for copyright and license details. */
 
-/* include modu */
+/* include modules */
 #include "selfrestart.c"
 #include "moveresize.c"
 #include "gaplessgrid.c"

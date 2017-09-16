@@ -1,6 +1,6 @@
 #!/bin/sh
 ~/.fehbg &
-compton -c -t-5 -l-5 -r3 -C &
+compton &
 xset +fp $HOME/.fonts
 xset fp rehash
 xrdb -merge $HOME/.Xdefaults
