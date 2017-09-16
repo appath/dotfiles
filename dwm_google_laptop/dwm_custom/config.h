@@ -91,7 +91,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", "-fn", "PragmataPro:size=8", "-w", "320", "-h", "20", "-x", "70", "-y", "750", "-dim", "0.4", NULL };
 static const char *termcmd[] 		= { "urxvt", NULL, };
-static const char *rybucmd[] 		= { "urxvt", "-name", "Rybu", "-geometry", "122x55", "-e", "irb", NULL, };
+static const char *rubycmd[] 		= { "urxvt", "-name", "Ruby", "-geometry", "122x55", "-e", "irb", NULL, };
 static const char *lfmcmd[] 		= { "urxvt", "-name", "Total Commander", "-geometry", "95x45", "-e", "lfm", NULL, };
 static const char *vol_up[] 	        = { "pulseaudio-ctl", "up", NULL };
 static const char *vol_down[] 		= { "pulseaudio-ctl", "down", NULL };
@@ -103,7 +103,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_p,			spawn,			{.v = dmenucmd } },
 	{ MODKEY,	         	XK_Return,		spawn,			{.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_m,                   spawn,                  {.v = lfmcmd } },
-	{ MODKEY,			XK_r,			spawn,			{.v = rybucmd } },
+	{ MODKEY,			XK_r,			spawn,			{.v = rubycmd } },
 	{ MODKEY|ShiftMask,		XK_b,			togglebar,		{0} },
 	{ MODKEY,			XK_Right,		focusstack,		{.i = +1 } },
 	{ MODKEY,			XK_Left,		focusstack,		{.i = -1 } },
