@@ -20,6 +20,9 @@
  *
  * To understand everything else, start reading main().
  */
+ /*
+ * UPDATE 16.09.2017
+ */
 #include <errno.h>
 #include <locale.h>
 #include <signal.h>
