@@ -1,4 +1,5 @@
 UPDATE 16.09.2017
+The code is added, the fixes are corrected. Updating patches for some fixes
 
 #### Custom DWM Google:.
 
