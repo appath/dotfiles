@@ -70,7 +70,7 @@ static const Layout layouts[] = {
 	{ "\ue002",   tile },    	/* first entry is default */
 	{ "\ue000",   monocle },        /* monocle is good for maximizing the preservation and focusing of the window */
 	{ "\ue003",   htile },          /* first entry is default */
-	{ "\ue00a",   gaplessgrid },    /* organizes windows in the grid /*
+	{ "\ue00a",   gaplessgrid },    /* organizes windows in the grid */
 };
 
 /* key definitions */
