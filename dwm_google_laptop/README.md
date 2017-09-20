@@ -121,6 +121,16 @@ dwmstatus:.
 
 ```sudo make uninstall```
 
+#### How to Install the Portable Version
+
+Sublime Download (https://www.sublimetext.com/)
+
+Now we should move the uncompressed files to an appropriate location.
+```sudo mv Sublime /opt/```
+
+Lastly, we create a symbolic link to use at the command line.
+```sudo ln -s /opt/Sublime/sublime_text /usr/bin/sublime```
+
 #### Social
 
 * [DeviantArt](http://boris241.deviantart.com/) Here I post different topics.
