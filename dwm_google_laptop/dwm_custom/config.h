@@ -54,6 +54,7 @@ static const Rule rules[] = {
 	/* class	instance	title	              tags mask    iscentered     isfloating     monitor */
 	{ NULL,         NULL,           "Total Commander",    0,           1,             0,             -1 },
 	{ NULL,         NULL,           "irb",                1 << 2,      1,             0,             -1 },
+	{ "Sublime",    NULL,           NULL,                 1 << 2,      0,             0,             -1 },
 	{ "VSCode",	NULL,		"Visual Studio Code", 1 << 2,	   0,    	  0,	         -1 },
 	{ "Luakit",	NULL,		NULL,	              1 << 5,	   0,    	  0,	         -1 },
 	{ "URxvt",	NULL,		NULL,	              0,	   1,		  0,	         -1 },
