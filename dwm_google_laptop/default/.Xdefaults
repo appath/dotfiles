@@ -1,10 +1,11 @@
-#include </home/user/.colors/dwm.color_0>
-*termName:			rxvt-256color
+#include </home/user/.colors/dwm.color_2>
+*termName:			rxvt-unicode
 *geometry:			116x22
 *scrollBar:			false
 *internalBorder:		22
+*cursorBlink:			true
 
 !PowerLine (xft:PragmataPro:size=8)
-!Default (xft:gmterm:size=8)
-*font:				xft:PragmataPro:size=8
-*fontBold:			xft:PragmataPro:size=8
+!SFM (xft:SF Mono:size=8)
+*font:				xft:SF Mono:size=8
+
