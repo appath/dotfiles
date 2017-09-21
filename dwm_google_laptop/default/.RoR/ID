@@ -1,0 +1,13 @@
+ruby
+# new project folder...
+# to create a git repository from this directory
+git init
+# add page to the repository
+git add .
+# comment on
+git commit -am "First Commit"
+# repository state
+git status
+# project history
+git log
+git push -f
