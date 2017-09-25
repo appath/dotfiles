@@ -146,5 +146,4 @@ Lastly, we create a symbolic link to use at the command line.
 
 
 @Kasper
-email: htc.boko@gmil.com
 
