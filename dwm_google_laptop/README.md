@@ -144,6 +144,6 @@ Lastly, we create a symbolic link to use at the command line.
 * [Google+](https://plus.google.com/u/0/106782122945207734872) //
 * [suckless dwm](http://suckless.org/) Original
 
-<center>
-  @Kasper
-</center>
+
+                    @Kasper
+
