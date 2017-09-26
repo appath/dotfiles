@@ -131,7 +131,7 @@ PKG v.GTK 2.0
 copy to folder GTK2.0 (in the home directory files)
 
 I have not made any icons yet, I'll do it soon.
-![dwmGTK](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/gtk2.0.png)
+![dwmGTK](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwmGTK.png)
 
 What is GTK+, and how can I use it?
 [GTK+](https://www.gtk.org/)
