@@ -73,8 +73,6 @@ style "murrine-default" {
 	GtkTreeView::vertical-separator = 0
 
 	GtkWidget::focus-line-width = 1
-	# The following line prevents the Firefox tabs
-	# from jumping a few pixels when you create a new tab
 	GtkWidget::focus-padding = 0
 
 	GtkWidget::wide-separators = 1
@@ -170,7 +168,6 @@ style "murrine-thin" {
 }
 
 # Notebook
-
 style "clearlooks-notebook-bg" {
 	bg[NORMAL] = @bg_color
 	bg[ACTIVE] = shade (0.80, @bg_color)
@@ -186,7 +183,6 @@ style "clearlooks-notebook" = "clearlooks-notebook-bg" {
 }
 
 # Various Standard Widgets
-
 style "murrine-button"  = "murrine-wider" {
 	bg[NORMAL] = @btn_bg_color
 	bg[PRELIGHT] = shade (1.10, @btn_bg_color)
@@ -321,7 +317,6 @@ style "murrine-hscrollbar" = "murrine-scrollbar" { }
 style "murrine-vscrollbar" = "murrine-scrollbar" { }
 
 # Menus
-
 style "murrine-menu" = "murrine-thin" {
 	bg[NORMAL] = @menu_bg_color
 	bg[PRELIGHT] = @selected_bg_color
@@ -402,7 +397,6 @@ style "murrine-menubaritem" {
 }
 
 # Toolbars
-
 style "murrine-toolbar" = "murrine-thin" {
 	bg[NORMAL] = @toolbar_bg_color
 	bg[PRELIGHT] = shade (1.02, @toolbar_bg_color)
@@ -442,7 +436,6 @@ class "GtkHandleBox" style "murrine-toolbar"
 widget_class "*Toolbar*.*Separator*" style "murrine-toolbar"
 
 # Panels
-
 style "murrine-panel" = "murrine-thin" {
 	xthickness = 2
 
@@ -513,7 +506,6 @@ widget "*gimmie*" style "bold-panel-item"
 # class "*Panel*" style "murrine-panel" # Disabled to fix bug
 
 # XFCE Styles
-
 style "workspace-switcher" = "murrine-panel" {
 	bg[ACTIVE] = @selected_bg_color
 	bg[SELECTED] = @selected_bg_color
@@ -603,7 +595,6 @@ widget "*Xfce*Panel*" style "murrine-panel"
 class "*Xfce*Panel*" style "murrine-panel"
 
 # Thunar Styles
-
 style "sidepane" {
 	base[NORMAL] = @bg_color
 	base[INSENSITIVE] = mix (0.4, shade (1.35, @selected_bg_color), shade (0.9, @base_color))
@@ -640,12 +631,10 @@ widget "whiskermenu-window*" style "whiskermenu"
 widget "*whisker*GtkVScrollbar" style "whiskermenu-scrollbar"
 
 # Gtk2 Open-File Dialog
-
 widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.GtkTreeView*" style "sidepane"
 widget_class "*GtkFileChooserWidget.GtkFileChooserDefault.GtkVBox.GtkHPaned.GtkVBox.GtkScrolledWindow.<GtkTreeView>.<GtkButton>" style "murrine-treeview-header"
 
 # Google Chrome/Chromium Styles (requires 9.0.597 or newer)
-
 style "chromium-toolbar-button" {
 	engine "murrine" {
 		roundness = 2
@@ -676,7 +665,6 @@ class "ChromeGtkFrame" style "chrome-gtk-frame"
 widget_class "*Chrom*Button*" style "chromium-toolbar-button"
 
 # General Styles
-
 class "GtkWidget" style "murrine-default"
 
 class "GtkFrame" style "murrine-wide"
@@ -739,7 +727,6 @@ widget "gtk-tooltip*" style "murrine-tooltips"
 widget_class "*<GtkScrolledWindow>*<OsScrollbar>" style "murrine-overlay-scrollbar"
 
 # Workarounds and Non-Standard Styling
-
 style "text-is-fg-color-workaround" {
 	text[NORMAL] = @text_color
 	text[PRELIGHT] = @fg_color
@@ -777,9 +764,6 @@ style "inkscape-toolbar-fix" {
 	}
 }
 
-#widget "*GtkHandleBox*" style "inkscape-toolbar-fix"
-#widget "*HandleBox*CommandsToolbar*" style "inkscape-toolbar-fix"
-#widget "*HandleBox*SnapToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*SelectToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*NodeToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*TweakToolbar*" style "inkscape-toolbar-fix"
@@ -799,7 +783,6 @@ widget "*HandleBox*ConnectorToolbar*" style "inkscape-toolbar-fix"
 widget "*HandleBox*PaintbucketToolbar*" style "inkscape-toolbar-fix"
 
 # Performance Fixes
-
 style "performance-fix" {
 	engine "murrine" {
 		textstyle = 0
