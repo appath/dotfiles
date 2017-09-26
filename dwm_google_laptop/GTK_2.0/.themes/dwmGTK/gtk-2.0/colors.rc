@@ -1,0 +1,14 @@
+# colors.rc
+# Copyright (c) 2017 Boris241 Team
+# https://github.com/appath
+# email: htc.boko@gmail.com
+
+gtk_color_scheme = "color_black:#2d3c46"
+gtk_color_scheme = "color_red:#a54242"
+gtk_color_scheme = "color_green:#8c9440"
+gtk_color_scheme = "color_yellow:#de935f"
+gtk_color_scheme = "color_blue:#5f819d"
+gtk_color_scheme = "color_magenta:#85678f"
+gtk_color_scheme = "color_cyan:#5e8d87"
+gtk_color_scheme = "color_white:#6c7a80"
+gtk_color_scheme = "color_gray:#6e6e6e"
