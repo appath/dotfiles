@@ -36,7 +36,7 @@ function dave_svn_prompt_info {
 	SVN_REVISION_STRING=$(svn info 2> /dev/null | grep '^Revision*') || return
 	SVN_REVISION=$(echo $SVN_REVISION_STRING | cut -d' ' -f 2 ) || return
 	
-	# this is the slowest test of the bunch
+	### this is the slowest test of the bunch
 	change_count=`svn status | grep "^?\|\!\|M\|A" | wc -l | awk '{print $1}'`
 	if [ "${change_count}" != '0' ]; then
 		svn_change="$ZSH_THEME_SVN_PROMPT_DIRTY"
@@ -44,7 +44,7 @@ function dave_svn_prompt_info {
 		svn_change="$ZSH_THEME_SVN_PROMPT_CLEAN"
 	fi
 
-	# Set the Prompt String	
+	### Set the Prompt String	
 	echo "$ZSH_THEME_SVN_PROMPT_PREFIX$SVN_REPO_PATH[2,-1]"'r'"$SVN_REVISION%{${svn_change}%}$ZSH_THEME_SVN_PROMPT_SUFFIX"
 }
 
