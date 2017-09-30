@@ -1,21 +1,14 @@
-############################################
-#	Dave ZSH Prompt Theme
-#	 - Inspired by Powerline theme by FreeAgent: https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme
-############################################
-
-############################################
-#	Date / Time
-############################################
+### This topic is a clone..
+### It is possible and without a font Powerline / PragmataPro
+### Date and Time
 if [ "$DAVE_RPROMPT_TIME" = "" ]; then
-  DAVE_RPROMPT_TIME=%D{%H:%M:%S}
+  DAVE_RPROMPT_TIME=%D{%H:%M}
 fi
 if [ "$DAVE_RPROMPT_DATE" = "" ]; then
   DAVE_RPROMPT_DATE=%D{%Y-%m-%d}
 fi
 
-############################################
-# Path
-############################################
+### Path
 function dave_dir_prompt_info {
 	DAVE_PWD=`pwd`
 	if [[ ~ == "${DAVE_PWD}" ]]; then
@@ -27,14 +20,10 @@ function dave_dir_prompt_info {
 }
 DAVE_DIR_INFO='$(dave_dir_prompt_info)'
 
-############################################
-#	Git Prompt
-############################################
+### Git Prompt
 DAVE_GIT_INFO_LEFT='$(git_prompt_info)'
 
-############################################
-#	Subversion Prompt
-############################################
+### Subversion Prompt
 function dave_svn_prompt_info {
 
 	wd=`pwd -P`
@@ -58,14 +47,11 @@ function dave_svn_prompt_info {
 	# Set the Prompt String	
 	echo "$ZSH_THEME_SVN_PROMPT_PREFIX$SVN_REPO_PATH[2,-1]"'r'"$SVN_REVISION%{${svn_change}%}$ZSH_THEME_SVN_PROMPT_SUFFIX"
 }
-#
-#	This puts the literal string $(dave_svn_prompt_info) right into the prompt, meaning it will run at every prompt
-#
+
+### This puts the literal string $(dave_svn_prompt_info) right into the prompt, meaning it will run at every prompt
 DAVE_SVN_INFO_LEFT='$(dave_svn_prompt_info)'
 
-############################################
-#	Date / Time / Display Defaults
-############################################
+### Date / Time / Display Defaults
 if [ -z $DAVE_SHOW_DATE ]; then
 	DAVE_SHOW_DATE='YES'
 fi
@@ -73,9 +59,7 @@ if [ -z $DAVE_SHOW_TIME ]; then
 	DAVE_SHOW_TIME='YES'
 fi
 
-############################################
-#	Color Defaults
-############################################
+### Color Defaults
 if [ -z $DAVE_COLOR_HOST_BG ]; then
 	DAVE_COLOR_HOST_BG='012'
 fi
@@ -101,7 +85,7 @@ if [ -z $DAVE_COLOR_GIT_FG ]; then
 	DAVE_COLOR_GIT_FG='252'
 fi
 if [ -z $DAVE_COLOR_END_BG ]; then
-	DAVE_COLOR_END_BG='000'
+	DAVE_COLOR_END_BG='255'
 fi
 if [ -z $DAVE_COLOR_GIT_CLEAN ]; then
 	DAVE_COLOR_GIT_CLEAN='118'
@@ -122,9 +106,7 @@ if [ -z $DAVE_COLOR_TIME_BG ]; then
 	DAVE_COLOR_TIME_BG='255'
 fi
 
-############################################
-#	Color Setup
-############################################
+### Color Setup
 DAVE_HOST_BG=%K{$DAVE_COLOR_HOST_BG}
 DAVE_HOST_FG=%F{$DAVE_COLOR_HOST_FG}
 DAVE_HOSTUSER_BG=%K{$DAVE_COLOR_USER_BG}
@@ -156,13 +138,10 @@ DAVE_TIMEEND_BG=%K{$DAVE_COLOR_END_BG}
 DAVE_DATEEND_FG=%F{$DAVE_COLOR_DATE_BG}
 DAVE_DATEEND_BG=%K{$DAVE_COLOR_END_BG}
 
-############################################
-# Git Prompt Setup
-############################################
-#
-#	The (dollar)'\u0008' below is a backspace character.  It backs up one char over the END connector, and
-#		then we overwrite it with the GIt connector instead.
-#
+
+### Git Prompt Setup
+### The (dollar)'\u0008' below is a backspace character.
+### It backs up one char over the END connector, and then we overwrite it with the GIt connector instead.
 ZSH_THEME_GIT_PROMPT_PREFIX=$'\u0008'"%{${DAVE_DIRGIT_BG}%}%{${DAVE_DIRGIT_FG}%}"$'\u25B6'"%{${DAVE_GIT_BG}%}%{${DAVE_GIT_FG}%} "
 ZSH_THEME_GIT_PROMPT_SUFFIX=" %{${DAVE_GITEND_BG}%}%{${DAVE_GITEND_FG}%}"$'\u25B6'
 ZSH_THEME_GIT_PROMPT_DIRTY="%{ %{${GIT_DIRTY_COLOR}%}"$'\u2717'"%}"
@@ -174,21 +153,15 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{ %{${GIT_CLEAN_COLOR}%}"$'\u2714'"%}"
 #ZSH_THEME_GIT_PROMPT_UNMERGED="%F{082]═%f"
 #ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{190]✭%f"
 
-############################################
-# Subversion Prompt Setup
-############################################
-#
-#	The (dollar)'\u0008' below is a backspace character.  It backs up one char over the END connector, and
-#		then we overwrite it with the GIt connector instead.
-#
+### Subversion Prompt Setup
+### The (dollar)'\u0008' below is a backspace character.
+### It backs up one char over the END connector, and then we overwrite it with the GIt connector instead.
 ZSH_THEME_SVN_PROMPT_PREFIX=$'\u0008'"%{${DAVE_DIRGIT_BG}%}%{${DAVE_DIRGIT_FG}%}"$'\u25B6'"%{${DAVE_GIT_BG}%}%{${DAVE_GIT_FG}%} "
 ZSH_THEME_SVN_PROMPT_SUFFIX=" %{${DAVE_GITEND_BG}%}%{${DAVE_GITEND_FG}%}"$'\u25B6'
 ZSH_THEME_SVN_PROMPT_DIRTY=" %{${GIT_DIRTY_COLOR}%}"$'\u2717'
 ZSH_THEME_SVN_PROMPT_CLEAN=" %{${GIT_CLEAN_COLOR}%}"$'\u2714'
 
-############################################
-# Left Prompt
-############################################
+### Left Prompt
 PROMPT="%{${DAVE_HOST_BG}%}%{${DAVE_HOST_FG}%}"
 PROMPT="${PROMPT} ${(C)$(hostname -s)} "
 PROMPT="${PROMPT}%{${DAVE_HOSTUSER_BG}%}%{${DAVE_HOSTUSER_FG}%}"
@@ -208,24 +181,22 @@ if [ "$DAVE_NO_BLANK_LINE" = "" ]; then
 ${PROMPT}"
 fi
 
-############################################
-# Right Prompt
-############################################
+### Right Prompt \u25C0
 if [ $DAVE_SHOW_DATE = 'YES' ] || [ $DAVE_SHOW_TIME = 'YES' ]; then
 	RPROMPT=''
 	if [ $DAVE_SHOW_TIME = 'YES' ]; then
 		RPROMPT="${RPROMPT}%{${DAVE_TIMEEND_BG}%}%{${DAVE_TIMEEND_FG}%}"
-		RPROMPT="${RPROMPT}"$'\u25C0'
+		RPROMPT="${RPROMPT}"$'---'
                 RPROMPT="${RPROMPT}%{${DAVE_TIME_BG}%}%{${DAVE_TIME_FG}%}"
                 RPROMPT="${RPROMPT} ${DAVE_RPROMPT_TIME} "
 	fi
 	if [ $DAVE_SHOW_DATE = 'YES' ]; then
 		if [ $DAVE_SHOW_TIME = 'YES' ]; then
 			RPROMPT="${RPROMPT}%{${DAVE_TIMEDATE_BG}%}%{${DAVE_TIMEDATE_FG}%}"
-                	RPROMPT="${RPROMPT}"$'\u25C0'
+                	RPROMPT="${RPROMPT}"
 		else
 			RPROMPT="${RPROMPT}%{${DAVE_DATEEND_BG}%}%{${DAVE_DATEEND_FG}%}"
-	                RPROMPT="${RPROMPT}"$'\u25C0'
+	                RPROMPT="${RPROMPT}"
 		fi
 		RPROMPT="${RPROMPT}%{${DAVE_DATE_BG}%}%{${DAVE_DATE_FG}%}"
 		RPROMPT="${RPROMPT} ${DAVE_RPROMPT_DATE} "
