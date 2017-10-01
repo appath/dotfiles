@@ -6,6 +6,15 @@
   export EDITOR=vim
   export BROWSER=luakit
   export LC_ALL=en_US.utf8
+  export CDPATH=/home/user/.RoR/
+
+# A handy tool for those who often work on the command line
+  alias cdi='cd `ls | peco`'
+
+# Using AutoComplete to the fullest
+# If you type kill space and press Tab, ZSH will list the processes
+# Example: 
+#	$ kill
 
 # workaround for handling TERM variable in multiple tmux sessions properly
 # from by Nicholas Marriott
