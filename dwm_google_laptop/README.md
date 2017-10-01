@@ -92,10 +92,10 @@ Here are my default settings.
 
 ruby, visual studio code, lfm, tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
 
-#### Sc reensh code, ot
+#### scee
 ![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
 
-![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/20_35_35.png)
+![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom_stapp.png)
 
 #### Video 
 
