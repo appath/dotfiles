@@ -134,13 +134,6 @@ I have not made any icons yet, I'll do it soon.
 What is GTK+, and how can I use it?
 [GTK+](https://www.gtk.org/)
 
-#### SLiM
-![SLiM](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/slim-nice.jpg)
-
-Simple Login Manager
-```is lightweight, easy to set, requires minimum dependencies and does not require any of the dependencies for desktop environments```
-
-
 #### How to Install the Portable Version
 
 Sublime Download (https://www.sublimetext.com/)
