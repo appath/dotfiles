@@ -93,7 +93,7 @@ Here are my default settings.
 ruby, visual studio code, lfm, tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
 
 #### image
-![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom0.png)
+![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm.jpg)
 
 #### Video 
 
