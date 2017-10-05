@@ -92,10 +92,8 @@ Here are my default settings.
 
 ruby, visual studio code, lfm, tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
 
-#### scee
-![dwm_google](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom.png)
-
-![new](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom_stapp.png)
+#### image
+![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom0.png)
 
 #### Video 
 
