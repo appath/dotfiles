@@ -25,7 +25,6 @@ Mirror (nano, vi or vim)
 	/etc/pacman.d/mirrorlist
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2017-05-17
 ##
 
 ## Worldwide x86x64
