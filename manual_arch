@@ -31,7 +31,7 @@ Mirror (nano, vi or vim)
 Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
 
 ## United States i686
-# Server = https://32.arlm.tyzoid.com/$arch/$repo
+Server = https://32.arlm.tyzoid.com/$arch/$repo
 
 Install basic packages
 $ pacstrap /mnt base grub zsh vim git
