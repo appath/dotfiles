@@ -1,4 +1,4 @@
-UPDATE 16.09.2017
+UPDATE 28.10.2017
 The code is added, the fixes are corrected. Updating patches for some fixes
 
 #### Custom DWM Google:.
@@ -134,7 +134,7 @@ I have not made any icons yet, I'll do it soon.
 What is GTK+, and how can I use it?
 [GTK+](https://www.gtk.org/)
 
-#### Custom colors,,,
+#### Custom colors ,$,
 A new little addition.
 
 It's just the color of the panel for different shells.
@@ -152,8 +152,9 @@ In the place where he himself is going DWM/
 And change the file name to the correct one. 
 ....config.h
 
-```List of color schemes for shells:
-   Fedora, Red Hat, Ubunta ArchLinux and Archlabs
+#### List of color schemes for shells:
+```
+   #Fedora, Red Hat, Ubunta ArchLinux and Archlabs
 ```
 
 ![custom](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/custom.png)
