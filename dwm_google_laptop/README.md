@@ -134,6 +134,30 @@ I have not made any icons yet, I'll do it soon.
 What is GTK+, and how can I use it?
 [GTK+](https://www.gtk.org/)
 
+#### Custom colors,,,
+A new little addition.
+
+It's just the color of the panel for different shells.
+
+I did not do everything.
+
+I took it as a basis which I use.
+
+(files in the directory are located dotfiles/dwm_google_laptop/dwm_custom/custom/)
+
+You just need to copy the file you like, which you liked.
+
+In the place where he himself is going DWM/
+
+And change the file name to the correct one. 
+....config.h
+
+```List of color schemes for shells:
+   Fedora, Red Hat, Ubunta ArchLinux and Archlabs
+```
+
+![custom](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/custom.png)
+
 #### How to Install the Portable Version
 
 Sublime Download (https://www.sublimetext.com/)
