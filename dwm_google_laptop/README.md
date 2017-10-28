@@ -153,7 +153,7 @@ And change the file name to the correct one.
 
 #### List of color schemes for shells:
 ```
-   #Fedora, Red Hat, Ubunta ArchLinux and Archlabs
+   #Fedora, Red Hat, Ubuntu ArchLinux and Archlabs
 ```
 
 ![custom](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/custom.png)
