@@ -1,5 +1,15 @@
 UPDATE 28.10.2017
 
+--
+
+Added a sound greeting
+
+Package vorbis-tools
+
+* [ogg123](https://github.com/xiph/vorbis-tools/tree/master/ogg123) //
+
+--
+
 ![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom/dwm.png)
 
 #### Custom DWM Google:.
