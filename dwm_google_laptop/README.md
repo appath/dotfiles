@@ -1,5 +1,18 @@
 UPDATE 28.10.2017
 
+               #####          ##
+              #######         ##    #### ##  ## ##  ## ##   ##
+              ##O#O##         ##     ##  ### ## ##  ##  ## ##
+              #VVVVV#         ##     ##  ## ### ##  ##  ## ##
+            ##  VVV  ##       ##### #### ##  ## ###### ##   ##
+           #          ##
+          #            ##
+          #            ###
+         QQ#           ##Q    
+       QQQQQQ#       #QQQQQQ
+       QQQQQQQ#     #QQQQQQQ
+         QQQQQ#######QQQQQ 
+
 --
 
 Added a sound greeting
