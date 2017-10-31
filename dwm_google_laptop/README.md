@@ -1,6 +1,6 @@
 UPDATE 28.10.2017
 
-<p align="center">
+<p align="left">
       <img src="https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom/dwm.png" alt="dwm custom">
 </p>
 
