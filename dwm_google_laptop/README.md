@@ -2,12 +2,6 @@ UPDATE 28.10.2017
 
 ![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom/dwm.png)
 
-      ##
-      ##    #### ##  ## ##  ## ##   ##
-      ##     ##  ### ## ##  ##  ## ##
-      ##     ##  ## ### ##  ##  ## ##
-      ##### #### ##  ## ###### ##   ##
-
 --
 
 Added a sound greeting
@@ -15,6 +9,12 @@ Added a sound greeting
 Package vorbis-tools [ogg123](https://github.com/xiph/vorbis-tools/tree/master/ogg123)
 
 --
+
+      ##
+      ##    #### ##  ## ##  ## ##   ##
+      ##     ##  ### ## ##  ##  ## ##
+      ##     ##  ## ### ##  ##  ## ##
+      ##### #### ##  ## ###### ##   ##
 
 #### Custom DWM Google:.
 
