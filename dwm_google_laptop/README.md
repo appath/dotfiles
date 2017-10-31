@@ -12,12 +12,6 @@ Package vorbis-tools [ogg123](https://github.com/xiph/vorbis-tools/tree/master/o
 
 --
 
-      ##
-      ##    #### ##  ## ##  ## ##   ##
-      ##     ##  ### ## ##  ##  ## ##
-      ##     ##  ## ### ##  ##  ## ##
-      ##### #### ##  ## ###### ##   ##
-
 #### Custom DWM Google:.
 
 Funny topic turned out.
