@@ -4,9 +4,7 @@ UPDATE 28.10.2017
 
 Added a sound greeting
 
-Package vorbis-tools
-
-* [ogg123](https://github.com/xiph/vorbis-tools/tree/master/ogg123) //
+Package vorbis-tools [ogg123](https://github.com/xiph/vorbis-tools/tree/master/ogg123)
 
 --
 
