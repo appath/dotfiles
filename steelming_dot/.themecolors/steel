@@ -1,5 +1,3 @@
-! steel 
-! 2017
 *.background:		[97]#0f0f0f
 *.foreground:		#aaaaaa
 *cursorColor:		#ff8100
