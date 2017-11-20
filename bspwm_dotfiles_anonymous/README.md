@@ -1,8 +1,6 @@
 ### Spider
 
-Packages
-=========
-
+Packages:
 * bspwm, sxhkd
 * polybar
 * hsetroot
