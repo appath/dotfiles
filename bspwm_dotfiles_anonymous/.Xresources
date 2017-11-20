@@ -1,0 +1,36 @@
+#include "/home/user/.terminal.bbit"
+*.dpi:			89
+*termName:		rxvt-256color
+*font:			xft:PragmataPro:size=8
+*fontBold:		xft:PragmataPro:size=8
+*.depth:		32
+*lineSpace:		1
+*letterSpace:		0
+*geometry:		55x22
+*.scrollBar:		false
+*.cursorBlink:		true
+*loginShell:		true
+*.internalBorder:	16
+
+# Term colors
+*background:		bg
+*foreground:		fg
+*colorBD:		bd
+*colorUL:		ul
+
+*color0:		bblk
+*color8:		bbblk
+*color1:		red
+*color9:		rred
+*color2:		green
+*color10:		ggreen
+*color3:		yellow
+*color11:		yyellow
+*color4:		blue
+*color12:		bblue
+*color5:		magenta
+*color13:		mmagenta
+*color6:		cyan
+*color14:		ccyan
+*color7:		white
+*color15:		wwhite
