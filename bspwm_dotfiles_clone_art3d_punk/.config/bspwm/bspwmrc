@@ -1,0 +1,29 @@
+#!/bin/sh
+urxvt &
+sxhkd &
+~/.fehbg &
+compton -C &
+$HOME/.config/polybar/launch &
+bspc monitor -d     
+bspc config border_width		1
+bspc config window_gap			8
+bspc config top_padding 		5
+bspc config bottom_padding		35
+bspc config split_ratio			0.44
+bspc config borderless_monocle		true
+bspc config gapless_monocle		true
+bspc config focus_by_distance		false
+bspc config history_aware_focus		true
+bspc config focus_follows_pointer	true
+bpsc config pointer_follows_focus	false
+bspc config click_to_focus		false
+bspc config adaptive raise		true
+bspc config center_pseudo_tiled		true
+bspc config focused_border_color 	"#171717"
+bspc config normal_border_color		"#171717"
+bspc rule -a URxvt state=floating
+bspc rule -a Thunar state=floating
+bspc rule -a Luakit desktop='^5'
+bspc rule -a Blender desktop='^2' state=floating
+bspc rule -a ncmpcpp desktop='^3' state=floating
+

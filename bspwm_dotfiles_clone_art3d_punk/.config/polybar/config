@@ -1,0 +1,117 @@
+;=====================================================
+; 
+;   To learn more about how to configure Lemonbuddy
+;   go to https://github.com/jaagr/lemonbuddy
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+;Coffee Lake ico 
+
+[bar/top]
+wm-name = mybar
+bottom = true
+override-redirect = true
+width = 100%
+height = 25
+offset-y = 9
+background = #00476771
+foreground = #d3d3d3
+underline-color = #13aeef
+
+spacing = 1
+underline-size = 3
+locale = en_US.UTF-8
+padding-left = 0
+padding-right = 0
+module-margin-left = 1
+module-margin-right = 0
+
+font-0 = Pragmata Pro:size=9;0
+font-1 = FontAwesome:size=7;0
+
+modules-center = bspwm cputemp cpu memory checkvpn thunar clock
+
+[module/cpu]
+type = internal/cpu
+label =  %percentage%%
+format-background = #171717
+format-underline = #13aeef
+format-padding = 2
+
+[module/cputemp]
+type = custom/script
+exec = ~/.config/polybar/barcputemp
+interval = 2
+format-background = #171717
+format-underline = #13aeef
+format-padding = 2
+
+[module/memory]
+type = internal/memory
+interval = 3
+format-background = #171717
+format-underline = #13aeef
+format-padding = 2
+label = " %gb_used%"
+
+[module/checkvpn]
+type = custom/script
+format-padding = 2
+exec = pgrep openvpn
+interval = 5
+label = " vpn"
+format-background = #171717
+format-underline = #13aeef
+
+[module/thunar]
+type = custom/script
+exec = ~/.config/polybar/thunar
+format-background = #171717
+format-padding = 2
+click-left = urxvt -name "Thunar Manager" -g 74x5 -e thunar
+
+[module/clock]
+type = internal/date
+interval = 5
+date-alt = "%a %d %b"
+date = %H:%M
+format-background = #171717
+format-underline = #13aeef
+format-padding = 2
+label = %date%
+
+[module/bspwm]
+type = internal/bspwm
+
+ws-icon-0 = ;
+ws-icon-1 = ;
+ws-icon-2 = ;
+ws-icon-3 = ;
+ws-icon-4 = ;
+
+label-focused = %icon%
+label-focused-underline = #13aeef
+label-focused-background = #171717
+
+label-focused-padding = 2
+label-occupied-padding = 2
+label-empty-padding = 2
+
+label-occupied = %icon%
+label-occupied-underline = #98b8c1
+label-occupied-background = #171717
+
+label-urgent = %icon%
+label-urgent-underline = #e85b97
+label-urgent-background = #171717
+
+label-empty = %icon%
+label-empty-background = #171717
+
+wm-restack = bspwm
+throttle-ms = 10
+throttle-limit = 5
+
+; vim:ft=dosini
