@@ -1,4 +1,4 @@
  #!/bin/bash
 temp=$((`sensors | grep "MB CPU Temp" | cut -d'+' -f2 | head -c2`))
-output=": $temp°"
+output=" $temp°"
 echo $output
