@@ -24,6 +24,7 @@ Pkg:
 
 #### On the line, I added it here, so that if something happens to a personal computer for modeling, I could quickly restore it.
 ```I'll add more from myself. The advantages of these point files are not only quick to refer to them. The author will be pleased that I am interested in his theme, I mean work it. Moreover, he can turn to them too, if something happens to him, too.```
+#### Thank you all for your understanding.
 
 ![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d_punk.jpg)
 
