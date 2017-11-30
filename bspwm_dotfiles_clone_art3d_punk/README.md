@@ -22,3 +22,9 @@ And this topic is the same time.
 Pkg: 
 * bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, compton and feh.
 
+![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d_punk.jpg)
+
+#### Social
+
+* [DeviantArt](http://boris241.deviantart.com/) Here I post different topics.
+* [Google+](https://plus.google.com/u/0/106782122945207734872) //
