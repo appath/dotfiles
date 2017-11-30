@@ -4,8 +4,8 @@ I mean there was no desire to create your own theme for Desktop
 
 I did not steal anything.
 
-The author of this topic is
-```[fs0ciety](https://fsociety.info/)```
+The ```author``` of this topic is
+[fs0ciety](https://fsociety.info/)
 
 This topic is very different for Desktop
 
