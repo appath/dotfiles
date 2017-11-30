@@ -19,8 +19,7 @@ As I wrote in the description above I needed a theme for a personal computer and
 
 And this topic is the same time.
 
-Pkg: 
-* bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, compton and feh.
+Pkg: * bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, compton and feh.
 
 ![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d_punk.jpg)
 
