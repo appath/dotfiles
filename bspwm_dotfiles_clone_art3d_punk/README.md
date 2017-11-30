@@ -20,7 +20,7 @@ As I wrote in the description above I needed a theme for a personal computer and
 And this topic is the same time.
 
 Pkg: 
-* bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, compton and feh.
+* bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, zsh, compton and feh.
 
 #### On the line, I added it here, so that if something happens to a personal computer for modeling, I could quickly restore it.
 ```I'll add more from myself. The advantages of these point files are not only quick to refer to them. The author will be pleased that I am interested in his theme, I mean work it. Moreover, he can turn to them too, if something happens to him, too.```
