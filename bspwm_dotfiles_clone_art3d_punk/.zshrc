@@ -1,7 +1,6 @@
 # Path to your zsh installation
 export EDITOR=nano
 export VISUAL=nano
-export BROWSER=luakit
 export LC_ALL=en_US.utf8
 export CDPATH=/home/user/.RoR/
 
