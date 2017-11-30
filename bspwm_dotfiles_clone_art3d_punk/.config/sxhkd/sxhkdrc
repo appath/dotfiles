@@ -6,9 +6,9 @@
 super + Return
 	urxvt
 
-# web luakit
-super + l
-	luakit
+# web google chrome
+super + z
+	google-chrome-stable
 
 # blender 3d
 super + b
