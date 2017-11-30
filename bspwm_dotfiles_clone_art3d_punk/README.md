@@ -22,6 +22,8 @@ And this topic is the same time.
 Pkg: 
 * bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, compton and feh.
 
+#### On the line, I added it here, so that if something happens to a personal computer for modeling, I could quickly restore it.
+
 ![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d_punk.jpg)
 
 #### Social
