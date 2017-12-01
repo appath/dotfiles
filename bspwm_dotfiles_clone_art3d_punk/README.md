@@ -22,6 +22,8 @@ And this topic is the same time.
 Pkg: 
 * bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, zsh, compton and feh.
 
+```Console Palette``` [+4](https://github.com/appath/Terminal/blob/master/schemes/.terminal.bspwm)
+
 #### On the line, I added it here, so that if something happens to a personal computer for modeling, I could quickly restore it.
 #### Thank you all for your understanding.
 
