@@ -22,7 +22,7 @@ And this topic is the same time.
 Pkg: 
 * bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, zsh, compton and feh.
 
-```Console Palette``` [+4](https://github.com/appath/Terminal/blob/master/schemes/.terminal.bspwm)
+```Console Palette``` [+4](https://github.com/appath/Terminal/blob/master/schemes/.terminal.bspwm) #### bspwm
 
 ..:Coffee Lake:..
 
