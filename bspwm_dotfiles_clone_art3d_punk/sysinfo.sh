@@ -55,6 +55,8 @@ bar_cols() {
 	done
 }
 
+clear
+
 # Exec..
 os
 wm
