@@ -1,6 +1,6 @@
 #!/bin/sh
 icon_enabled="  "
-icon_disabled="  "
+icon_disabled="  "
 status=`systemctl is-active bluetooth.service`
 
 if [ $status == "active" ]
