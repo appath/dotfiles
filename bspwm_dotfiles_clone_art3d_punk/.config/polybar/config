@@ -8,7 +8,6 @@
 ;=====================================================
 
 ;Coffee Lake ico 
-;Bluetooth 
 
 [bar/top]
 wm-name = mybar
