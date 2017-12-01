@@ -8,6 +8,7 @@
 ;=====================================================
 
 ;Coffee Lake ico 
+;Bluetooth 
 
 [bar/top]
 wm-name = mybar
@@ -31,7 +32,7 @@ module-margin-right = 0
 font-0 = Pragmata Pro:size=9;0
 font-1 = FontAwesome:size=7;0
 
-modules-center = bspwm cputemp cpu memory checkvpn thunar clock
+modules-center = bspwm cputemp cpu memory checkvpn thunar bluetooth clock
 
 [module/cpu]
 type = internal/cpu
@@ -72,6 +73,11 @@ format-background = #171717
 format-padding = 2
 click-left = urxvt -name "Thunar Manager" -g 74x5 -e thunar
 
+[module/bluetooth]
+type = custom/script
+interval = 5
+exec = ~/.config/polybar/bluetooth
+
 [module/clock]
 type = internal/date
 interval = 5
@@ -86,10 +92,11 @@ label = %date%
 type = internal/bspwm
 
 ws-icon-0 = ;
-ws-icon-1 = ;
-ws-icon-2 = ;
-ws-icon-3 = ;
-ws-icon-4 = ;
+ws-icon-1 = ;
+ws-icon-2 = ;
+ws-icon-3 = ;
+ws-icon-4 = ;
+ws-icon-5 = ;
 
 label-focused = %icon%
 label-focused-underline = #13aeef
