@@ -25,7 +25,7 @@ Pkg:
 #### On the line, I added it here, so that if something happens to a personal computer for modeling, I could quickly restore it.
 #### Thank you all for your understanding.
 
-![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d_punk.jpg)
+![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d.jpg)
 
 #### Social
 
