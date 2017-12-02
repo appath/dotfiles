@@ -27,4 +27,4 @@ bspc rule -a Google-chrome desktop='^6'
 bspc rule -a Blender desktop='^3'
 bspc rule -a Krita desktop="^2"
 bspc rule -a ncmpcpp desktop='^4' state=floating
-
+bspc rule -a Steam desktop='^5' state=floating
