@@ -1,6 +1,7 @@
 # Path to your zsh installation
 export EDITOR=nano
 export VISUAL=nano
+export BROWSER=luakit
 export LC_ALL=en_US.utf8
 export CDPATH=/home/user/.RoR/
 
@@ -21,6 +22,10 @@ set HIST_IGNORE_SPACE
 setopt NO_BEEP
 # If you typed the path to the directory without the cd command, then go
 setopt AUTO_CD
+# The number of commands stored in the HISTFILE
+SAVEHIST=2300
+# Command history file
+HISTFILE=~/.zsh_history
 
 # Configuration
 alias ls='ls --color=auto'
