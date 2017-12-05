@@ -19,11 +19,11 @@ As I wrote in the description above I needed a theme for a personal computer and
 
 And this topic is the same time.
 
-I decided to take two monitors, the upper and lower screen.
+```I decided to take two monitors, the upper and lower screen.
 
 Not just installed monitors in the plane a and bent them 20% into the body
 
-The result was a book effect
+The result was a book effect```
 
 #### Double Wallpaper
 [+Double Wallpapers](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/ahsoka_tano_vs_darth_vader(Dual).psd)
