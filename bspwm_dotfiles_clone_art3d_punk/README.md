@@ -20,9 +20,7 @@ As I wrote in the description above I needed a theme for a personal computer and
 And this topic is the same time.
 
 ```I decided to take two monitors, the upper and lower screen.
-
 Not just installed monitors in the plane a and bent them 20% into the body
-
 The result was a book effect```
 
 #### Double Wallpaper
