@@ -7,7 +7,7 @@ Packages:
 * compton
 * rxvt-unicode
 
-_file `.terminal.anonymos` [+5](https://github.com/appath/Terminal/blob/master/schemes/.terminal.anonymous)
+_file `.terminal.anonymous` [+5](https://github.com/appath/Terminal/blob/master/schemes/.terminal.anonymous)
 
 ### "Skin
 ![Anonymous](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_anonymous/skin.jpg)
