@@ -2,7 +2,8 @@
 
 Packages:
 * bspwm, sxhkd
-* polybar
+* tmux
+* feh
 * hsetroot
 * compton
 * rxvt-unicode
