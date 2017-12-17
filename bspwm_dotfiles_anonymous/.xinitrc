@@ -1,8 +1,5 @@
-#!/bin/sh
-xset +fp $HOME/.fonts
-xset fp rehash
-xrdb -merge $HOME/.Xresources
+xrdb -merge /home/user/.Xresources
 xsetroot -cursor_name left_ptr
-sxhkd &
+xset +fp /home/user/.fonts
+xset fp rehash
 exec bspwm
-#exec openbox-session

@@ -1,9 +1,0 @@
-#!/usr/bin/python
-
-import imaplib
-obj = imaplib.IMAP4_SLL('imap.exp.net',993)
-obj.login('user@exp.net','passwd')
-obj.select()
-quantity = len(obj.search(None, 'UnSeen')[1][0].split())
-if quantity != 0:
-	print(quantity)

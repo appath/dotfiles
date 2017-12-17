@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# web
+super + z
+	luakit
+
 # terminal emulator
 super + Return
 	urxvt
