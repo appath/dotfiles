@@ -1,4 +1,3 @@
-### Spider
 
 Packages:
 * bspwm, sxhkd
