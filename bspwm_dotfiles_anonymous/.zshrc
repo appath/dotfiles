@@ -30,5 +30,7 @@ HISTFILE=~/.zsh_history
 # Configuration
 alias ls='ls --color=auto'
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+autoload -U colors
+colors
 
-PROMPT=".++ %~ "
+PROMPT=".%{$fg[white]%}% ++%{$reset_color%} %~ "
