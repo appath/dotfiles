@@ -1,5 +1,4 @@
 #!/bin/bash
-# KeyMap
 while true; do
 	if [ "$( xset -q | awk -F \" \" '/Group 2/ {print($4)}' )" = "on" ]; then
 		LAYOUT="RU";	// Russian
