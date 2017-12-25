@@ -72,7 +72,6 @@ case ${TERM} in
 		;;
 esac
 
-# Sanitize TERM Console
 safe_term=${TERM//[^[:alnum:]]/?}
 match_lhs=""
 
