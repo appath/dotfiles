@@ -2,7 +2,6 @@
 # ~/.bashrc
 # PACMAN ARCH
 # [.}
-# 25, Dec 2017...
 
 function about() {
 cat <<EOF
