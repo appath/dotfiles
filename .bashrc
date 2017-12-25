@@ -1,3 +1,7 @@
+#
+# ~/.bashrc
+#
+
 function about() {
 cat <<EOF
 
