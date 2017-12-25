@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
-#
+# PACMAN ARCH
+# 
 
 function about() {
 cat <<EOF
