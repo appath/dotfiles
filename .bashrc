@@ -27,7 +27,7 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-# Colorizer
+# Re:colors
 if [ "$TERM" = "linux" ]; then
    echo -en "\e]P00a0f0d" #black
    echo -en "\e]P8567366" #darkgrey
@@ -72,7 +72,7 @@ match_lhs=""
 
 [[ -f ~/.dir_colors ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
-[[ -f ~/DracOS.dirColors ]] && match_lhs="${match_lhs}$(</etc/DracOS.dirColors)"
+[[ -f ~/.dirColors ]] && match_lhs="${match_lhs}$(</etc/.dirColors)"
 [[ -z ${match_lhs} ]] \
 	&& type -P dircolors >/dev/null \
 	&& match_lhs=$(dircolors --print-database)
