@@ -5,7 +5,6 @@ cat <<EOF
 EOF
 }
 
-# We have new colors!! YEAY!
 # Colors
 RS="\[\033[0m\]"    # reset
 HC="\[\033[1m\]"    # hicolor
@@ -28,7 +27,7 @@ BMAG="\[\033[45m\]" # background magenta
 BCYN="\[\033[46m\]" # background cyan
 BWHT="\[\033[47m\]" # background white
 
-# tty-colorizer
+# Colorizer
 if [ "$TERM" = "linux" ]; then
    echo -en "\e]P00a0f0d" #black
    echo -en "\e]P8567366" #darkgrey
@@ -53,9 +52,6 @@ fi
 [[ $- != *i* ]] && return
 
 # Bash won't get SIGWINCH if another process is in the foreground.
-# Enable checkwinsize so that bash will check the terminal size when
-# it regains control.
-# http://cnswww.cns.cwru.edu/~chet/bash/FAQ (E11)
 shopt -s checkwinsize
 
 # Enable history appending instead of overwriting.
@@ -70,7 +66,7 @@ case ${TERM} in
 		;;
 esac
 
-# sanitize TERM:
+# Sanitize TERM Console
 safe_term=${TERM//[^[:alnum:]]/?}
 match_lhs=""
 
@@ -82,8 +78,6 @@ match_lhs=""
 	&& match_lhs=$(dircolors --print-database)
 
 if [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] ; then
-	
-	# we have colors :-)
 
 	# Enable colors for ls, etc. Prefer ~/.dir_colors
 	if type -P dircolors >/dev/null ; then
@@ -95,10 +89,7 @@ if [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] ; then
 	fi
 
 	PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \w \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]\[\033[01;34m\]\")\\$\[\033[00m\] "
-
-	# Use this other PS1 string if you want \W for root and \w for all other users:
-	# PS1="$(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h\[\033[01;34m\] \W'; else echo '\[\033[01;32m\]\u@\h\[\033[01;34m\] \w'; fi) \$([[ \$? != 0 ]] && echo \"\[\033[01;31m\]:(\[\033[01;34m\] \")\\$\[\033[00m\] "
-
+	
 	alias ls="ls --color=auto"
 	alias dir="dir --color=auto"
 	alias grep="grep --colour=auto"
@@ -115,7 +106,6 @@ PS3="> "
 PS4="+ "
 
 # PATH
-# ~/bin
 if [ -d "$HOME/bin" ];
     then PATH="$HOME/bin:$PATH"
 fi
