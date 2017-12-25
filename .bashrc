@@ -108,7 +108,7 @@ fi
 
 PS2="> "
 PS3="> "
-PS4="+ "
+PS4=".++ "
 
 # PATH
 if [ -d "$HOME/bin" ];
