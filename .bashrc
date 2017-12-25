@@ -1,7 +1,6 @@
-## About Section
 function about() {
 cat <<EOF
-####################################
+
 EOF
 }
 
