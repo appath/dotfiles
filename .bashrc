@@ -2,23 +2,6 @@
 function about() {
 cat <<EOF
 ####################################
-# DracOS Bashrc                    #
-# Inspired by ultimate bashrc      #
-# By: randalltux || @randalltux    #
-#                                  #
-# license:                         #
-# This program is free software;   #
-# You can redistribute it and/or   #
-# modify it under the terms of the #
-# GNU General Public License       #
-#                                  #
-# 2016 - rndtx | DracOS Dev Team   #
-# ================================ #
-# Credits:                         #
-# 	- RANDALLTUX               #
-#	- ZEE EICHEL		   #
-#	- CYBERKING		   #
-####################################
 EOF
 }
 
@@ -122,33 +105,9 @@ if [[ $'\n'${match_lhs} == *$'\n'"TERM "${safe_term}* ]] ; then
 
 else
 
-	# show root@ when we do not have colors
-	# PS1="\u@\h \w \$([[ \$? != 0 ]] && echo \":( \")\$ "
-
-	# Use this other PS1 string if you want \W for root and \w for all other users:
-	# PS1="\u@\h $(if [[ ${EUID} == 0 ]]; then echo '\W'; else echo '\w'; fi) \$([[ \$? != 0 ]] && echo \":( \")\$ "
-	
-	# Simple Bashrc
-	# PS1="
-	# \@ $FBLE \W $RS "
-	
-	# Other customized bashrc prompt try one by one :p
-	# PS1='\[\033]0;\w\007\]\[\e[35;1m\]\u\[\e[0m\]\[\e[32m\]@\h\[\e[34m\]\w \[\e[33m\]\$ \[\e[0m\]'
-	# PS1='\[\033[01;31m\]\u\[\033[01;36m\]@\[\033[01;32m\]\h\[\033[01;33m\]:\[\033[01;33m\]\w\n\[\033[01;31m\]\$ \[\033[00;32m\]'
-	# PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] "
-	# PS1="\[\033[0;31m\][\u] [ \w ] \[\033[0m\] \n # "
-	# PS1="\[\033[0;33m\][\!]\`if [[ \$? = "0" ]]; then echo "\\[\\033[32m\\]"; else echo "\\[\\033[31m\\]"; fi\`[\u.\h: \`if [[ `pwd|wc -c|tr -d " "` > 18 ]]; then echo "\\W"; else echo "\\w"; fi\`]\$\[\033[0m\] "; echo -ne "\033]0;`hostname -s`:`pwd`\007"
-	# PS1="\[\033[0;34m\][\u] \[\033[0;0m\]\w \[\033[0m\]$ "
-	# PS1="\[\033[0;34m\][\u] \[\033[0;31m\][ \w ] \[\033[0m\] \n >> "
-	# PS1="\[\033[0;34m\][\u] \[\033[0;33m\][ \t ] \[\033[0;31m\][ \w ] \[\033[0m\] \n >> "
+	# Other customized bashrc
 	PS1='\[\033[1;30m\][\[\033[0;37m\]${PIPESTATUS}\[\033[1;30m\]:\[\033[0;37m\]${SHLVL}\[\033[1;30m\]:\[\033[0;37m\]\j\[\033[1;30m\]][\[\033[1;34m\]\u\[\033[0;34m\]@\[\033[1;34m\]\h\[\033[1;30m\]:\[\033[0;37m\]`tty | sed s/\\\\\/dev\\\\\/\//g`\[\033[1;30m\]]\[\033[0;37m\][\[\033[1;37m\]\W\[\033[0;37m\]]\[\033[1;30m\] \$\[\033[00m\] '
-	# PS1="[\[\033[1;34m\]\u\[\033[0m\]@\h \W]\\$ "
-	# PS1="[\!] \033[1;36m[ \u@\h ]\033[1;32m\] [ \t ] [ \d ]\n\033[1;33m\[[ \w ] \033[00m\\n\[\e[30;1m\](\[\e[32;1m\]\$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b\[\e[30;1m\]) \[\e[0m\] $: "
-	# PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
-	# PS1='\e[1;31;47m\u \e[1;32;47mon \h \e[1;35;47m\d \@\e[0;0m\n\e[1;31m[dir.= \w] \# > \e[0;0m'
-	# PS1="\[\e[37;1m\]-{\[\e[34;1m\]\u@\h\[\e[37;1m\]}-\n\[\e[37;1m\](\[\e[34;1m\]\w: \$(/bin/ls -1 | /usr/bin/wc -l | /bin/sed 's: ::g') files, \$(/bin/ls -lah | /bin/grep -m 1 total | /bin/sed 's/total //')b\[\e[37;1m\])\n--> \[\e[0m\]"
-	# PS1="\n\[\033[32;1m\]It's \t\[\033[33;1m\] Currently browsing \[\033[1;36m\]\w \[\033[33;1m\]directory\n\[\033[34;1m\]\`if [ \$? = 0 ]; then echo \[\e[37m\]Last Command Was Successfully Executed \[\e[32m\]^_^\[\e[0m\]; else echo \[\e[37m\]Smeggin Hell !!! Last Command Was Unknown \[\e[32m\]O_O\[\e[0m\]; fi\` \n\[\033[31m\]DracOS GNU/Linux Shell \n\n\[\033[34;1m\]"
-	# PS1='\e[33;1m\u@\h: \e[31m\W\e[0m\$ '
+
 fi
 
 PS2="> "
