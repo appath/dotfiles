@@ -77,7 +77,7 @@ match_lhs=""
 
 [[ -f ~/.dir_colors ]] && match_lhs="${match_lhs}$(<~/.dir_colors)"
 [[ -f /etc/DIR_COLORS ]] && match_lhs="${match_lhs}$(</etc/DIR_COLORS)"
-[[ -f ~/.dirColors ]] && match_lhs="${match_lhs}$(</etc/.dirColors)"
+[[ -f ~/.dircolors ]] && match_lhs="${match_lhs}$(</etc/.dircolors)"
 [[ -z ${match_lhs} ]] \
 	&& type -P dircolors >/dev/null \
 	&& match_lhs=$(dircolors --print-database)
