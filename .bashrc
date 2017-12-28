@@ -1,15 +1,6 @@
 #
 # ~/.bashrc
-# PACMAN ARCH
 # [.}
-
-function about() {
-cat <<EOF
-.-------,---------.
-: ᗧ•••ᗣ• " Pacman ;
-'---------------' `;
-EOF
-}
 
 # Colors
 RS="\[\033[0m\]"    # reset
