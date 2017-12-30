@@ -1,11 +1,16 @@
-#include </home/user/.colors/dwm.color_2>
+#include </root/.color>
 *termName:			rxvt-unicode
 *geometry:			116x22
 *scrollBar:			false
 *internalBorder:		22
 *cursorBlink:			true
 
+*colorUL:                       #8c9440
+*perl-ext-common:               default,matcher
+*url-launcher:                  /usr/bin/xdg-open
+*matcher.button:                1
+
 !PowerLine (xft:PragmataPro:size=8)
 !SFM (xft:SF Mono:size=8)
 *font:				xft:SF Mono:size=8
-*fontBold:    xft:SF Mono:size=8
+*fontBold:                      xft:SF Mono:size=8
