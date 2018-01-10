@@ -36,7 +36,7 @@ static const int topbar 			= 0;	/* 1 means bottom bar */
 #define NUMCOLORS 9
 static const char colors[NUMCOLORS][MAXCOLORS][9] = {
 	// border	 foreground	  background
-	{ "#f9f9f9",	 "#f5f5f5", 	  "#2f2d38" },  // 0 = normal
+	{ "#f9f9f9",	 "#f5f5f5", 	  "#000203" },  // 0 = normal
 	{ "#000000", 	 "#f5f5f5", 	  "#8b97b1" },  // 1 = selected
 	{ "#b43030", 	 "#f5f5f5", 	  "#b23450" },  // 2 = red / urgent
 	{ "#212121", 	 "#f5f5f5", 	  "#14161A" },  // 3 = green / occupied
@@ -48,7 +48,7 @@ static const char colors[NUMCOLORS][MAXCOLORS][9] = {
 };
 
 /* tagging */
-static const char *tags[] = { "\ue240", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", "\ue26d", "\ue1dd" };
+static const char *tags[] = { "GIGABYTE  ", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", "\ue26d", "\ue1dd" };
 
 static const Rule rules[] = {
 	/* class	instance	title	              tags mask    iscentered     isfloating     monitor */
@@ -91,7 +91,7 @@ static const Layout layouts[] = {
 /* commands */
 /* dmenu custom */
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", "-fn", "PragmataPro:size=8", "-w", "320", "-h", "20", "-x", "70", "-y", "750", "-dim", "0.4", NULL };
+static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", "-fn", "PragmataPro:size=9", "-w", "320", "-h", "20", "-x", "70", "-y", "750", "-dim", "0.4", NULL };
 static const char *termcmd[] 		= { "urxvt", NULL, };
 static const char *rubycmd[] 		= { "urxvt", "-name", "Ruby", "-geometry", "122x55", "-e", "irb", NULL, };
 static const char *lfmcmd[] 		= { "urxvt", "-name", "Total Commander", "-geometry", "95x45", "-e", "lfm", NULL, };
