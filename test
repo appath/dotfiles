@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # Installer ARCH
 # it`s synthetic, makes it easy to install on the hard drive axis.
