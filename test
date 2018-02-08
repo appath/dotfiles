@@ -62,11 +62,11 @@ clear
 exit
 fi
     echo
-    echo -n -e "Back To Menu? (y/n) ";
+    echo -n -e "Back To Menu? [y/n] ";
     read again;
         while [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ];
         do
-    echo -n "Back To Menu (y/n) ";
+    echo -n "Back To Menu [y/n] ";
     read again;
     done
 done
