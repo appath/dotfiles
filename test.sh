@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Installer ARCH
 # it`s synthetic, makes it easy to install on the hard drive axis.
 # vim :set fileformat=unix save :wq!
