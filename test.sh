@@ -53,6 +53,7 @@ then
 elif test $installer == '4'
 then
     echo -ne "Compression"
+    echo
     mount -o subvol=root,compress=lzo,autodefrag /dev/sda /mnt
     echo -ne "Same"
     mkdir /mnt/home
