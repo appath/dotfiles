@@ -44,7 +44,7 @@ then
     mount /dev/sda /mnt
 elif test $installer == '3'
 then
-    echo -ne $cyan"We create two subtopics"
+    echo -ne "We create two subtopics"
     btrfs subvolume create /mnt/root
     btrfs subvolume create /mnt/home
     echo -ne ${info}
