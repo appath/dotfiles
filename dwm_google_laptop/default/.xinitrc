@@ -1,6 +1,6 @@
 #!/bin/bash
 #~/.fehbg &
-~/.xprofiles &
+~/.xprofile &
 #compton &
 xset +fp $HOME/.fonts
 xset fp rehash
