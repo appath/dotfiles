@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-fill '/home/user/img/girl.jpg'
+feh  --bg-fill 'img/woman.jpg'
