@@ -1,4 +1,4 @@
-#include </root/.color>
+#include </home/user/.color>
 *termName:			rxvt-unicode
 *geometry:			116x22
 *scrollBar:			false
