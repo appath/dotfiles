@@ -1,10 +1,11 @@
-#!/bin/sh
-~/.fehbg &
-compton &
+#!/bin/bash
+#~/.fehbg &
+~/.xprofiles &
+#compton &
 xset +fp $HOME/.fonts
 xset fp rehash
 xrdb -merge $HOME/.Xdefaults
-dwmstatus &
+#dwmstatus &
 # Suond greeting bus...
-ogg123 -q /home/user/bus/sound.ogg &
+#ogg123 -q /home/user/bus/sound.ogg &
 exec dwm
