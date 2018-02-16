@@ -1,7 +1,8 @@
 #!/bin/bash
+#~/.xprofile &
 #~/.fehbg &
-~/.xprofile &
-#compton &
+#compton -c user/.compton.conf &
+xsetroot -cursor_name left_ptr
 xset +fp $HOME/.fonts
 xset fp rehash
 xrdb -merge $HOME/.Xdefaults
