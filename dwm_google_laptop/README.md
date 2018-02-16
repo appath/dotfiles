@@ -1,4 +1,4 @@
-UPDATE 31.10.2017
+UPDATE 16.02.2018
 
 ![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom/dwm.png)
 
