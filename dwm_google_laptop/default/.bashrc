@@ -6,12 +6,12 @@ PS1='[*] '
 
 [[ $- != *i* ]] && retirn
 
-# ALIAS
+# Alias
 alias ls='ls --color=auto'
 alias terminal='xrdb ~/.Xdefaults'
 alias t=tmux
 
-# RUBY
+# Ruby
 #if which ruby >/dev/null && which gem >/dev/null; then
 #    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 #fi
