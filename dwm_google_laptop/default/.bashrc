@@ -17,7 +17,7 @@ alias t=tmux
 #fi
 
 # Unpacking of all types of archives (tar, tar.gz, tar.xz, tar.bz2, bz2, zip, Z, 7z, xz, rar, gz, tar, tbz2, tgz and exe).
-7pack () {
+npack () {
   if [ -f $1 ] ; then
     case $1 in
       *.tar.bz2)   tar xvjf $1    ;;
