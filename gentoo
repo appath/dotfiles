@@ -124,7 +124,7 @@ bootstrap.sh && emerge -e system
 =================================
 
 cd ..
-emerge -av sys-kernel/gentoo-source
+emerge -av sys-kernel/gentoo-sources
 
 cd /usr/src/
 ls -la
