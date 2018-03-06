@@ -94,7 +94,7 @@ ls /usr/share/zoneinfo
 cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 echo "Europe/Moscow" > /etc/timezone
 
-nano -w /etc/locale.gen
+nano /etc/locale.gen
 	ru_US.UTF-8 UTF-8
 	en_US.UTF-8 UTF-8
 	
@@ -110,10 +110,6 @@ eselect locale list
 можно установить правильную локаль из списка
 you can set the correct locale from the list
 eselect locale set 4
-
-перезагрузка среды:
-reboot the environment:
-env-update && source /etc/profile && export PS1="[chroot] ${PS1}"
 
 =================================
 ls
@@ -167,14 +163,14 @@ passwd
 emerge -av dhcpcd
 emerge -av sys-boot/grub:2
 
-nano -w /etc/fstab 
+nano /etc/fstab 
 	/dev/sda1     /boot         ext2    defaults,noatime    0 2
 	/dev/sda3     /             ext4    noatime             0 1
 	/dev/sda2     none          swap    sw                  0 0
 	/dev/cdrom    /mnt/cdrom    auto    noauto,user         0 0
 
 grub-install /dev/sda
-nano -w /etc/default/grub
+nano /etc/default/grub
 	GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" пример "пусто"
 	пункты загрузки linux-ядер будут преобразованы в verbose mode, то есть режим загрузки без 
 	графической заставки и с выводом на экран текстовой информации
@@ -192,10 +188,10 @@ nano -w /etc/default/grub
 		
 grub-mkconfig -o /boot/grub/grub.cfg
 
-nano -w /etc/conf.d/hostname
+nano /etc/conf.d/hostname
 	gentoo-linux
 	
-nano -w /etc/hosts
+nano /etc/hosts
 	
 	
 cd ..
