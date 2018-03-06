@@ -178,10 +178,7 @@ cp vmlinuz-*-gentoo-r1 EFI/BOOT/BOOTx64.EFI
 cp vmlinuz-*-gentoo-r1 EFI/BOOT/BOOT.EFI
 
 cd
-passwd
-	toor пример
 
-emerge -av dhcpcd
 emerge -av sys-boot/grub:2
 
 nano /etc/fstab 
@@ -222,7 +219,16 @@ cd /etc/init.d
 ln -s net.lo net.eth1
 rc-update add net.eth1 default
 
+emerge -av syslog-ng
+rc-update add syslog-ng default
+emerge -av dhcpcd
+
 rc-update add sshd default
+
+passwd root
+	toor пример
+useradd -m -G users,wheel,audio -s /bin/bash user
+passwd user
 
 cd ..
 rm stage3-*.tar.*
