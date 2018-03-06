@@ -104,7 +104,7 @@ eselect locale set 4
 
 перезагрузка среды:
 reboot the environment:
-env-update && source /etc/profile && export chroot . /bin/bash
+env-update && source /etc/profile && export PS1="chroot . /bin/sh"
 
 =================================
 ls
