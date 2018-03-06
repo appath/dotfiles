@@ -23,13 +23,13 @@ date
 030612552018
 MMDDhhmmGGGG
 МесяцДеньЧасыМинутыГод
-MonthDateHourMonutesYear
+MonthDateHourMonutesYearg
 
 cd /mnt/gentoo
 links https://www.gentoo.org
 DOWN Stage3
 
-tar xpf stage3-*.tar.* --xattrs
+tar xvpf stage3-*.tar.* --xattrs
 распаковка stage3
 unpacking
 
@@ -37,14 +37,6 @@ mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
 mkdir /mnt/gentoo/etc/portage/repos.conf
 cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 cp -L /etc/resolv.conf /mnt/gentoo/etc/
-
-mount --types proc /proc /mnt/gentoo/proc
-mount --rbind /sys /mnt/gentoo/sys
-mount --make-rslave /mnt/gentoo/sys
-mount --rbind /dev /mnt/gentoo/dev
-mount --make-rslave /mnt/gentoo/dev
-
-mount проверка test
 
 chroot /mnt/gentoo /bin/bash
 source /etc/profile
@@ -57,6 +49,15 @@ or
 chroot . /bin/sh
 =================================
 
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+mount --make-rslave /mnt/gentoo/dev
+
+mount проверка test
+
+mkdir /usr/portage
 emerge-webrsync
 
 cd etc/
@@ -65,7 +66,7 @@ cd portage/
 ls
 man make.conf
 
-nano -w make.conf
+nano make.conf
 	CHOST="" i686 x86_64
 	CFLAGS="-02 -pipe -march=native"
 	CXXFLAGS="${CFLAGS}"
@@ -75,7 +76,7 @@ gcc -march=native -E -v - < /dev/null
 nproc
 процессор 2 .. 4 .. 6 .. 8
 
-nano -w make.conf
+nano make.conf
 	MAKEOPTS="-j -l" -j3 -l2 пример
 	USE="-bindist"
 
@@ -90,8 +91,8 @@ you can read the news
 =================================
 
 ls /usr/share/zoneinfo
+cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 echo "Europe/Moscow" > /etc/timezone
-emerge --config sys-libs/timezone-data
 
 nano -w /etc/locale.gen
 	ru_US.UTF-8 UTF-8
@@ -112,7 +113,7 @@ eselect locale set 4
 
 перезагрузка среды:
 reboot the environment:
-env-update && source /etc/profile
+env-update && source /etc/profile && export PS1="[chroot] ${PS1}"
 
 =================================
 ls
