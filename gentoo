@@ -136,3 +136,6 @@ make help
 Core
 make defconfig
 make nconfig
+	Пи барахло кишки для сборки
+	Pi trash guts for assembly
+make -j3 -l2 пример
