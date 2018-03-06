@@ -132,6 +132,7 @@ cd linux
 eselect kernel list
 	[1]  linux-*-gentoo *
 
+cd linux
 make help
 
 Ядро
