@@ -46,10 +46,16 @@ mount --make-rslave /mnt/gentoo/dev
 
 mount проверка test
 
+chroot /mnt/gentoo /bin/bash
+source /etc/profile
+export PS1="[chroot] $PS1"
+
+=================================
 chroot . /bin/bash
 или
 or
 chroot . /bin/sh
+=================================
 
 emerge-webrsync
 
@@ -186,7 +192,10 @@ nano -w /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 nano -w /etc/conf.d/hostname
-	test
+	gentoo-linux
+	
+nano -w /etc/hosts
+	
 	
 cd ..
 rm stage3-*.tar.*
