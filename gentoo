@@ -51,8 +51,7 @@ chroot . /bin/bash
 or
 chroot . /bin/sh
 
-env-update
-emerge --sync
+emerge --sync --quiet
 
 cd etc/
 ls
