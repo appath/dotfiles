@@ -1,3 +1,10 @@
+================================
+1005 Ночь
+С вкусом ванили
+1005 Night
+With vanilla flavor
+================================
+
 cfdisk
 100mb BOOT
 2G SWAP
@@ -16,6 +23,7 @@ date
 030612552018
 MMDDhhmmGGGG
 МесяцДеньЧасыМинутыГод
+MonthDateHourMonutesYear
 
 cd /mnt/gentoo
 links https://www.gentoo.org
@@ -23,6 +31,7 @@ DOWN Stage3
 
 tar xpf stage3-*.tar.* --xattrs
 распаковка stage3
+unpacking
 
 cp /etc/resolv.conf etc/
 
@@ -32,7 +41,7 @@ mount --make-rslave /mnt/gentoo/sys
 mount --rbind /dev /mnt/gentoo/dev
 mount --make-rslave /mnt/gentoo/dev
 
-mount проверка
+mount проверка test
 
 chroot . /bin/bash
 или
@@ -65,8 +74,10 @@ nano make.conf
 =================================
 eselect news list 
 обзор новостей.
+review of news.
 eselect news read
 можно прочитать новости
+you can read the news
 =================================
 
 ls /usr/share/zoneinfo
@@ -79,6 +90,7 @@ nano -w /etc/locale.gen
 	
 locale-gen
 список локалей
+list of locales
 eselect locale list
 	[1] C
 	[2] POSIX
@@ -86,9 +98,11 @@ eselect locale list
 	[4] en_US.utf-8
 	
 можно установить правильную локаль из списка
+you can set the correct locale from the list
 eselect locale set 4
 
 перезагрузка среды:
+reboot the environment:
 env-update && source /etc/profile && export chroot . /bin/bash
 
 =================================
@@ -118,5 +132,6 @@ eselect kernel list
 make help
 
 Ядро
+Core
 make defconfig
 make nconfig
