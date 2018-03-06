@@ -176,7 +176,7 @@ nano -w /etc/default/grub
 	GRUB_DISTRIBUTOR=`Gentoo`
 	данная строка отвечает за названия дистрибутива, которое будет отображаться в меню GRUB2
 	This line is responsible for the names of the distribution, which will be displayed in the menu GRUB2
-	GRUB_GFXMODE=1024x768
+	GRUB_GFXMODE=1024x768x32
 	этот пункт отвечает за разрешение графического меню GRUB2 (640x480, 800x600, 1024x768, 1600×1200  для 
 	соотношения сторон 4:3. И 640x400, 800x500, 1024x640, 1280x800, 1680x1050 для широкоформатных 
 	мониторов с соотношением сторон 16:10)
