@@ -184,3 +184,27 @@ $PWD/*
 umount -l /mnt/gentoo/dev{/shm,/pts,}  
 umount -R /mnt/gentoo
 reboot
+
+=================================
+Linux Bootlogo
+логотип экран загрузки Linux
+boot logo/screen of Linux
+бешеные пингвины отображаются на экране
+к примеру если у вас один процессор то один пингвин
+rabid penguins are displayed on the screen
+for example, if you have one processor, one penguin
+
+Перекомпилировать и установить ядро
+Драйверы устройств ---> 
+    Поддержка графики ---> 
+        [*] Логотип загрузки ---> 
+            [*] 224-цветной логотип Armadeus Linux
+
+Recompile & install kernel
+Device Drivers  --->
+    Graphics support  --->
+        [*] Bootup logo  --->
+            [*]   224-color Armadeus Linux logo
+=================================
+
+03/06 15:21 2018
