@@ -104,7 +104,7 @@ eselect locale set 4
 
 перезагрузка среды:
 reboot the environment:
-env-update && source /etc/profile && export PS1="chroot . /bin/sh"
+env-update && source /etc/profile && export chroot . /bin/bash
 
 =================================
 ls
@@ -136,6 +136,41 @@ make help
 Core
 make defconfig
 make nconfig
-	Пи барахло кишки для сборки
-	Pi trash guts for assembly
-make -j3 -l2 пример
+make -j3 -l2
+make
+make install
+make modules_install
+cd /boot
+ls
+	EFI	*	*
+	vmlinuz-*-gentoo-r1
+
+если EFI
+mkdir EFI/BOOT
+cp vmlinuz-*-gentoo-r1 EFI/BOOT/BOOTx64.EFI
+cp vmlinuz-*-gentoo-r1 EFI/BOOT/BOOT.EFI
+
+cd
+passwd
+	toor пример
+
+emerge -av dhcpcd
+emerge --sync
+emerge -av sys-boot/grub:2
+
+nano -w /etc/fstab 
+	/dev/sda1     /boot         ext2    defaults,noatime    0 2
+	/dev/sda3     /             ext4    noatime             0 1
+	/dev/sda2     none          swap    sw                  0 0
+	/dev/cdrom    /mnt/cdrom    auto    noauto,user         0 0
+
+grub-install /dev/sda
+grub-mkconfig -o /boot/grub/grub.cfg
+
+exit
+cd
+
+$PWD/*
+umount -l /mnt/gentoo/dev{/shm,/pts,}  
+umount -R /mnt/gentoo
+reboot
