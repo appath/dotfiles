@@ -240,6 +240,8 @@ umount -l /mnt/gentoo/dev{/shm,/pts,}
 umount -R /mnt/gentoo
 reboot
 
+* df -h, uname -a, ping -c2 nasa.gov
+
 =================================
 Linux Bootlogo
 логотип экран загрузки Linux
