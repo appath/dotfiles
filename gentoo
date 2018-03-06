@@ -7,7 +7,7 @@ With vanilla flavor
 
 /etc/init.d/sshd start
 ifconfig -a
-ifconfig enp2s0 5.5.5.5 netmask 255.255.255.0
+ifconfig eth0 5.5.5.5 netmask 255.255.255.0
 (задаем параметры сети где 5.5.5.5 внешний адрес выданный нам провайдером
 set the network parameters where 5.5.5.5 is the external address given to us by the provider)
 route add default gw 7.7.7.7
