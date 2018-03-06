@@ -216,11 +216,13 @@ nano /etc/hosts
 	
 
 nano /etc/conf.d/net
-	config_enp0s3="dhcp"
-	config_enp0s8="dhcp"
+	config_eth0="dhcp"
+	config_eth1="dhcp"
 cd /etc/init.d
-ln -s net.lo net.enp0s3
-rc-update add net.enp0s3 default
+ln -s net.lo net.eth1
+rc-update add net.eth1 default
+
+rc-update add sshd default
 
 cd ..
 rm stage3-*.tar.*
@@ -253,5 +255,39 @@ Device Drivers  --->
         [*] Bootup logo  --->
             [*]   224-color Armadeus Linux logo
 =================================
+
+packages:
+cronie	
+	Запуск задач по расписанию
+elinks	
+	Консольный веб-клиент
+htop	
+	Продвинутый top. Мониторинг сервера в реальном времени
+ipset	
+	Утилита администрирования ядерного ipset
+iptables	
+	Фаервол
+ldns-utils	
+	ДНС-утилиты
+logrotate	
+	Ротация логов
+lfm	
+	Двупанельный файловый менеджер в стиле Norton Commander
+munin	
+	Клиент-серверное приложение для мониторинга серверов
+ntp	
+	Сервер точного времени
+open-vm-tools	
+	Набор утилит управления гостевой машиной vmware
+screen	
+	Консольный оконный менеджер
+syslog-ng	
+	Логирование событий
+telnet-bsd	
+	Консольный telnet-клиент
+unbound	
+	Кешируюший днс-сервер
+whois	
+	Утилита показывает информацию о доменах, автономных системах, блоках адресов
 
 03/06 15:21 2018
