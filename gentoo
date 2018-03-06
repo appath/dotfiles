@@ -83,7 +83,7 @@ cd /usr/src/
 ls -la
 cd linux
 eselect kernel list
-		[1]		linux-*-gentoo *
+	[1]  linux-*-gentoo *
 
 make help
 
