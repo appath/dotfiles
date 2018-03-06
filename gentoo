@@ -146,6 +146,7 @@ make -j3 -l2
 make
 make install
 make modules_install
+ls -la arch/x86/boot/bzImage
 cd /boot
 ls
 	EFI	*	*
