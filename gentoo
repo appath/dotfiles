@@ -178,7 +178,7 @@ nano -w /etc/hosts
 	::1       localhost
 
 cd /mnt/gentoo
-rm tar xpf stage3-*.tar.*
+rm stage3-*.tar.*
 exit
 cd
 
