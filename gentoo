@@ -173,7 +173,7 @@ nano -w /etc/default/grub
 	графической заставки и с выводом на экран текстовой информации
 	loading points of linux kernels will be converted to verbose mode, that is, the boot 
 	mode without a graphic screen saver and with the display of text information
-	GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Gentoo`
+	GRUB_DISTRIBUTOR=`Gentoo`
 	данная строка отвечает за названия дистрибутива, которое будет отображаться в меню GRUB2
 	This line is responsible for the names of the distribution, which will be displayed in the menu GRUB2
 	GRUB_GFXMODE=1024x768
