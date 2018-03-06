@@ -48,9 +48,9 @@ ls
 man make.conf
 
 nano make.conf
-    CHOST="" i686 x86_64
-    CFLAGS="-02 -pipe -march=native"
-    CXXFLAGS="${CFLAGS}"
+CHOST="" i686 x86_64
+CFLAGS="-02 -pipe -march=native"
+CXXFLAGS="${CFLAGS}"
 
 gcc -march=native -E -v - < /dev/null
 
@@ -58,23 +58,32 @@ nproc
 процессор 2 .. 4 .. 6 .. 8
 
 nano make.conf
-    MAKEOPTS="-j -l" -j3 -l2 пример
-    USE="-bindist"
+MAKEOPTS="-j -l" -j3 -l2 пример
+USE="-bindist"
 
 =================================
 ls
 cd package.use/
 ls
 nano iputils
-    net-misc/iputils -caps -filecaps
+	net-misc/iputils -caps -filecaps
 
 cd 
 cd /usr/portage/scripts/
 ls
-    bootstrap.sh -h инфо
+	bootstrap.sh -h инфо
 
 bootstrap.sh && emerge -e system
 =================================
 
 cd ..
 emerge -av gentoo-source
+
+cd /usr/src/
+ls -la
+cd linux
+eselect kernel list
+		[1]		linux-*-gentoo *
+
+make help
+
