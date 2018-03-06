@@ -188,10 +188,6 @@ grub-mkconfig -o /boot/grub/grub.cfg
 nano -w /etc/conf.d/hostname
 	test
 	
-nano -w /etc/hosts
-	127.0.0.1 test localhost
-	::1       localhost
-
 cd ..
 rm stage3-*.tar.*
 exit
