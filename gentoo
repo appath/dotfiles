@@ -1,0 +1,48 @@
+cfdisk
+100mb BOOT
+2G SWAP
+/ ROOT
+
+mkfs.ext2 -L BOOT /dev/sda1
+mkfs.ext4 -L / /dev/sda3
+mkswap -L swap /dev/sda2
+
+mount /dev/sda3 /mnt/gentoo
+mkdir /mnt/gentoo/boot
+mount /dev/sda1 /mnt/gentoo/boot
+swapon /dev/sda2
+
+date
+030612552018
+MMDDhhmmGGGG
+МесяцДеньЧасыМинутыГод
+
+cd /mnt/gentoo
+links https://www.gentoo.org
+DOWN Stage3
+
+tar xpf stage3-*.tar.* --xattrs
+распаковка stage3
+
+cp /etc/resolv.conf etc/
+
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+mount --make-rslave /mnt/gentoo/dev
+
+mount проверка
+
+chroot . /bin/bash
+или
+chroot . /bin/sh
+
+env-update
+emerge --sync
+
+cd etc/
+ls
+cd portage/
+ls
+man make.conf
