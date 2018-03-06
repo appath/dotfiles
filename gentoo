@@ -38,6 +38,14 @@ mkdir /mnt/gentoo/etc/portage/repos.conf
 cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
 cp -L /etc/resolv.conf /mnt/gentoo/etc/
 
+mount --types proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /dev /mnt/gentoo/dev
+mount --make-rslave /mnt/gentoo/dev
+
+mount проверка test
+
 chroot /mnt/gentoo /bin/bash
 source /etc/profile
 export PS1="[chroot] $PS1"
@@ -48,14 +56,6 @@ chroot . /bin/bash
 or
 chroot . /bin/sh
 =================================
-
-mount --types proc /proc /mnt/gentoo/proc
-mount --rbind /sys /mnt/gentoo/sys
-mount --make-rslave /mnt/gentoo/sys
-mount --rbind /dev /mnt/gentoo/dev
-mount --make-rslave /mnt/gentoo/dev
-
-mount проверка test
 
 mkdir /usr/portage
 emerge-webrsync
