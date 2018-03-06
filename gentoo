@@ -48,9 +48,9 @@ ls
 man make.conf
 
 nano make.conf
-CHOST="" i686 x86_64
-CFLAGS="-02 -pipe -march=native"
-CXXFLAGS="${CFLAGS}"
+	CHOST="" i686 x86_64
+	CFLAGS="-02 -pipe -march=native"
+	CXXFLAGS="${CFLAGS}"
 
 gcc -march=native -E -v - < /dev/null
 
@@ -58,8 +58,38 @@ nproc
 процессор 2 .. 4 .. 6 .. 8
 
 nano make.conf
-MAKEOPTS="-j -l" -j3 -l2 пример
-USE="-bindist"
+	MAKEOPTS="-j -l" -j3 -l2 пример
+	USE="-bindist"
+
+(news items)
+=================================
+eselect news list 
+обзор новостей.
+eselect news read
+можно прочитать новости
+=================================
+
+ls /usr/share/zoneinfo
+echo "Europe/Moscow" > /etc/timezone
+emerge --config sys-libs/timezone-data
+
+nano -w /etc/locale.gen
+	ru_US.UTF-8 UTF-8
+	en_US.UTF-8 UTF-8
+	
+locale-gen
+список локалей
+eselect locale list
+	[1] C
+	[2] POSIX
+ 	[3] ru_RU.utf-8
+	[4] en_US.utf-8
+	
+можно установить правильную локаль из списка
+eselect locale set 4
+
+перезагрузка среды:
+env-update && source /etc/profile && export chroot . /bin/bash
 
 =================================
 ls
@@ -71,19 +101,19 @@ nano iputils
 cd 
 cd /usr/portage/scripts/
 ls
-	bootstrap.sh -h инфо
+./bootstrap.sh -h инфо
 
 bootstrap.sh && emerge -e system
 =================================
 
 cd ..
-emerge -av gentoo-source
+emerge -av sys-kernel/gentoo-source
 
 cd /usr/src/
 ls -la
 cd linux
 eselect kernel list
-		[1]		linux-*-gentoo *
+		[1]  linux-*-gentoo *
 
 make help
 
