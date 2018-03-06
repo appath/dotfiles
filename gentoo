@@ -48,7 +48,7 @@ mount проверка test
 
 chroot /mnt/gentoo /bin/bash
 source /etc/profile
-export PS1="[chroot] $PS1"
+export PS1="[setup] $PS1"
 
 =================================
 chroot . /bin/bash
