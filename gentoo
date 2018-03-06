@@ -45,6 +45,7 @@ mount проверка test
 
 chroot . /bin/bash
 или
+or
 chroot . /bin/sh
 
 env-update
