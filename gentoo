@@ -33,7 +33,10 @@ tar xpf stage3-*.tar.* --xattrs
 распаковка stage3
 unpacking
 
-cp /etc/resolv.conf etc/
+mirrorselect -i -o >> /mnt/gentoo/etc/portage/make.conf
+mkdir /mnt/gentoo/etc/portage/repos.conf
+cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf
+cp -L /etc/resolv.conf /mnt/gentoo/etc/
 
 mount --types proc /proc /mnt/gentoo/proc
 mount --rbind /sys /mnt/gentoo/sys
@@ -166,6 +169,13 @@ nano -w /etc/fstab
 
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
+
+nano -w /etc/conf.d/hostname
+	test
+	
+nano -w /etc/hosts
+	127.0.0.1 test localhost
+	::1       localhost
 
 exit
 cd
