@@ -5,6 +5,24 @@
 With vanilla flavor
 ================================
 
+/etc/init.d/sshd start
+ifconfig -a
+ifconfig enp2s0 5.5.5.5 netmask 255.255.255.0
+(задаем параметры сети где 5.5.5.5 внешний адрес выданный нам провайдером
+set the network parameters where 5.5.5.5 is the external address given to us by the provider)
+route add default gw 7.7.7.7
+а шлюз 7.7.7.7 провайдера через который мы выходим в сеть.
+and the gateway 7.7.7.7 of the provider through which we enter the network.
+
+nano /etc/resolv.conf
+	nameserver 4.4.4.4
+ping -c3 gentoo.org
+(eсли ответы есть, то сеть и днс настроены и работают.
+if there are answers, then the network and the dns are configured and working.)
+соединится по ssh
+connect to ssh
+ssh -l root 5.5.5.5
+
 cfdisk
 100mb BOOT
 2G SWAP
@@ -194,7 +212,14 @@ nano /etc/conf.d/hostname
 	
 nano /etc/hosts
 	
-	
+
+nano /etc/conf.d/net
+	config_enp0s3="dhcp"
+	config_enp0s8="dhcp"
+cd /etc/init.d
+ln -s net.lo net.enp0s3
+rc-update add net.enp0s3 default
+
 cd ..
 rm stage3-*.tar.*
 exit
