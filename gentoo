@@ -319,4 +319,25 @@ whois
 w3m	Текстовый веб-браузер
 	Text Based Web Browser
 
+***********************************
+Быстрое решение с Фреймбуфером
+Убедитесь, что раздел mount /boot смонтирован, чтобы эти файлы были доступны. Просто выполните команду
+Fast solution with Framebuffer
+Make sure that the mount /boot partition is mounted so that these files are available. Just run the command
+mount /boot
+
+Конфигурация
+Configuration
+Таблица >> http://pierre.baudu.in/other/grub.vga.modes.html
+Table >> http://pierre.baudu.in/other/grub.vga.modes.html
+nano /etc/default/grub
+	GRUB_CMDLINE_LINUX_DEFAULT="vga=792"
+	
+Убедитесь, что раздел mount /boot смонтирован до выполнения следующей команды
+Ensure that the mount /boot partition is mounted before the next command is run
+grub-mkconfig -o /boot/grub/grub.cfg
+umount /boot
+reboot
+***********************************
+
 03/06 15:21 2018
