@@ -264,38 +264,55 @@ Device Drivers  --->
             [*]   224-color Armadeus Linux logo
 =================================
 
-packages:
+Пакеты:
+Packages:
 cronie	
 	Запуск задач по расписанию
+	Running tasks on a schedule
 elinks	
 	Консольный веб-клиент
+	Console Web Client
 htop	
 	Продвинутый top. Мониторинг сервера в реальном времени
+	Advanced top. Real-time server monitoring
 ipset	
 	Утилита администрирования ядерного ipset
+	Nuclear ipset administration utility
 iptables	
 	Фаервол
+	Firewall
 ldns-utils	
 	ДНС-утилиты
+	DNS-utilities
 logrotate	
 	Ротация логов
+	Rotation of logs
 lfm	
 	Двупанельный файловый менеджер в стиле Norton Commander
+	Two-Pane File Manager in the style of Norton Commander
 munin	
 	Клиент-серверное приложение для мониторинга серверов
+	Client-server application for server monitoring
 ntp	
 	Сервер точного времени
+	Time server
 open-vm-tools	
 	Набор утилит управления гостевой машиной vmware
+	A set of utilities for managing the guest machine vmware
 screen	
 	Консольный оконный менеджер
+	Console Window Manager
 syslog-ng	
 	Логирование событий
+	Event Logging
 telnet-bsd	
 	Консольный telnet-клиент
+	Console telnet client
 unbound	
 	Кешируюший днс-сервер
+	Cached dns server
 whois	
 	Утилита показывает информацию о доменах, автономных системах, блоках адресов
+	The utility displays information about domains, autonomous systems, address blocks
 
 03/06 15:21 2018
