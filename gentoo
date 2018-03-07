@@ -4,6 +4,8 @@
 1005 Night
 With vanilla flavor
 ================================
+Этот мануал писан адом не пытайтесь установить на основное железо, если вы новичёк.
+This manual writing hell do not try to install on the main hardware, if you're new.
 
 /etc/init.d/sshd start
 ifconfig -a
