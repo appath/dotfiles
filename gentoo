@@ -92,10 +92,10 @@ nano make.conf
 gcc -march=native -E -v - < /dev/null
 
 nproc
-процессор 2 .. 4 .. 6 .. 8
+процессор CPU 2 .. 4 .. 6 .. 8
 
 nano make.conf
-	MAKEOPTS="-j -l" -j3 -l2 пример
+	MAKEOPTS="-j -l" -j3 -l2 пример example
 	USE="-bindist"
 
 (news items)
