@@ -316,5 +316,7 @@ unbound
 whois	
 	Утилита показывает информацию о доменах, автономных системах, блоках адресов
 	The utility displays information about domains, autonomous systems, address blocks
+w3m	Текстовый веб-браузер
+	Text Based Web Browser
 
 03/06 15:21 2018
