@@ -213,7 +213,7 @@ nano /etc/hosts
 	
 
 nano /etc/conf.d/net
-	config_eth0="dhcp"
+	config_eth0="dhcp" (config_enps03="dhcp")
 	config_eth1="dhcp"
 cd /etc/init.d
 ln -s net.lo net.eth1
