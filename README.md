@@ -101,6 +101,7 @@ The function of creating snapshots in BTRFS is implemented quite accurately, and
 ArchWiki [Btrfs](https://wiki.archlinux.org/index.php/Btrfs) | Tool helps with sub-volumes and thin LVM volumes [Snapper Utility](https://wiki.archlinux.org/index.php/Snapper)
 
 =-098hack+-
+
 <a align="left" href="https://area31.net.br" title="Area31">
 <img src="https://area31.net.br/wiki/images/4/46/2014-07-04-area31-atomo-250px-preto-transparente.png" alt="Area31">
 </a>
