@@ -13,9 +13,6 @@ ping -c3 bing.com
 
 date 071620002011
 hwclock --systohc
-ls /usr/share/zoneinfo
-cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime
-echo "Europe/Moscow" > /etc/timezone
 
 PuTTY
 systemctl start sshd
@@ -129,6 +126,10 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 rc-update add dhcpcd default
 nano /etc/conf.d/hostname
+
+ls /usr/share/zoneinfo
+cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+echo "Europe/Moscow" > /etc/timezone
 
 passwd root
 exit
