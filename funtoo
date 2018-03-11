@@ -12,14 +12,13 @@ ARCH.ISO
 ping -c3 bing.com
 
 date 071620002011
+hwclock --systohc
 
 PuTTY
-ssh
-$ systemctl start sshd
-$ ifconfig
+systemctl start sshd
+ifconfig
     100.11.111.00:22
-
-$passwd root
+passwd root
     root
 
 PuTTY
@@ -118,8 +117,12 @@ boot {
 }
 
 grub-install --target=i386-pc --no-floppy /dev/sda
+or
+ grub-install /dev/sda
 /etc/default/grub.cfg
 boot-update
+or
+grub-mkconfig -o /boot/grub/grub.cfg
 
 rc-update add dhcpcd default
 nano /etc/conf.d/hostname
