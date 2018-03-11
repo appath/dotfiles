@@ -45,6 +45,7 @@ mount /dev/sda1 /mnt/funtoo/boot
 gcc -march=native -Q --help=target | grep march
 
 cd /mnt/funtoo
+https://www.funtoo.org/Subarches
 wget http://пример/stage3-latest.tar.xz
 tar xvpf stage3-*.tar.*
 
@@ -55,7 +56,7 @@ mount --make-rslave /mnt/funtoo/sys
 mount --rbind /dev /mnt/funtoo/dev
 mount --make-rslave /mnt/funtoo/dev
 
-cp /etc/resolv.conf /mnt/funtoo/etc/
+cp -L /etc/resolv.conf /mnt/funtoo/etc/
 
 chroot /mnt/funtoo /bin/bash
 source /etc/profile
@@ -67,10 +68,8 @@ nproc
   .. 2 .. 4
 nano -w /etc/portage/make.conf
   MAKEOPTS="-j3 -l2"
-  USE="-bindist"
 
 nano -w /etc/fstab
-
 # The root filesystem should have a pass number of either 0 or 1.
 # All other filesystems should have a pass number of 0 or greater than 1.
 #
@@ -80,7 +79,7 @@ nano -w /etc/fstab
 #
 # <fs>       <mountpoint>  <type>  <opts>         <dump/pass>
 
-/dev/sda1    /boot         ext2    noauto,noatime 1 2
+/dev/sda1    /boot         ext2    noauto,noatime 0 2
 /dev/sda2    none          swap    sw             0 0
 /dev/sda3    /             ext4    noatime        0 1
 #/dev/cdrom  /mnt/cdrom    auto    noauto,ro      0 0
@@ -99,24 +98,9 @@ boot {
   timeout 3 
 }
 
-"Funtoo Linux" {
-  kernel bzImage[-v]
-}
-
-"Funtoo Linux genkernel" {
-  kernel kernel[-v]
-  initrd initramfs[-v]
-  params += real_root=auto 
-} 
-
-"Funtoo Linux better-initramfs" {
-  kernel vmlinuz[-v]
-  initrd /initramfs.cpio.gz
-}
-
 grub-install --target=i386-pc --no-floppy /dev/sda
 or
- grub-install /dev/sda
+grub-install /dev/sda
 /etc/default/grub.cfg
 boot-update
 or
@@ -134,3 +118,5 @@ exit
 cd /mnt
 umount -lR funtoo
 reboot -=poweroff
+
+0311/2018
