@@ -46,7 +46,7 @@ gcc -march=native -Q --help=target | grep march
 
 cd /mnt/funtoo
 wget http://пример/stage3-latest.tar.xz
-tar xмpf stage3-*.tar.*
+tar xvpf stage3-*.tar.*
 
 cd /mnt/funtoo
 mount --types proc /proc /mnt/funtoo/proc
