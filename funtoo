@@ -101,7 +101,7 @@ boot {
 grub-install --target=i386-pc --no-floppy /dev/sda
 or
 grub-install /dev/sda
-/etc/default/grub.cfg
+nano -w /etc/default/grub
 boot-update
 or
 grub-mkconfig -o /boot/grub/grub.cfg
