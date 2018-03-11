@@ -118,7 +118,7 @@ boot {
 }
 
 grub-install --target=i386-pc --no-floppy /dev/sda
-/etc/grub/grub.cfg
+/etc/default/grub.cfg
 boot-update
 
 rc-update add dhcpcd default
