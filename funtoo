@@ -85,8 +85,6 @@ nano -w /etc/fstab
 /dev/sda3    /             ext4    noatime        0 1
 #/dev/cdrom  /mnt/cdrom    auto    noauto,ro      0 0
 
-ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
-
 emerge packagename
 ego sync
 emerge -auDN @world
