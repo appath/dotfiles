@@ -6,6 +6,7 @@
 
 https://www.archlinux.org/
 https://www.funtoo.org/Welcome
+https://www.youtube.com/watch?v=6JdgvkRKkBw
 
 ARCH.ISO
 
@@ -107,7 +108,6 @@ or
 grub-mkconfig -o /boot/grub/grub.cfg
 
 rc-update add dhcpcd default
-nano /etc/conf.d/hostname
 
 ls /usr/share/zoneinfo
 cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime
