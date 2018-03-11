@@ -1,0 +1,131 @@
+##
+#
+# Install Funtoo Linux (ARCH.iso)
+#
+##
+
+https://www.archlinux.org/
+https://www.funtoo.org/Welcome
+
+ARCH.ISO
+
+ping -c3 bing.com
+
+date 071620002011
+
+PuTTY
+ssh
+$ systemctl start sshd
+$ ifconfig
+    100.11.111.00:22
+
+$passwd root
+    root
+
+PuTTY
+user [root]
+passwd [root]
+OK
+
+cfdisk /dev/sda
+100mb BOOT
+2gb SWAP
+/ ROOT
+
+mkfs.ext2 /dev/sda1 -L BOOT
+mkswap /dev/sda2 -L SW
+swapon /dev/sda2
+mkfs.ext4 /dev/sda3 -L /
+
+mkdir /mnt/funtoo
+mount /dev/sda3 /mnt/funtoo
+mkdir /mnt/funtoo/boot
+mount /dev/sda1 /mnt/funtoo/boot
+
+Если вы не знаете, какой из них выбрать, выполните следующую команду:
+gcc -march=native -Q --help=target | grep march
+
+cd /mnt/funtoo
+wget http://пример/stage3-latest.tar.xz
+tar xмpf stage3-*.tar.*
+
+cd /mnt/funtoo
+mount --types proc /proc /mnt/funtoo/proc
+mount --rbind /sys /mnt/funtoo/sys
+mount --make-rslave /mnt/funtoo/sys
+mount --rbind /dev /mnt/funtoo/dev
+mount --make-rslave /mnt/funtoo/dev
+
+cp /etc/resolv.conf /mnt/funtoo/etc/
+
+chroot /mnt/funtoo /bin/bash
+source /etc/profile
+export PS1="[chroot] ${PS1}"
+
+ego sync
+
+nproc
+  .. 2 .. 4
+nano -w /etc/portage/make.conf
+  MAKEOPTS="-j3 -l2"
+  USE="-bindist"
+
+nano -w /etc/fstab
+
+# The root filesystem should have a pass number of either 0 or 1.
+# All other filesystems should have a pass number of 0 or greater than 1.
+#
+# NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
+#
+# See the manpage fstab(5) for more information.
+#
+# <fs>       <mountpoint>  <type>  <opts>         <dump/pass>
+
+/dev/sda1    /boot         ext2    noauto,noatime 1 2
+/dev/sda2    none          swap    sw             0 0
+/dev/sda3    /             ext4    noatime        0 1
+#/dev/cdrom  /mnt/cdrom    auto    noauto,ro      0 0
+
+ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+
+emerge packagename
+ego sync
+emerge -auDN @world
+
+emerge -s debian-sources
+emerge --ask boot-update
+
+nano -w /etc/boot.conf
+boot {
+  generate grub
+  default "Funtoo Linux genkernel" 
+  timeout 3 
+}
+
+"Funtoo Linux" {
+  kernel bzImage[-v]
+}
+
+"Funtoo Linux genkernel" {
+  kernel kernel[-v]
+  initrd initramfs[-v]
+  params += real_root=auto 
+} 
+
+"Funtoo Linux better-initramfs" {
+  kernel vmlinuz[-v]
+  initrd /initramfs.cpio.gz
+}
+
+grub-install --target=i386-pc --no-floppy /dev/sda
+/etc/grub/grub.cfg
+boot-update
+
+rc-update add dhcpcd default
+nano /etc/conf.d/hostname
+
+passwd root
+exit
+cd /mnt
+umount -lR funtoo
+reboot -=poweroff
