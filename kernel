@@ -41,10 +41,14 @@ make modules_install
 Это скопирует скомпилированные модули в директорию /lib/modules с именем версии ядра
 This will copy the compiled modules to the / lib / modules directory with the name of the kernel version
 cp -v arch/x86_64/boot/bzImage /boot/vmlinuz-4.15.9-ARCH НазваниеВашегоЯдра(NameofYourCore)
-mkinitcpio -k 4.15.9-ARCH ПолноеНазваниеЯдра(FullNameKernel) -c /etc/mkinitcpio.conf -g /boot/initramfs-4.15.9-ARCH.img НазваниеВашегоЯдра(NameofYourCore).img
+mkinitcpio -k 4.15.9-ARCH ПолноеНазваниеЯдра(FullNameKernel) -c /etc/mkinitcpio.conf -g /boot/initramfs-4.15.9-ARCH НазваниеВашегоЯдра(NameofYourCore).img
 cp System.map /boot/
 
-grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o /boot/grub/grub.cfgboo
+/boot/grub/grub.conf (initrd initramfs-4.15.9-ARCH.img)
+mv /boot/initramfs-4.15.9-ARCH /boot/initramfs-4.15.9-ARCH.img
+ls /boot/
+    .. initramfs-4.15.9-ARCH  initramfs-4.15.9-ARCH.img
 
 Конфиг
 Config GRUB new kernel
