@@ -44,8 +44,8 @@ cp -v arch/x86_64/boot/bzImage /boot/vmlinuz-4.15.9-ARCH НазваниеВаш�
 mkinitcpio -k 4.15.9-ARCH ПолноеНазваниеЯдра(FullNameKernel) -c /etc/mkinitcpio.conf -g /boot/initramfs-4.15.9-ARCH НазваниеВашегоЯдра(NameofYourCore).img
 cp System.map /boot/
 
-grub-mkconfig -o /boot/grub/grub.cfgboo
-/boot/grub/grub.conf (initrd initramfs-4.15.9-ARCH.img)
+grub-mkconfig -o /boot/grub/grub.cfg
+nano -w /boot/grub/grub.conf (initrd initramfs-4.15.9-ARCH.img)
 mv /boot/initramfs-4.15.9-ARCH /boot/initramfs-4.15.9-ARCH.img
 ls /boot/
     .. initramfs-4.15.9-ARCH  initramfs-4.15.9-ARCH.img
