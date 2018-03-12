@@ -43,3 +43,7 @@ This will copy the compiled modules to the / lib / modules directory with the na
 cp -v arch/x86/boot/bzImage /boot/vmlinuz-НазваниеВашегоЯдра(NameofYourCore)
 
 mkinitcpio -k ПолноеНазваниеЯдра(FullNameKernel) -g /boot/initramfs-НазваниеВашегоЯдра(NameofYourCore).img
+
+Конфиг
+Config GRUB new kernel
+/boot/grub/grub.conf
