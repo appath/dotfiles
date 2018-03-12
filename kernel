@@ -1,0 +1,44 @@
+Kernel
+https://www.kernel.org/
+
+ArchLinux
+создаём директорию
+create a directory
+mkdir ~/build
+переходим в папку
+go to folder
+cd build
+
+установка пакетов
+package installation
+pacman -S wget bc base-devel
+
+загрузка
+loading
+wget -c https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.9.tar.xz
+распаковка
+unpacking
+npack linux-4.15.9.tar.xz
+
+переходим в папку
+go to folder
+cd linux-4.15.9
+
+Подготовьтесь к компиляции
+Prepare for compilation
+make mrproper
+
+(Необязательно)
+(Not necessary)
+zcat /proc/config.gz > $HOME/build/linux-4.15.9/.config
+
+make nconfig
+make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
+make install
+make modules_install
+
+Это скопирует скомпилированные модули в директорию /lib/modules с именем версии ядра
+This will copy the compiled modules to the / lib / modules directory with the name of the kernel version
+cp -v arch/x86/boot/bzImage /boot/vmlinuz-НазваниеВашегоЯдра(NameofYourCore)
+
+mkinitcpio -k ПолноеНазваниеЯдра(FullNameKernel) -g /boot/initramfs-НазваниеВашегоЯдра(NameofYourCore).img
