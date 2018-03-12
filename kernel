@@ -32,6 +32,7 @@ make mrproper
 (Not necessary)
 zcat /proc/config.gz > $HOME/build/linux-4.15.9/.config
 
+make defconfig
 make nconfig
 make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
 make install
