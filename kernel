@@ -41,7 +41,6 @@ make modules_install
 Это скопирует скомпилированные модули в директорию /lib/modules с именем версии ядра
 This will copy the compiled modules to the / lib / modules directory with the name of the kernel version
 cp -v arch/x86_64/boot/bzImage /boot/vmlinuz-4.15.9-ARCH НазваниеВашегоЯдра(NameofYourCore)
-
 mkinitcpio -k 4.15.9-ARCH ПолноеНазваниеЯдра(FullNameKernel) -c /etc/mkinitcpio.conf -g /boot/initramfs-4.15.9-ARCH.img НазваниеВашегоЯдра(NameofYourCore).img
 
 Конфиг
