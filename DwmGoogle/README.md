@@ -1,6 +1,6 @@
 UPDATE 16.02.2018
 
-![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm_custom/dwm.png)
+![dwm](dwm.png)
 
 --
 
@@ -53,7 +53,7 @@ and
 
 Added by dwmstatus 17.08.2017
 
-![dwmstatus](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwmstatus.jpg)
+![dwmstatus](dwmstatus.jpg)
 
 ``` cd build/dwmstatus/```
 
@@ -102,7 +102,7 @@ Here are my default settings.
 ruby, visual studio code, lfm, tmux, zsh, compton, rxvt-unicode-patched, lolcat, feh...
 
 #### image
-![dwm](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwm.jpg)
+![dwm](dwm.jpg)
 
 #### Video 
 
@@ -138,7 +138,7 @@ PKG v.GTK 2.0
 copy to folder GTK2.0 (in the home directory files)
 
 I have not made any icons yet, I'll do it soon.
-![dwmGTK](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/dwmGTK.png)
+![dwmGTK](dwmGTK.png)
 
 What is GTK+, and how can I use it?
 [GTK+](https://www.gtk.org/)
@@ -166,7 +166,7 @@ And change the file name to the correct one.
    #Fedora, Red Hat, Ubuntu ArchLinux and Archlabs
 ```
 
-![custom](https://github.com/appath/dotfiles/blob/master/dwm_google_laptop/custom.png)
+![custom](custom.png)
 
 #### How to Install the Portable Version
 
