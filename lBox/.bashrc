@@ -41,7 +41,7 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 
-export VISUAL="nano"
+export VISUAL="vim"
 alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
