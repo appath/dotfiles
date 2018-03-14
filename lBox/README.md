@@ -16,7 +16,7 @@ Easy Powerline BASH, VIM
      $ POWERLINE_BASH_SELECT=1
      $ . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh | Key "TAB "Return
      
- ![lBox](lBox/-=aa.png)
+ ![lBox](-=aa.png)
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
