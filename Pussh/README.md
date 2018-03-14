@@ -15,7 +15,7 @@ I did not try this design on a stationary PC, but I tried an interesting solutio
 * compton
 * rxvt-unicode-patched and cool lolcat сheerful cat ☻
 
-![Pussh](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_pussh/0_21_58.png)
+![Pussh](0_21_58.png)
 
 If something is not clear write on the mail.
 
