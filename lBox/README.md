@@ -15,3 +15,4 @@ Powerline BASH, VIM
      $ . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh | Key "TAB "Return
 
 [git: powerline/powerline] (https://github.com/powerline/powerline)
+[video: install] (https://www.youtube.com/watch?v=WVGDJat3rd8&feature=youtu.be)
