@@ -5,7 +5,7 @@ Installing
      pacman -S xorg xorg-xinit puthon3.6 vim python-pip curl git wget sxhkd bspwm tmux
      yaourt -S rxvt-unicode-patched
 
-Powerline BASH
+Powerline BASH, VIM
 
      $ su
      $ pip install powerline-status
