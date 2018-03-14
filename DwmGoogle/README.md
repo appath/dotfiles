@@ -1,7 +1,4 @@
 UPDATE 16.02.2018
-
-![dwm](dwm.png)
-
 --
 
 Added a sound greeting
