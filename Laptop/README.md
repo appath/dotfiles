@@ -50,7 +50,7 @@ chmod +x ~/.config/bspwm/bspwmrc
 
 ... luakit-git
 
-![Cyber Pank](https://raw.githubusercontent.com/appath/dotfiles/master/bspwm_dotfiles_laptop/bspwm_dotfiles_laptop.png)
+![Cyber Pank](bspwm_dotfiles_laptop.png)
 
 #### Social
 
