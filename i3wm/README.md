@@ -44,7 +44,7 @@ $ mkfontscale
 $ mkfontdir
 $ fc-cache -fv
 ```
-![i3](https://github.com/appath/dotfiles/blob/master/i3wm_dotfiles_laptop/i3wm_laptop.png)
+![i3](i3wm_laptop.png)
 
 #### Social
 
