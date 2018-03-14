@@ -1,3 +1,9 @@
+" Powerline
+let $PYTHONPATH='/usr/lib64/python3.6/site-packages'
+set rtp+=/usr/lib64/python3.6/site-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
+
 " Replacing the Tab for Spaces
 set expandtab
 set tabstop=2
