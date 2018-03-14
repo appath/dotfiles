@@ -4,7 +4,7 @@ BSPWM DESKTOP
 ====
 Installing
 
-     pacman -S xorg xorg-xinit puthon3.6 vim python-pip curl git wget sxhkd bspwm tmux htop
+     pacman -S xorg xorg-xinit puthon3.6 vim python-pip curl git wget sxhkd bspwm tmux htop dfc
      yaourt -S rxvt-unicode-patched
 
 Easy Powerline BASH, VIM
