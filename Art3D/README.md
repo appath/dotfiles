@@ -23,7 +23,7 @@ And this topic is the same time.
 
 #### Double Wallpaper
 [+Double Wallpapers](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/ahsoka_tano_vs_darth_vader(Dual).psd)
-![Dual Monitor](https://raw.githubusercontent.com/appath/dotfiles/master/bspwm_dotfiles_clone_art3d_punk/Dual_Monitor.jpg)
+![Dual Monitor](Dual_Monitor.jpg)
 
 Pkg: 
 * bspwm, sxhkd, polybar-git, tmux, urxvt-unicode, zsh, compton and feh.
@@ -35,7 +35,7 @@ Pkg:
 #### On the line, I added it here, so that if something happens to a personal computer for modeling, I could quickly restore it.
 #### Thank you all for your understanding.
 
-![Art3D](https://github.com/appath/dotfiles/blob/master/bspwm_dotfiles_clone_art3d_punk/art3d.jpg)
+![Art3D](art3d.jpg)
 
 #### Social
 
