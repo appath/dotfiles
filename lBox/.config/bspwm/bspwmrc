@@ -1,7 +1,6 @@
 #!/bin/sh
 sxhkd &
 urxvt &
-compton -C &
 bspc monitor -d I II III IV V VI
 bspc config border_width		1
 bspc config window_gap			8
