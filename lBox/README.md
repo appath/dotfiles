@@ -1,6 +1,6 @@
 <a href="https://area31.net.br" title="area31.net.br"> ... area31</a>
 
-BSPWM DESKTOP
+Gray BSPWM DESKTOP
 ====
 Installing
 
