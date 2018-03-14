@@ -2,9 +2,9 @@
 # wm independent hotkeys
 #
 
-# Scrot
-alt + Print
-  scrot -u -b
+# HTTPS
+alt + g
+	luakit
 
 # terminal emulator
 alt + Return
