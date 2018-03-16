@@ -36,13 +36,18 @@ npack () {
 #fi
 
 # Powerline BASH
+# Arch
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
-# Arch
 . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 # Kali
-#. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+#if [ -f `which powerline-daemon` ]; then
+#  powerline-daemon -q
+#  POWERLINE_BASH_CONTINUATION=1
+#  POWERLINE_BASH_SELECT=1
+#  . /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
+#fi
 
 export VISUAL="vim"
 alias ls='ls --color=auto'
