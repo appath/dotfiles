@@ -11,7 +11,7 @@ Installing
      
      Kali
      apt install xorg python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode firefox
-     https://www.kali.org/ Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
+https://www.kali.org/ Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
 
 Easy Powerline BASH, VIM
 
