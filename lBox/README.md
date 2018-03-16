@@ -4,9 +4,13 @@ GRAY BSPWM DESKTOP
 ====
 Installing
 
+     Arch
      pacman -S xorg xorg-xinit puthon3.6 vim python-pip curl git wget sxhkd bspwm tmux htop dfc mupdf
      yaourt -S rxvt-unicode-patched lfm
      framework git: luakit/luakit
+     
+     Kali
+     apt install xorg python-pip curl git wget sxhkd bspwm tmux htop dfc mupdf rxvt-unicode firefox
 
 Easy Powerline BASH, VIM
 
