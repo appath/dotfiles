@@ -10,7 +10,7 @@ Installing
      framework git: luakit/luakit
      
      Kali
-     apt install xorg python-pip curl git wget sxhkd bspwm tmux htop dfc mupdf rxvt-unicode firefox
+     apt install xorg python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode firefox
      https://www.kali.org/ Minimal ISO
 
 Easy Powerline BASH, VIM
