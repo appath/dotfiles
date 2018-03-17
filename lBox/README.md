@@ -15,7 +15,7 @@ Installing
 
 Kali Grub, Font Video Driver VirtualBox
       
-      mamo -w /etc/default/grub 
+      nano -w /etc/default/grub 
       nano -w /etc/grub.d/05_debian_theme
           black/black
           black/light-gray
