@@ -50,3 +50,14 @@ Easy Powerline BASH, VIM
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
 .[video: install] 'https://www.youtube.com/watch?v=WVGDJat3rd8&feature=youtu.be'
+
+• ▌ ▄ ·. ▄▄▄ .▄▄▄▄▄ ▄▄▄·      
+·██ ▐███▪▀▄.▀·•██  ▐█ ▀█      
+▐█ ▌▐▌▐█·▐▀▀▪▄ ▐█.▪▄█▀▀█      
+██ ██▌▐█▌▐█▄▄▌ ▐█▌·▐█ ▪▐▌     
+▀▀  █▪▀▀▀ ▀▀▀  ▀▀▀  ▀  ▀      
+.▄▄ ·  ▄▄▄·▄▄▌        ▪  ▄▄▄▄▄
+▐█ ▀. ▐█ ▄███•  ▪     ██ •██  
+▄▀▀▀█▄ ██▀·██▪   ▄█▀▄ ▐█· ▐█.▪
+▐█▄▪▐█▐█▪·•▐█▌▐▌▐█▌.▐▌▐█▌ ▐█▌·
+ ▀▀▀▀ .▀   .▀▀▀  ▀█▄▀▪▀▀▀ ▀▀▀ 
