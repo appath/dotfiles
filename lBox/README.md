@@ -13,6 +13,15 @@ Installing
      apt install xorg puthon3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm firefox
 [Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
 
+Kali Video Driver VirtualBox
+      
+      apt update && apt install -y linux-headers-$(uname -r)
+      mount /dev/sr0 /media/cdrom
+      cp /media/cdrom/VBoxLinuxAdditions.run ~/
+      chmod 755 VBoxLinuxAdditions.run
+      ./VBoxLinuxAdditions.run
+      reboot
+
 Easy Powerline BASH, VIM
 
      $ su
