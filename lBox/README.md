@@ -13,8 +13,16 @@ Installing
      apt install xorg puthon3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm firefox
 [Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
 
-Kali Video Driver VirtualBox
+Kali Grub, Font Video Driver VirtualBox
       
+      mamo -w /etc/default/grub 
+      nano -w /etc/grub.d/05_debian_theme
+          black/black
+          black/light-gray
+          
+      update-grub -o grub.cfg
+      grub-mconfig -o /boot/grub/grub.cfg
+      dpkg-reconfigure console-setup
       apt update && apt install -y linux-headers-$(uname -r)
       mount /dev/sr0 /media/cdrom
       cp /media/cdrom/VBoxLinuxAdditions.run ~/
