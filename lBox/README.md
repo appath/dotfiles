@@ -3,7 +3,7 @@
 трум пурум пум пум
 
 trum purum pum pum
-[!Кто ходит в гости по утрам =))](https://www.youtube.com/watch?v=L2D0zr_P0Ps)
+[Кто ходит в гости по утрам =))](https://www.youtube.com/watch?v=L2D0zr_P0Ps)
 
 GRAY BSPWM DESKTOP
 ====
