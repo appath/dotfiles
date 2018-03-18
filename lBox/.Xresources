@@ -1,4 +1,4 @@
-#include "/home/user/.terminal"
+#include "/root/.terminal"
 *.dpi: 89
 *.letterSpace: -1
 *font: xft:Pragmata Pro:size=10
