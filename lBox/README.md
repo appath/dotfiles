@@ -1,9 +1,5 @@
 <a href="https://area31.net.br" title="area31.net.br"> ... area31</a>
 
-трум пурум пум пум
-
-trum purum pum pum
-
 GRAY BSPWM DESKTOP
 ====
 Installing
@@ -47,8 +43,9 @@ Easy Powerline BASH, VIM
  
  [MetaSploit](https://github.com/rapid7/metasploit-framework)
  
- Script
- ![metaservice](1metaservice.png)
+ ++  SCRIPT
+ 
+ ![metaservice](088uw.png)
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
