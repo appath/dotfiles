@@ -4,7 +4,10 @@
 
 # HTTPS
 alt + g
-	luakit
+	firefox
+
+# Visual Studio Code
+	code
 
 # terminal emulator
 alt + Return
