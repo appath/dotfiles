@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+# msfconsole
+# Service Scripts
+# git: appath
+
+f0='\e[1;31m'	#Red
+f1='\e[1;34m'	#Blue
+f2='\e[1;37m'	#White
+f3='\033[92m'	#Green
+f4='\e[1;30m'	#Gray
+f5='\e[1;94m'	#Violet
+
+again='y'
+	while [ $again == 'y' ] || [ $again == 'Y' ] || [ $again == 'yes' ] || [ $again == 'YES' ];
+	do
+
+clear
+echo "::"
+echo -e $f1 ""
+echo "	• ▌ ▄ ·. ▄▄▄ .▄▄▄▄▄ ▄▄▄·	"
+echo "	·██ ▐███▪▀▄.▀·•██  ▐█ ▀█	"
+echo "	▐█ ▌▐▌▐█·▐▀▀▪▄ ▐█.▪▄█▀▀█	"
+echo "	██ ██▌▐█▌▐█▄▄▌ ▐█▌·▐█ ▪▐▌	"
+echo "	▀▀  █▪▀▀▀ ▀▀▀  ▀▀▀  ▀  ▀	"
+echo "	.▄▄ ·  ▄▄▄·▄▄▌        ▪  ▄▄▄▄▄	"
+echo "	▐█ ▀. ▐█ ▄███•  ▪     ██ •██	"
+echo "	▄▀▀▀█▄ ██▀·██▪   ▄█▀▄ ▐█· ▐█.▪	"
+echo "	▐█▄▪▐█▐█▪·•▐█▌▐▌▐█▌.▐▌▐█▌ ▐█▌·	"
+echo "	 ▀▀▀▀ .▀   .▀▀▀  ▀█▄▀▪▀▀▀ ▀▀▀	"
+echo -e $f2 "                  	service		";
+echo ""
+echo -e $f2"[$f0"01"$f2]$f0  $f4 The service starts Postgresql initialization the database"
+echo -e $f2"[$f0"02"$f2]$f0  $f4 Information about TCP adn staus"
+echo -e $f2"[$f0"03"$f2]$f0  $f4 Command msfdb with the init par. to create the MSF"
+echo -e $f2"[$f0"04"$f2]$f0  $f4 Exit"
+echo ""
+echo -e $f4"# This script simply launches"
+echo -e $f4"# the commands in turn, simplifies the work ..."
+echo -e $f5"*$f4 Now everything will just go away with .metaservice and type in the console$f0 msfconsole$f4<< "
+echo ""
+echo -n -e '\e[1;30mMS\e[0m > '; tput sgr0
+read MService
+
+if [ "$MService" == "1" ]; then
+	    echo
+	    echo -e "# Run the database ..."
+		echo
+		sleep 3
+		/etc/init.d/postgresql start
+		sleep 1
+
+elif [ "$MServise" == "2" ]; then
+		echo
+		echo -e "# Dump socket statistics . "
+		echo
+		sleep 3
+		ss -ant
+		sleep 1
+
+elif [ $MService == "3" ]; then
+		echo 
+		echo -e "# Initializing the database."
+		echo
+		sleep 1
+		msfdb init
+		sleep 4
+
+elif [ $MService == "4" ]; then
+	clear
+exit
+
+fi
+		echo
+		echo -n -e "Backward [yes/no]: ";
+		read again;
+		while [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ] && [ $again != 'yes' ] && [ $again != 'YES' ] && [ $again != 'no' ] && [ $again != 'NO' ];
+		do
+		echo -n "Backward [yes/no]: ";
+		read again;
+	done
+done
