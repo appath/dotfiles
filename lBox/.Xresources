@@ -2,7 +2,7 @@
 *.dpi: 89
 *.letterSpace: -1
 *font: xft:Pragmata Pro:size=10
-*termName: rxvt-unicode
+*termName: rxvt-256color
 *.depth: 32
 *.scrollBar: False
 *.cursorBlink: True
