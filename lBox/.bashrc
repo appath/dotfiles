@@ -1,7 +1,3 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -46,5 +42,5 @@ POWERLINE_BASH_SELECT=1
 
 export VISUAL="vim"
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 #PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
