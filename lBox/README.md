@@ -47,7 +47,8 @@ Easy Powerline BASH, VIM
  
  [MetaSploit](https://github.com/rapid7/metasploit-framework)
  
- ![metaservice](metaservice.png)
+ Script
+ ![metaservice](1metaservice.png)
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
