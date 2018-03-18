@@ -5,9 +5,8 @@ GRAY BSPWM DESKTOP
 Installing
 
      Arch
-     pacman -S xorg xorg-xinit python3.6 vim python-pip curl git wget sxhkd bspwm tmux htop dfc mupdf
+     pacman -S xorg xorg-xinit python3.6 vim python-pip curl git wget sxhkd bspwm tmux htop dfc mupdf firefox
      yaourt -S rxvt-unicode-patched lfm
-     framework git: luakit/luakit
      
      Kali
      apt install xorg python3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm firefox
