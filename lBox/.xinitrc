@@ -1,5 +1,5 @@
-xrdb -merge /home/user/.Xresources
+xrdb -merge /root/.Xresources
 xsetroot -cursor_name left_ptr
-xset +fp /home/user/.fonts
+xset +fp /root/.fonts
 xset fp rehash
 exec bspwm
