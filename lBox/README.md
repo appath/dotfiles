@@ -39,7 +39,7 @@ Easy Powerline BASH, VIM
      $ POWERLINE_BASH_SELECT=1
      $ . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh | Key "TAB "Return
      
- ![lBox](0991555.png)
+ ![lBox](0991475.png)
  
  [MetaSploit](https://github.com/rapid7/metasploit-framework)
  
