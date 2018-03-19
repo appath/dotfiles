@@ -71,9 +71,29 @@ Based on RSA keys:
 
 denyhosts
 http://denyhosts.sourceforge.net/
-автоматически вносить хосты при
+автоматически вносит хосты при
 провальном логине в черный список, баня их
 пожизненно.
-automatically make hosts when
+automatically introduces hosts when
 failed login in the black list, their bath
 for life.
+
+****************************
+Можно ещё усилить Приватный Ключ (с помощь скриптинга)
+You can still strengthen the Private Key (with the help of scripting)
+
+	ssh-add -d id_rsa # ключ удалён / key removed
+	ssh-add -l # ключей не должно быть по сути / keys should not be inherently
+	mv id_rsa id_rsa_it # переименовываем Приватный Ключ / Rename the Private Key
+	ssh-add -d id_rsa
+	ssh-add -l
+	mv id_rsa id_rsa_it
+	openssl pkcs8 -topk8 -v2 des3 -in id_rsa_it -out id_rsa 
+	# подтвердим старый пароль, создаём новый и подтверждаем его еще раз / confirm the old password, create a new one and confirm it again
+	chmod 600 .ssh/keys/id_rsa
+	ssh-add .ssh/keys/id_rsa
+	ssh-add -l # файл должен быть добавлен / the file must be added
+	
+Ключ теперь ещё сложнее будет брутить...
+The key is now even more difficult to brut ...
+****************************
