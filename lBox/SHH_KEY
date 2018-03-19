@@ -74,11 +74,9 @@ Based on RSA keys:
 
 denyhosts
 http://denyhosts.sourceforge.net/
-автоматически вносит хосты при
-провальном логине в черный список, баня их
+автоматически вносит хосты при неправильном входе в учётку попадает в черный список, баня их
 пожизненно.
-automatically introduces hosts when
-failed login in the black list, their bath
+automatically makes the hosts with an incorrect entry into the register falls into the black list, their bath
 for life.
 
 ****************************
