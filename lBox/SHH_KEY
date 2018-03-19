@@ -38,3 +38,29 @@ We try to connect via PuTTY
 ip address
 PuTTY
 	root@.... port22
+
+Чёрная кошка
+В 95 году, SSH  получил широкое
+распространение как мощный протокол
+удаленного доступа.
+Этот SSH демон может быть угрозой для машины.
+Мы с вами попытаемся закрыть или защитить от проникновение по SSH в вашу машину.
+Есть и другие способы, рассмотрю простые способы.
+Отключить доступ довольно просто и это вам позволит усилить
+безопасность.
+
+/etc/ssh/sshd_config
+	
+	PermitRootLogin no
+	PasswordAuthentication no 
+	ChallengeResponseAuthentication no
+	Port hacking
+ 
+На основе ключей
+	ssh-keygen -t rsa -b 8192 -f id_rsa -C "hacking"
+
+denyhosts
+http://denyhosts.sourceforge.net/
+автоматически вносить хосты при
+провальном логине в черный список, баня их
+пожизненно.
