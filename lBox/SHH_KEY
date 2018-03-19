@@ -48,6 +48,15 @@ PuTTY
 Есть и другие способы, рассмотрю простые способы.
 Отключить доступ довольно просто и это вам позволит усилить
 безопасность.
+Black cat
+In the year 95, SSH received a wide
+distribution as a powerful protocol
+remote access.
+This SSH daemon can be a threat to the machine.
+We will try to close or protect you from penetrating SSH into your machine.
+There are other ways, I will consider simple ways.
+Disabling access is quite simple and it will allow you to strengthen
+security.
 
 /etc/ssh/sshd_config
 	
@@ -56,7 +65,8 @@ PuTTY
 	ChallengeResponseAuthentication no
 	Port hacking
  
-На основе ключей
+На основе RSA ключей:
+Based on RSA keys:
 	ssh-keygen -t rsa -b 8192 -f id_rsa -C "hacking"
 
 denyhosts
@@ -64,3 +74,6 @@ http://denyhosts.sourceforge.net/
 автоматически вносить хосты при
 провальном логине в черный список, баня их
 пожизненно.
+automatically make hosts when
+failed login in the black list, their bath
+for life.
