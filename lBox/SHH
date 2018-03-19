@@ -7,11 +7,12 @@ RSAAuthentication yes (no)
 PasswordAuthentication no (yes)
 ChallengeResponseAuthentication no (yes)
   
-  service ssh restart
+	service ssh restart
 
 Создадим
+Let's create
   
-  mkdir .ssh
+	mkdir .ssh
 	chmod 0700 ~/.ssh
 	mkdir .ssh/keys/
 
@@ -19,6 +20,10 @@ ChallengeResponseAuthentication no (yes)
 У вас должно получиться два файла с ключами один для Привата а другой Публичный
 Так-же установите доп. пароль для ключей!
 Теперь нужно cкопировать на машину ключ Публичный!
+Generate the keys with PUTTYGEN and save them to the media.
+You should get two files with one key for Privat and another Public
+So, install the add. password for keys!
+Now you need to copy the public key to the machine!
 	
 	mount /dev/sdb1 /media/flash
 	cp /media/flash/id_rsa.pub .ssh/keys/
@@ -27,5 +32,7 @@ ChallengeResponseAuthentication no (yes)
 	ssh-keygen -i -f .ssh/keys/id_rsa.pub >> .ssh/authorized_keys
 
 Пробуем подключится через PuTTY
+We try to connect via PuTTY
 ip address
 PuTTY
+	root@.... port22
