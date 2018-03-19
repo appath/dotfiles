@@ -2,7 +2,7 @@
 
 PermitRootLogin yes (no)
 PubkeyAuthentication yes (no)
-#AuthorizedKeyFile	.ssh/authorized_keys
+AuthorizedKeyFile	.ssh/authorized_keys
 RSAAuthentication yes (no)
 PasswordAuthentication no (yes)
 ChallengeResponseAuthentication no (yes)
