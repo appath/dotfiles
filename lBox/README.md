@@ -40,7 +40,7 @@ Easy Powerline BASH, VIM
      
  ![lBox](0991475.png)
  
- [SHH_KEY](SSH_KEY)
+ [SHH_KEY](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/SHH_KEY)
  
  [MetaSploit](https://github.com/rapid7/metasploit-framework)
  
