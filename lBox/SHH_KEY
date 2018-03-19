@@ -37,7 +37,10 @@ Now you need to copy the public key to the machine!
 We try to connect via PuTTY
 ip address
 PuTTY
-	root@.... port22
+	root@.... port22 
+	другой
+	other
+	root@.... -v
 
 Чёрная кошка
 В 95 году, SSH  получил широкое
