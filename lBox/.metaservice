@@ -45,7 +45,7 @@ read MService
 
 if [ "$MService" == "1" ]; then
 	    echo
-	    echo -e "# System check for update"
+	    echo -e "# System check for"
 		echo
 		sleep 3
 		sudo apt update && sudo apt upgrade
