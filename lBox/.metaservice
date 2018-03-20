@@ -15,7 +15,7 @@ again='y'
 	do
 
 clear
-echo "::"
+echo "	https://github.com/rapid7/metasploit-framework"
 echo -e $f1 ""
 echo "	• ▌ ▄ ·. ▄▄▄ .▄▄▄▄▄ ▄▄▄·	"
 echo "	·██ ▐███▪▀▄.▀·•██  ▐█ ▀█	"
@@ -44,24 +44,24 @@ echo -n -e '\e[1;30mMS\e[0m > '; tput sgr0
 read MService
 
 if [ "$MService" == "1" ]; then
-	    echo
-	    echo -e "# System check for"
+	        echo
+	        echo -e "# System check for"
 		echo
 		sleep 3
 		sudo apt update && sudo apt upgrade
 		sleep 1
 
 elif [ "$MService" == "2" ]; then
-	    echo
-	    echo -e "# Find the package to install ..."
+	        echo
+	        echo -e "# Find the package to install ..."
 		echo
 		sleep 4
 		sudo apt-cache search .*metasploit.* && sudo apt install metasploit-framework
 		sleep 2
 
 elif [ "$MService" == "3" ]; then
-	    echo
-	    echo -e "# Run the database ..."
+	        echo
+	        echo -e "# Run the database ..."
 		echo
 		sleep 2
 		/etc/init.d/postgresql start
