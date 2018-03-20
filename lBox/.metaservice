@@ -29,10 +29,10 @@ echo "	▐█▄▪▐█▐█▪·•▐█▌▐▌▐█▌.▐▌▐█▌ 
 echo "	 ▀▀▀▀ .▀   .▀▀▀  ▀█▄▀▪▀▀▀ ▀▀▀	"
 echo -e $f2 "                  	service		";
 echo ""
-echo -e $f2"[$f0"01"$f2]$f0  $f4 Update/Upgrade System
+echo -e $f2"[$f0"01"$f2]$f0  $f4 Update/Upgrade System"
 echo -e $f2"[$f0"02"$f2]$f0  $f4 Install Metasploit"
 echo -e $f2"[$f0"03"$f2]$f0  $f4 The service starts Postgresql initialization the database"
-echo -e $f2"[$f0"04"$f2]$f0  $f4 Information about anp (package net-tools) adn port "
+echo -e $f2"[$f0"04"$f2]$f0  $f4 Information about anp (package net-tools) adn port"
 echo -e $f2"[$f0"05"$f2]$f0  $f4 Command msfdb with the init par. to create the MSF"
 echo -e $f2"[$f0"06"$f2]$f0  $f4 Exit"
 echo ""
