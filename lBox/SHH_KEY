@@ -71,7 +71,7 @@ security.
 На основе RSA ключей:
 Based on RSA keys:
 	ssh-keygen -t rsa -b 8192 -f id_rsa -C "hacking"
-	ssh-copy-id указать публичный ключь -i id_rsa.pub указываем машину root@... (-v)
+	ssh-copy-id указать публичный ключ -i id_rsa.pub указываем машину root@... (-v)
 
 denyhosts
 http://denyhosts.sourceforge.net/
