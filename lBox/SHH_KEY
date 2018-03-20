@@ -15,7 +15,7 @@ ChallengeResponseAuthentication no (yes)
 Let's create
   
 	mkdir .ssh
-	chmod 0700 ~/.ssh
+	chmod 700 ~/.ssh
 	mkdir .ssh/keys/
 
 Генерируем ключи с помощью PUTTYGEN и сохраним их на носитель.
@@ -30,8 +30,9 @@ Now you need to copy the public key to the machine!
 	mount /dev/sdb1 /media/flash
 	cp /media/flash/id_rsa.pub .ssh/keys/
 	umount /dev/sdb1 /media/flash
-	chmod 0644 .ssh/keys/id_rsa.pub
+	chmod 644 .ssh/keys/id_rsa.pub
 	ssh-keygen -i -f .ssh/keys/id_rsa.pub >> .ssh/authorized_keys
+	chmod 600 .ssh/authorized_keys
 
 Пробуем подключится через PuTTY
 We try to connect via PuTTY
