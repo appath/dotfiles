@@ -29,10 +29,12 @@ echo "	▐█▄▪▐█▐█▪·•▐█▌▐▌▐█▌.▐▌▐█▌ 
 echo "	 ▀▀▀▀ .▀   .▀▀▀  ▀█▄▀▪▀▀▀ ▀▀▀	"
 echo -e $f2 "                  	service		";
 echo ""
-echo -e $f2"[$f0"01"$f2]$f0  $f4 The service starts Postgresql initialization the database"
-echo -e $f2"[$f0"02"$f2]$f0  $f4 Information about TCP adn staus"
-echo -e $f2"[$f0"03"$f2]$f0  $f4 Command msfdb with the init par. to create the MSF"
-echo -e $f2"[$f0"04"$f2]$f0  $f4 Exit"
+echo -e $f2"[$f0"01"$f2]$f0  $f4 Update/Upgrade System
+echo -e $f2"[$f0"02"$f2]$f0  $f4 Install Metasploit"
+echo -e $f2"[$f0"03"$f2]$f0  $f4 The service starts Postgresql initialization the database"
+echo -e $f2"[$f0"04"$f2]$f0  $f4 Information about anp (package net-tools) adn port "
+echo -e $f2"[$f0"05"$f2]$f0  $f4 Command msfdb with the init par. to create the MSF"
+echo -e $f2"[$f0"06"$f2]$f0  $f4 Exit"
 echo ""
 echo -e $f4"# This script simply launches"
 echo -e $f4"# the commands in turn, simplifies the work ..."
@@ -43,21 +45,37 @@ read MService
 
 if [ "$MService" == "1" ]; then
 	    echo
-	    echo -e "# Run the database ..."
+	    echo -e "# System check for update"
 		echo
 		sleep 3
+		sudo apt update && sudo apt upgrade
+		sleep 1
+
+elif [ "$MService" == "2" ]; then
+	    echo
+	    echo -e "# Find the package to install ..."
+		echo
+		sleep 4
+		sudo apt-cache search .*metasploit.* && sudo apt install metasploit-framework
+		sleep 2
+
+elif [ "$MService" == "3" ]; then
+	    echo
+	    echo -e "# Run the database ..."
+		echo
+		sleep 2
 		/etc/init.d/postgresql start
 		sleep 1
 
-elif [ "$MServise" == "2" ]; then
+elif [ "$MServise" == "4" ]; then
 		echo
-		echo -e "# Dump socket statistics . "
+		echo -e "# There is a check of the port . "
 		echo
 		sleep 3
-		ss -ant
+		netstat -anp | grep 5432
 		sleep 1
 
-elif [ $MService == "3" ]; then
+elif [ $MService == "5" ]; then
 		echo 
 		echo -e "# Initializing the database."
 		echo
@@ -65,7 +83,7 @@ elif [ $MService == "3" ]; then
 		msfdb init
 		sleep 4
 
-elif [ $MService == "4" ]; then
+elif [ $MService == "6" ]; then
 	clear
 exit
 
