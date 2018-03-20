@@ -15,7 +15,6 @@ again='y'
 	do
 
 clear
-echo -e"$f5 https://github.com/rapid7/metasploit-framework"
 echo -e $f1 ""
 echo "	• ▌ ▄ ·. ▄▄▄ .▄▄▄▄▄ ▄▄▄·	"
 echo "	·██ ▐███▪▀▄.▀·•██  ▐█ ▀█	"
