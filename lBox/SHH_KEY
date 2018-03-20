@@ -85,6 +85,7 @@ for life.
 Можно ещё усилить Приватный Ключ (с помощь скриптинга)
 You can still strengthen the Private Key (with the help of scripting)
 
+	eval $(ssh-agent)
 	ssh-add -d id_rsa # ключ удалён / key removed
 	ssh-add -l # ключей не должно быть по сути / keys should not be inherently
 	mv id_rsa id_rsa_it # переименовываем Приватный Ключ / Rename the Private Key
