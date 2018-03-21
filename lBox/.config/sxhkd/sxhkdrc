@@ -8,7 +8,7 @@ alt + v
 
 # scrot
 # screensots
-alt + shift + s
+alt + shift + 0
   scrot -d 7 -c screenshots.png
 
 # HTTPS
