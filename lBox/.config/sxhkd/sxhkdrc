@@ -4,12 +4,12 @@
 
 # Visual Studio Code
 alt + v
-  code
+	code
 
 # scrot
 # screensots
 alt + shift + 0
-  scrot -d 7 -c screenshots.png
+	scrot -d 7 -c screenshots.png
 
 # HTTPS
 alt + g
