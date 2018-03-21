@@ -40,13 +40,13 @@ Easy Powerline BASH, VIM
  
 Screensots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/screenshot_1.jpg), [*2](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/screenshot_2.jpg)
  
-![lBox](scrot/screenshot_1.png)
+![lBox](scrot/screenshot_1.jpg)
  
 [SHH_KEY](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/SHH_KEY)
  
 [MetaSploit](https://github.com/rapid7/metasploit-framework)
  
-++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice
+++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice)
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
