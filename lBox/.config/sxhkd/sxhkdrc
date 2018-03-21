@@ -7,7 +7,7 @@ alt + v
 	code
 
 # scrot
-# screensots
+# screenshots
 alt + shift + 0
 	scrot -d 7 -c screenshots.png
 
