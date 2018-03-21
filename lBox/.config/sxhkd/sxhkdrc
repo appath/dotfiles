@@ -2,6 +2,10 @@
 # wm independent hotkeys
 #
 
+# GitKraken
+alt + k
+	gitkraken
+
 # Visual Studio Code
 alt + v
 	code
