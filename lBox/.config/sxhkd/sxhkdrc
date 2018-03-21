@@ -2,12 +2,18 @@
 # wm independent hotkeys
 #
 
+# Visual Studio Code
+alt + v
+  code
+
+# scrot
+# screensots
+alt + shift + s
+  scrot -d 7 -c screenshots.png
+
 # HTTPS
 alt + g
 	firefox
-
-# Visual Studio Code
-	code
 
 # terminal emulator
 alt + Return

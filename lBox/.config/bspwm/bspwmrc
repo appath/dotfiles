@@ -21,4 +21,4 @@ bspc config normal_border_color		"#171717"
 bspc rule -a URxvt follow=on
 bspc rule -a Tor desktop='^3' state=floating
 bspc rule -a Firefox desktop='^2' follow=on
-bspc rule -a Code desktop='^4' follow=on
+bspc rule -a Code desktop='^4' state=floating
