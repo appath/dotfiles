@@ -37,14 +37,16 @@ Easy Powerline BASH, VIM
      $ POWERLINE_BASH_CONTINUATION=1
      $ POWERLINE_BASH_SELECT=1
      $ . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh | Key "TAB "Return
-     
- ![lBox](0991475.png)
  
- [SHH_KEY](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/SHH_KEY)
+Screensots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/screenshot_1.jpg), [*2](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/screenshot_2.jpg)
  
- [MetaSploit](https://github.com/rapid7/metasploit-framework)
+![lBox](scrot/screenshot_1.png)
  
- ++ SCRIPT service [+.metaservice](https://github.com/appath/dotfiles/blob/master/lBox/.metaservice)
+[SHH_KEY](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/SHH_KEY)
+ 
+[MetaSploit](https://github.com/rapid7/metasploit-framework)
+ 
+++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
