@@ -47,7 +47,22 @@ Screenshots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/s
 [SHH_KEY](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/SHH_KEY)
  
 [MetaSploit](https://github.com/rapid7/metasploit-framework)
- 
+
+Запуск Metasploit Framewor >> Launch the Metasploit Framework
+
+     Database
+     /etc/init.d/postgresql start
+     работает или нет ? postgresql и убедившись, что порт 5432 прослушивается
+     works or not? postgresql and making sure that port 5432 is listening
+     ss -ant
+     netstat -anp | grep 5432
+     Инициализируем базу данных Metasploit
+     Initializing the Metasploit database
+     msfdb init
+     Запускаем мсфконсо́ль
+     We launch
+     msfconsole
+     
 ++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice)
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
