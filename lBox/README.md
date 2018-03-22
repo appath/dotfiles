@@ -10,7 +10,6 @@ Installing
      
      Kali
      apt install xorg python3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm firefox
-     libgnome-keyring-common libgnome-keyring-dev
      
 [GitKraken](https://www.gitkraken.com/download)
 
