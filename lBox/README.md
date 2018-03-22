@@ -63,6 +63,10 @@ Screenshots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/s
      We launch
      msfconsole
      
+     Если вы предпочитаете иметь запущенные PostgreSQL
+     If you prefer to have running PostgreSQL
+     update-rc.d postgresql enable
+     
 ++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice)
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
