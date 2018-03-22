@@ -70,6 +70,10 @@ Screenshots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/s
      
 ++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice)
 
+Cobra_2 [+ansi](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/cobra_2.ansi.txt)
+
+![Cobra_2](scrot/cobra_2.jpg)
+
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
 
 .[video: install] 'https://www.youtube.com/watch?v=WVGDJat3rd8&feature=youtu.be'
