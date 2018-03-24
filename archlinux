@@ -2,25 +2,28 @@
 
 ARCH|Linux BTRFS SPEED --
 
+# systemctl start sshd.service
+# systemctl enable sshd.service
+
 Creating a partition and sub-sections
-$ mkfs.btrfs -f -L VB /dev/sda (VB name Disk)
+# mkfs.btrfs -f -L VB /dev/sda (VB name Disk)
 
 We mount:
-$ mount /dev/sda /mnt
+# mount /dev/sda /mnt
 
 We create two subtopics
-$ btrfs subvolume create /mnt/root
-$ btrfs subvolume create /mnt/home
+# btrfs subvolume create /mnt/root
+# btrfs subvolume create /mnt/home
 
 Unmount:
-$ umount /mnt
+# umount /mnt
 
 Compression (lzo), gives an increase in space saving plus improves performance, and defragmetation in the background.
 We mount:
-$ mount -o subvol=root,compress=lzo,autodefrag /dev/sda /mnt
+# mount -o subvol=root,compress=lzo,autodefrag /dev/sda /mnt
 Same
-$ mkdir /mnt/home
-$ mount -o subvol=home,compress=lzo,autodefrag /dev/sda /mnt/home
+# mkdir /mnt/home
+# mount -o subvol=home,compress=lzo,autodefrag /dev/sda /mnt/home
 
 Mirror (nano, vi or vim)
 	/etc/pacman.d/mirrorlist
@@ -35,39 +38,39 @@ Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
 Server = https://32.arlm.tyzoid.com/$arch/$repo
 
 Install basic packages
-$ pacstrap /mnt base grub zsh vim git
+# pacstrap /mnt base grub zsh vim git
 
 Generate fstab
-$ genfstab -p /mnt >> /mnt/etc/fstab
-$ lsblk
+# genfstab -p /mnt >> /mnt/etc/fstab
+# lsblk
 
 Checking the cat
-$ cat /mnt/etc/fstab
+# cat /mnt/etc/fstab
 
 We enter
-$ arch-chroot /mnt
+# arch-chroot /mnt
 
 Machine name
-$ echo machine_name > /etc/hostname
+# echo machine_name > /etc/hostname
 
 Locals
 $ nano /etc/locale.gen
 # Uncomment.
 en_US.UTF-8 UTF-8
 To generate
-$ locale-gen
-$ echo 'LANG=en_US.UTF-8' > /etc/locale.conf 		# $HOME/.config/locale.conf
-$ echo 'LC_MESSAGES=en_US.UTF-8' > /etc/locale.conf	# $HOME/.config/locale.conf
-$ echo 'LC_COLLATE=C' > /etc/locale.conf		# $HOME/.config/locale.conf
+# locale-gen
+# echo 'LANG=en_US.UTF-8' > /etc/locale.conf 		# $HOME/.config/locale.conf
+# echo 'LC_MESSAGES=en_US.UTF-8' > /etc/locale.conf	# $HOME/.config/locale.conf
+# echo 'LC_COLLATE=C' > /etc/locale.conf		# $HOME/.config/locale.conf
 Check locale
-$ locale
-$ locale -a
+# locale
+# locale -a
 
 Ram-Disc (nano, vi or vim)
 	/etc/mkinitcpio.conf
 HOOKS= keymap, Remove fsck 
-$ mkinitcpio -p linux
-$ passwd root
+# mkinitcpio -p linux
+# passwd root
 	*****
 	*****
 Repository (nano, vi or vim)
@@ -80,26 +83,26 @@ Include = /etc/pacman.d/mirrorlist
 [archlinuxfr]
 SigLevel = Never
 Server = http://repo.archlinux.fr/$arch
-$ pacman -Sy yaourt
+# pacman -Sy yaourt
 
 Boot Loader
-$ grub-install /dev/sda
-$ grub-mkconfig -o /boot/grub/grub.cfg
+# grub-install /dev/sda
+# grub-mkconfig -o /boot/grub/grub.cfg
 
 Select the time zone
-$ ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
+# ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 
 Exit
-$ exit
-$ reboot
+# exit
+# reboot
 
 ####
 ##	The Internet
 ####
 
-$ ls /sys/class/net
-$ systemctl enable dhcpcd
-$ systemctl start dhcpcd
+# ls /sys/class/net
+# systemctl enable dhcpcd
+# systemctl start dhcpcd
 
 ####
 ##	New user
