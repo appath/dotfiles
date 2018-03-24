@@ -1,2 +1,0 @@
-ICON
-myGtkMenu
