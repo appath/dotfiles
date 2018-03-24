@@ -4,6 +4,7 @@ ARCH|Linux BTRFS SPEED --
 
 # systemctl start sshd.service
 # systemctl enable sshd.service
+# ip address
 
 Creating a partition and sub-sections
 # mkfs.btrfs -f -L VB /dev/sda (VB name Disk)
