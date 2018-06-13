@@ -129,6 +129,7 @@ Yaourt Install [user!]
 # cd package-query && makepkg -si && cd /tmp/
 # git clone https://aur.archlinux.org/yaourt.git
 # cd yaourt && makepkg -si && cd
+# yaourt --help
 
 ####
 ##	New user
