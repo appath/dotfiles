@@ -116,10 +116,19 @@ Exit
 # systemctl enable dhcpcd
 # systemctl start dhcpcd
 
-# pacman -S networkmanager-dispatcher-sshd git
+# pacman -S networkmanager-dispatcher-sshd git sudo
 # systemctl start sshd.service
 # systemctl enable sshd.service
 # ip address
+# nano /etc/sudoerc 
+	user ALL=(ALL) ALL
+
+Yaourt Install [user!]
+# mkdir tmp
+# cd /tmp/ && git clone https://aur.archlinux.org/package-query.git
+# cd package-query && makepkg -si && cd /tmp/
+# git clone https://aur.archlinux.org/yaourt.git
+# cd yaourt && makepkg -si && cd
 
 ####
 ##	New user
