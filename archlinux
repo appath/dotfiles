@@ -38,11 +38,20 @@ Server = http://mirror.rackspace.com/archlinux/$repo/os/$arch
 ## United States i686
 Server = https://32.arlm.tyzoid.com/$arch/$repo
 
-## Russia
+## Russia i686
 Server = https://mirror.yandex.ru/archlinux32/$arch/$repo
 
+Repositories i686
+# pacman -Syy archlinux32-keyring-transition
+# pacman -S archlinux32-keyring
+# Run pacman -Syuu for a full transition.
+Note, that some packages are currently newer in the official repositories and will be downgraded, therefore.
+Also note, that packages found in your package cache won't match the signatures from archlinux32
+either allow pacman to delete these cached packages or run pacman -Sc to clean your cache before you start and after 
+you finish upgrading.
+
 Install basic packages
-# pacstrap /mnt base grub zsh vim git
+# pacstrap /mnt base base-devel grub
 
 Generate fstab
 # genfstab -p /mnt >> /mnt/etc/fstab
@@ -79,7 +88,7 @@ HOOKS= keymap, Remove fsck
 	*****
 Repository (nano, vi or vim)
 	/etc/pacman.conf
-# Uncomment.
+# Uncomment. x86_64
 [multilib]
 Include = /etc/pacman.d/mirrorlist
 
@@ -87,7 +96,6 @@ Include = /etc/pacman.d/mirrorlist
 [archlinuxfr]
 SigLevel = Never
 Server = http://repo.archlinux.fr/$arch
-# pacman -Sy yaourt
 
 Boot Loader
 # grub-install /dev/sda
@@ -107,6 +115,11 @@ Exit
 # ls /sys/class/net
 # systemctl enable dhcpcd
 # systemctl start dhcpcd
+
+# pacman -S networkmanager-dispatcher-sshd git
+# systemctl start sshd.service
+# systemctl enable sshd.service
+# ip address
 
 ####
 ##	New user
