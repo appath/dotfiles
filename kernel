@@ -22,7 +22,7 @@ ln -s /usr/src/linux-4.15.9 /usr/src/linux && cd linux && pwd && less README
 Prepare for compilation
 make mrproper
 
-(Необязательно)
+(Необязательно, возможно будут изменение в ядре)
 (Not necessary)
 zcat /proc/config.gz > $HOME/build/linux-4.15.9/.config
 
