@@ -40,7 +40,7 @@ make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
           LD расширение (сборка модулей)
 less README
 make modules_install
-ls /lib/modules/ (каталоги с модулями (kernel))
+ls /lib/modules/ (каталоги с модулями (kernel)) версия ядра.
 make install
 
 (Boot Logo)
