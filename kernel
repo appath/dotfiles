@@ -35,6 +35,8 @@ make defconfig
 make nconfig
 (многоядерных процессоров)
 make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
+          CC расширение (идёт компиляция)
+          LD расширение (сборка модулей)
 make install
 make modules_install
 (Boot Logo)
