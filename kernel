@@ -2,27 +2,21 @@ Kernel
 https://www.kernel.org/
 
 ArchLinux
-создаём директорию
-create a directory
-mkdir ~/build
-переходим в папку
-go to folder
-cd build
 
 установка пакетов
 package installation
 pacman -S wget bc base-devel
 
-загрузка
-loading
+kernel.org
 wget -c https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.9.tar.xz
-распаковка
-unpacking
-npack linux-4.15.9.tar.xz
 
-переходим в папку
-go to folder
-cd linux-4.15.9
+cd /usr/src
+Распаковка
+npack linux-4.15.9.tar.xz
+Символьная ссылка
+ls -l (старая rm linux)
+Новая
+ln -s /usr/src/linux-4.15.9 /usr/src/linux && cd linux && pwd && less README
 
 Подготовьтесь к компиляции
 Prepare for compilation
@@ -32,11 +26,18 @@ make mrproper
 (Not necessary)
 zcat /proc/config.gz > $HOME/build/linux-4.15.9/.config
 
+make config
+make menuconfig
 make defconfig
 make nconfig
 make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
 make install
 make modules_install
+(Boot Logo)
+Device Drivers  --->
+    Graphics support  --->
+        [*] Bootup logo  --->
+            [*]   224-color Armadeus Linux logo
 
 Это скопирует скомпилированные модули в директорию /lib/modules с именем версии ядра
 This will copy the compiled modules to the / lib / modules directory with the name of the kernel version
