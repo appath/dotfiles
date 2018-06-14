@@ -12,7 +12,7 @@ wget -c https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.9.tar.xz
 
 cd /usr/src
 Распаковка
-npack linux-4.15.9.tar.xz
+npack ~/linux-4.15.9.tar.xz
 Символьная ссылка
 ls -l (старая rm linux)
 Новая
