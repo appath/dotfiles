@@ -38,6 +38,7 @@ make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
 Процесс:
           CC расширение (идёт компиляция)
           LD расширение (сборка модулей)
+less README
 make install
 make modules_install
 (Boot Logo)
