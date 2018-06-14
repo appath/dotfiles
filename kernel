@@ -44,6 +44,7 @@ make modules_install (только установка модулей)
 make modules_install install
 ls /lib/modules/ (каталоги с модулями (kernel)) версия ядра.
 make install
+ls -l /boot/
 
 (Boot Logo)
 Device Drivers  --->
