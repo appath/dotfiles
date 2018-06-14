@@ -26,6 +26,7 @@ make mrproper
 (Not necessary)
 zcat /proc/config.gz > $HOME/build/linux-4.15.9/.config
 
+file Makefile
 make config
 make menuconfig
 make defconfig
