@@ -39,8 +39,10 @@ make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
           CC расширение (идёт компиляция)
           LD расширение (сборка модулей)
 less README
-make install
 make modules_install
+ls /lib/modules/ (каталоги с модулями (kernel))
+make install
+
 (Boot Logo)
 Device Drivers  --->
     Graphics support  --->
