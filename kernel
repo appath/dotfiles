@@ -51,6 +51,11 @@ Device Drivers  --->
     Graphics support  --->
         [*] Bootup logo  --->
             [*]   224-color Armadeus Linux logo
+            
+cp arch/x86/boot/bzImage /boot/vmlinuz-4.17.1
+cp System.map /boot/System.map-4.17.1
+cp .config /boot/config-4.17.1
+mkinitcpio -k 4.17.1 -c /etc/mkinitcpio.conf -g /boot/initramfs-4.15.9
 
 Это скопирует скомпилированные модули в директорию /lib/modules с именем версии ядра
 This will copy the compiled modules to the / lib / modules directory with the name of the kernel version
