@@ -33,6 +33,7 @@ make config
 make menuconfig
 make defconfig
 make nconfig
+(многоядерных процессоров)
 make -j3 -l2 [# число ядер + 1] nproc [# number of cores + 1]
 make install
 make modules_install
