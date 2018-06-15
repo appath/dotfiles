@@ -11,7 +11,7 @@ Installing
      
      Kali
      apt install xorg python3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm firefox
-     nmap openssh-server linux-headers-`uname -r` bison build-essential dkms flex gcc cpp g++ libncurses5-dev make
+     nmap openssh-server bison build-essential dkms flex gcc cpp g++ libncurses5-dev make
      
 
 [Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
