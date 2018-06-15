@@ -1,6 +1,10 @@
 
 5/5000
 
+Night M0th
+
+Just a theme made for work, well, kind of hacking a bad kid and everything in the same spirit.
+
 GRAY BSPWM DESKTOP
 ====
 Installing
