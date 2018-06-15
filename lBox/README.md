@@ -34,10 +34,10 @@ Kali Grub, Font Video Driver VirtualBox
       reboot
 
 Kali +G_
+
 SSH-Server
 
-     $ service --status-all     
-     [ ] ssh
+     $ service --status-all
      $ update-rc.d -f ssh remove
      $ update-rc.d -f ssh defaults
      $ cd /etc/ssh/
@@ -45,8 +45,10 @@ SSH-Server
      $ mv ssh_host_* insecure_original_default_kali_keys/
      $ dpkg-reconfigure openssh-server
      $ vim /usr/sbin/update-rc.d
-ssh disabled => ssh enabled [ok]
-Save update-rc.d
+     
+ssh disabled => ssh enabled [ok]...
+
+Save file update-rc.d
 
      $ update-rc.d -f ssh remove && update-rc.d -f ssh defaults
      
