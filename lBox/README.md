@@ -18,7 +18,7 @@ Installing
 
 https://www.kernel.org/
 
-![Tux] (https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/kernel_tux.png)
+![Tux](scrot/kernel_tux.png)
 
 Kali Grub, Font Video Driver VirtualBox
       
