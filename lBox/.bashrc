@@ -45,3 +45,9 @@ alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 #PS1="==> \[\033[38;5;1m\]WARNING:\[$(tput sgr0)\] "
 #PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
+
+#ROOT
+#export PS1="+\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]> \[$(tput sgr0)\]"
+#USER
+#export PS1="\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]> \[$(tput sgr0)\]"
+
