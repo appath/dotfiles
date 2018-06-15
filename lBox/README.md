@@ -53,6 +53,7 @@ ssh disabled => ssh enabled [ok]...
 Save file update-rc.d
 
      $ update-rc.d -f ssh remove && update-rc.d -f ssh defaults
+     $ systemctl start ssh
      
 Easy Powerline BASH, VIM
 
