@@ -10,10 +10,6 @@ GRAY BSPWM DESKTOP
 ====
 Installing
 
-     Arch
-     pacman -S xorg xorg-xinit python3.6 vim python-pip curl git wget sxhkd bspwm tmux htop dfc mupdf firefox
-     yaourt -S rxvt-unicode-patched lfm
-     
      Kali
      apt install xorg python3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm
      nmap openssh-server bison build-essential dkms flex gcc g++ libncurses5-dev make fakeroot
@@ -41,7 +37,6 @@ Kali Grub, Font Video Driver VirtualBox
           black/light-gray
           
       update-grub2
-      grub-mconfig -o /boot/grub/grub.cfg
       dpkg-reconfigure console-setup
       apt update && apt install -y linux-headers-$(uname -r)
       mount /dev/sr0 /media/cdrom
