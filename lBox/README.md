@@ -25,7 +25,7 @@ Kali Grub, Font Video Driver VirtualBox
           black/black
           black/light-gray
           
-      update-grub -o grub.cfg
+      update-grub2
       grub-mconfig -o /boot/grub/grub.cfg
       dpkg-reconfigure console-setup
       apt update && apt install -y linux-headers-$(uname -r)
