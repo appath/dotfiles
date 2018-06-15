@@ -18,6 +18,11 @@ Installing
 
 https://www.kernel.org/
 
+Compiling
+
+Tux
+         vga=0x318
+
 ![Tux](scrot/kernel_tux.png)
 
 Kali Grub, Font Video Driver VirtualBox
