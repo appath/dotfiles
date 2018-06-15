@@ -35,7 +35,7 @@ Kali Grub, Font Video Driver VirtualBox
 
 Kali +G_
 
-SSH-Server
+SSH
 
      $ service --status-all
      $ update-rc.d -f ssh remove
