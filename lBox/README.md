@@ -30,7 +30,9 @@ Kali Grub, Font Video Driver VirtualBox
       
       nano -w /etc/default/grub 
       nano -w /etc/grub.d/05_debian_theme
-          black/black
+      Set the traditional Debian blue theme
+      Custom Kali light gray with dark tones
+          light-gray/black
           black/light-gray
           
       update-grub2
