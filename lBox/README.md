@@ -16,6 +16,8 @@ Installing
 
 [Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
 
+https://www.kernel.org/
+
 Kali Grub, Font Video Driver VirtualBox
       
       nano -w /etc/default/grub 
