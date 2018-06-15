@@ -1,5 +1,6 @@
 
 5/5000
+
 GRAY BSPWM DESKTOP
 ====
 Installing
@@ -10,7 +11,7 @@ Installing
      
      Kali
      apt install xorg python3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm firefox
-     nmap
+     nmap openssh-server
      
 
 [Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
@@ -32,6 +33,21 @@ Kali Grub, Font Video Driver VirtualBox
       ./VBoxLinuxAdditions.run
       reboot
 
+Kali +G_
+SSH-Server
+     $ service --status-all
+     [ ] ssh
+     $ update-rc.d -f ssh remove
+     $ update-rc.d -f ssh defaults
+     $ cd /etc/ssh/
+     $ mkdir insecure_original_default_kali_keys
+     $ mv ssh_host_* insecure_original_default_kali_keys/
+     $ dpkg-reconfigure openssh-server
+     $ vim /usr/sbin/update-rc.d
+ssh disabled => ssh enabled [ok]
+Save update-rc.d
+     $ update-rc.d -f ssh remove && update-rc.d -f ssh defaults
+     
 Easy Powerline BASH, VIM
 
      $ su
