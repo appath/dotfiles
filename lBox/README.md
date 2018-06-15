@@ -18,6 +18,8 @@ Installing
 
 https://www.kernel.org/
 
+Screenshots (scrot/kernel_tux.png)
+
 Kali Grub, Font Video Driver VirtualBox
       
       nano -w /etc/default/grub 
