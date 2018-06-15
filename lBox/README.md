@@ -20,7 +20,7 @@ https://www.kernel.org/
 
 Compiling
 
-Tux
+Tux [wikipedia](https://ru.wikipedia.org/wiki/Tux)
 
          vga=0x318
 
