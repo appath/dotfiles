@@ -32,11 +32,11 @@ npack () {
 #fi
 
 # Powerline BASH
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
 # Arch
-. /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+#. /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 # Kali
 #. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 
