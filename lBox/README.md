@@ -35,7 +35,8 @@ Kali Grub, Font Video Driver VirtualBox
 
 Kali +G_
 SSH-Server
-     $ service --status-all
+
+     $ service --status-all     
      [ ] ssh
      $ update-rc.d -f ssh remove
      $ update-rc.d -f ssh defaults
@@ -46,6 +47,7 @@ SSH-Server
      $ vim /usr/sbin/update-rc.d
 ssh disabled => ssh enabled [ok]
 Save update-rc.d
+
      $ update-rc.d -f ssh remove && update-rc.d -f ssh defaults
      
 Easy Powerline BASH, VIM
