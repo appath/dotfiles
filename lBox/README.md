@@ -67,6 +67,34 @@ Save file update-rc.d
      $ update-rc.d -f ssh remove && update-rc.d -f ssh defaults
      $ systemctl start ssh
      
+MotD [links](https://github.com/OutsideIT/FireMotD)
+
+(Не стал изобретать велосипеды просто взял у товарища под ником <willemdh> такую штуку FireMotD
+Did not invent the bicycles just picked up from a friend under a nickname <willemdh> such a thing FireMotD)
+
+Установку по FireMotDе читайте у него 
+
+Install on FireMotDe read from him
+     
+Новый файл скрипта нужен будет
+
+     $ touch /etc/update-motd.d/15-firemotd
+
+По умолчанию отменим старые привязки от файла
+
+     $ chmod a-x /etc/update-motd.d/10-uname
+     
+А новый применим
+
+     $ chmod a+x /etc/update-motd.d/15-firemotd
+     
+Добавим пару бл.в.ыф
+
+     $ vim /etc/update-motd.d/15-firemotd
+               #!/bin/sh
+               /usr/local/bin/FireMotD --theme original
+               и сохраним файл
+     
 Easy Powerline BASH, VIM
 
      $ su
