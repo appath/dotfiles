@@ -5,7 +5,6 @@ apt update
 echo -e "\e[32m::\033[0m Outputting packages that need to be updated"
 apt list --upgradable
 echo -e "\e[31mKali GNU/Linux\033[0m to update packages. Run 'apt upgrade' to see them."
-exit
 # Run sudo Script ./+check
 # simple facilitates action
 # executable chmod +x +check
