@@ -70,6 +70,7 @@ Save file update-rc.d
 MotD [links](https://github.com/OutsideIT/FireMotD)
 
 (Не стал изобретать велосипеды просто взял у товарища под ником <willemdh> такую штуку FireMotD
+     
 Did not invent the bicycles just picked up from a friend under a nickname <willemdh> such a thing FireMotD)
 
 Установку по FireMotDе читайте у него 
@@ -78,22 +79,31 @@ Install on FireMotDe read from him
      
 Новый файл скрипта нужен будет
 
+A new script file will be needed
+
      $ touch /etc/update-motd.d/15-firemotd
 
 По умолчанию отменим старые привязки от файла
+
+By default, we will cancel old file bindings
 
      $ chmod a-x /etc/update-motd.d/10-uname
      
 А новый применим
 
+And the new one is applicable
+
      $ chmod a+x /etc/update-motd.d/15-firemotd
      
 Добавим пару бл.в.ыф
+
+Add a couple bl.v.if
 
      $ vim /etc/update-motd.d/15-firemotd
                #!/bin/sh
                /usr/local/bin/FireMotD --theme original
                и сохраним файл
+               and save the file
      
 Easy Powerline BASH, VIM
 
