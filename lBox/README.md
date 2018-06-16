@@ -143,6 +143,21 @@ Screenshots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/s
      If you prefer to have running PostgreSQL
      update-rc.d postgresql enable
      
+МОНТИРОВАНИЕ ФЛЕШКИ
+
+MOUNTING THE FILE
+     
+     $  fdisk -l
+     Как видите, здесь мы можем посмотреть детальную информацию об устройстве.
+     As you can see, here we can see detailed information about the device.
+     $ mkdir /mnt/usb
+     Монтируем флешку с помощью команды mount
+     Mount the USB flash drive using the mount command
+     $ mount /dev/sdx1 /mnt/usb
+     После завершения работы с флешкой не забудьте ее отмонтировать.
+     After you finish working with the flash drive, do not forget to unmount it.
+     $ umount /dev/sdx1
+     
 ++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice)
 
 Cobra_2 [+ansi](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/cobra_2.ansi.txt)
