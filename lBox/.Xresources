@@ -1,4 +1,4 @@
-#include "/root/.terminal"
+#include </root/.terminal>
 *.dpi: 89
 *.letterSpace: -1
 *font: xft:Inconsolata:size=10
