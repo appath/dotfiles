@@ -116,7 +116,7 @@ Easy Powerline BASH, VIM
      $ POWERLINE_BASH_SELECT=1
      $ . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh | Key "TAB "Return
  
-Screenshots [*1](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/screenshot_1.jpg), [*2](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/scrot/screenshot_2.jpg)
+Screenshots [*1](scrot/screenshot_1.jpg), [*2](scrot/screenshot_2.jpg)
  
 ![lBox](scrot/screenshot_1.jpg)
  
@@ -159,6 +159,9 @@ MOUNTING THE FILE
      $ umount /dev/sdx1
      
 ++ SCRIPT service [+.metaservice](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/.metaservice)
+
+-+TERM
+![terminal](scrot/term.jpg)
 
 Cobra_2 [+ansi](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/cobra_2.ansi.txt)
 
