@@ -69,9 +69,9 @@ Save file update-rc.d
      
 MotD [links](https://github.com/OutsideIT/FireMotD)
 
-(Не стал изобретать велосипеды просто взял у товарища под ником <willemdh> такую штуку FireMotD
+(Не стал изобретать велосипеды просто взял у товарища под ником -willemdh- такую штуку FireMotD
      
-Did not invent the bicycles just picked up from a friend under a nickname <willemdh> such a thing FireMotD)
+Did not invent the bicycles just picked up from a friend under a nickname -willemdh- such a thing FireMotD)
 
 Установку по FireMotDе читайте у него 
 
