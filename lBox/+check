@@ -10,3 +10,5 @@ echo -e "\e[31mKali GNU/Linux\033[0m to update packages. Run 'apt upgrade' to se
 # executable chmod +x +check
 # Performs simple packet validation actions and prints a list
 # to update packages
+# color http://misc.flogisoft.com/bash/tip_colors_and_formatting
+# end
