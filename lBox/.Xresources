@@ -6,7 +6,7 @@
 *.depth: 32
 *.scrollBar: False
 *.cursorBlink: True
-*.cursorColor: #ffffff
+*.cursorColor: #292929
 *colorUL: #8c9440
 *perl-ext-common: default,matcher
 *url-launcher: /usr/bin/xdg-open
