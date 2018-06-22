@@ -21,6 +21,8 @@ Installing
 
 [Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
 
+Accessories Hcipc M503-1
+
 [Kernel Archives](https://www.kernel.org/)
 
 Compiling
