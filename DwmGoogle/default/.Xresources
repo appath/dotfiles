@@ -27,7 +27,7 @@
 *cursorBlink: true
 *foreground: #bfbfbf
 *background: #0c0c0c
-*cursorColor: #e0e080
+*cursorColor: red
 *colorUL: #8c9440
 *highlightColor: #343434
 *fadecolor: #0c0c0c
