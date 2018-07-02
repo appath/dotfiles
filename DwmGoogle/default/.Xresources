@@ -17,32 +17,32 @@
 *color7: #dddddd
 *color15: #dddddd
 
-URxvt.termName: rxvt-unicode
-URxvt.perl-lib: /root/.urxvt/urxvt-perls 
-URxvt.perl-ext-common: default,matcher,clipboard,url-select
-URxvt.keysym.Shift-Control-C: perl:clipboard:copy
-URxvt.keysym.Shift-Control-V: perl:clipboard:paste
-URxvt.iso14755: False
-URxvt.geometry: 100x30
-URxvt.saveLines: 5000
-URxvt.cursorBlink: true
-URxvt.foreground: #bfbfbf
-URxvt.background: #0c0c0c
-URxvt.cursorColor: #e0e080
-URxvt.highlightColor: #343434
-URxvt.fadecolor: #0c0c0c
-URxvt.fading: 40
-URxvt.transparent: true
-URxvt.tintColor: #0c0c0c
-URxvt.visualBell: false
-URxvt.urgentOnBell: true
-URxvt.scrollBar: true
-URxvt.scrollBar_right: true
-URxvt.url-select.launcher: links 
-URxvt.url-select.underline: true
-URxvt.urlLauncher: "links -g"
-URxvt.matcher.button: 1
-URxvt.tabbed.tabbar-fg: 4
-URxvt.tabbed.tabbar-bg: 0
-URxvt.tabbed.tab-fg: 7
-URxvt.tabbed.tab-bg: 4
+*termName: rxvt-unicode
+*perl-lib: /root/.urxvt/urxvt-perls 
+*perl-ext-common: default,matcher,clipboard,url-select
+*iso14755: False
+*geometry: 100x30
+*saveLines: 5000
+*cursorBlink: true
+*foreground: #bfbfbf
+*background: #0c0c0c
+*cursorColor: #e0e080
+*highlightColor: #343434
+*fadecolor: #0c0c0c
+*fading: 40
+*transparent: true
+*tintColor: #0c0c0c
+*visualBell: false
+*urgentOnBell: true
+*scrollBar: true
+*scrollBar_right: true
+*url-select.launcher: links 
+*url-select.underline: true
+*urlLauncher: "links -g"
+*matcher.button: 1
+*tabbed.tabbar-fg: 4
+*tabbed.tabbar-bg: 0
+*tabbed.tab-fg: 7
+*tabbed.tab-bg: 4
+*font: xft:SF Mono:size=8
+*fontBold: xft:SF Mono:size=8
