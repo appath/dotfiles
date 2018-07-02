@@ -21,12 +21,14 @@
 *perl-lib: /root/.urxvt/urxvt-perls 
 *perl-ext-common: default,matcher,clipboard,url-select
 *iso14755: False
-*geometry: 100x30
-*saveLines: 5300
+*geometry: 116x22
+*saveLines: 5400
+*internalBorder: 22
 *cursorBlink: true
 *foreground: #bfbfbf
 *background: #0c0c0c
 *cursorColor: #e0e080
+*colorUL: #8c9440
 *highlightColor: #343434
 *fadecolor: #0c0c0c
 *fading: 40
@@ -35,14 +37,16 @@
 *visualBell: false
 *urgentOnBell: true
 *scrollBar: true
+*scrollstyle: plain
 *scrollBar_right: true
 *url-select.launcher: links 
 *url-select.underline: true
-*urlLauncher: "links -g"
+*url-launcher: /usr/bin/xdg-open
 *matcher.button: 1
 *tabbed.tabbar-fg: 4
 *tabbed.tabbar-bg: 0
 *tabbed.tab-fg: 7
 *tabbed.tab-bg: 4
+*loginShell: true
 *font: xft:SF Mono:size=8
 *fontBold: xft:SF Mono:size=8
