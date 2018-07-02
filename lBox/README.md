@@ -42,6 +42,8 @@ Kali Grub, Font Video Driver VirtualBox
           
       update-grub2
       dpkg-reconfigure console-setup
+      cd ~/.fonts && mkfontdir && mkfontscale && fc-cache -fv
+      rm -f /etc/fonts/conf.d/70-no-bitmaps.conf
       apt update && apt install -y linux-headers-$(uname -r)
       mount /dev/sr0 /media/cdrom
       cp /media/cdrom/VBoxLinuxAdditions.run ~/
