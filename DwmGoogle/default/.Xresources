@@ -20,13 +20,11 @@
 *termName: rxvt-unicode
 *perl-lib: /root/.urxvt/urxvt-perls 
 *perl-ext-common: default,matcher,clipboard,url-select
-*iso14755: False
+*iso14755: false
 *geometry: 116x22
 *saveLines: 5400
 *internalBorder: 22
 *cursorBlink: true
-*foreground: #bfbfbf
-*background: #0c0c0c
 *cursorColor: red
 *colorUL: #8c9440
 *highlightColor: #343434
@@ -36,7 +34,7 @@
 *tintColor: #0c0c0c
 *visualBell: false
 *urgentOnBell: true
-*scrollBar: true
+*scrollBar: false
 *scrollstyle: plain
 *scrollBar_right: true
 *url-select.launcher: links 
