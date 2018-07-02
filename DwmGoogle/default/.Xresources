@@ -22,7 +22,7 @@
 *perl-ext-common: default,matcher,clipboard,url-select
 *iso14755: False
 *geometry: 100x30
-*saveLines: 5000
+*saveLines: 5300
 *cursorBlink: true
 *foreground: #bfbfbf
 *background: #0c0c0c
