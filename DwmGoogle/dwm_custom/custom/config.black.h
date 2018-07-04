@@ -48,7 +48,7 @@ static const char colors[NUMCOLORS][MAXCOLORS][9] = {
 };
 
 /* tagging */
-static const char *tags[] = { "     #     ", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", "\ue26d", "\ue1dd" };
+static const char *tags[] = { "       #!    ", "\ue1e5", "\ue1ed", "\ue1ef", "\ue19e", "\ue26d", "\ue1dd" };
 
 static const Rule rules[] = {
 	/* class	instance	title	              tags mask    iscentered     isfloating     monitor */
