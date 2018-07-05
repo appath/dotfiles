@@ -1,5 +1,5 @@
 /* UPDATE
-* GitHub COPY Custom 24.12.2017
+* GitHub COPY Custom 5.5.2018
 * by https://github.com/appath/
 * See LICENSE file for copyright and license details. 
 */
