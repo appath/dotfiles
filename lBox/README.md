@@ -45,10 +45,7 @@ Kali Grub, Font Video Driver VirtualBox
       cd ~/.fonts && mkfontdir && mkfontscale && fc-cache -fv
       rm -f /etc/fonts/conf.d/70-no-bitmaps.conf
       apt update && apt install -y linux-headers-$(uname -r)
-      mount /dev/sr0 /media/cdrom
-      cp /media/cdrom/VBoxLinuxAdditions.run ~/
-      chmod 755 VBoxLinuxAdditions.run
-      ./VBoxLinuxAdditions.run
+      apt -y install virtualbox-guest-x11
       reboot
 
 Kali +G_
