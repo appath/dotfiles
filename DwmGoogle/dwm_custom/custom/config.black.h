@@ -91,7 +91,7 @@ static const Layout layouts[] = {
 /* commands */
 /* dmenu custom */
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] 		= { "dmenu_run", NULL }; /* dmenu 4.7 default */
+static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", NULL }; /* dmenu 4.7 custom BLACK */
 static const char *termcmd[] 		= { "urxvt", NULL, };
 static const char *rubycmd[] 		= { "urxvt", "-name", "Ruby", "-geometry", "122x55", "-e", "irb", NULL, };
 static const char *lfmcmd[] 		= { "urxvt", "-name", "Total Commander", "-geometry", "95x45", "-e", "lfm", NULL, };
