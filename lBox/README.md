@@ -20,7 +20,7 @@ Installing
      qutebrowser hugo
      
 
-[Kali Linux](https://www.kali.org/) Minimal [+ISO](https://docs.kali.org/installation/kali-linux-network-mini-iso-install)
+[Kali Linux](https://www.kali.org/) Minimal [+ISO] netboot (http://http.kali.org/dists/kali-rolling/main/installer-amd64/current/images/)
 
 [Kernel Archives](https://www.kernel.org/)
 
