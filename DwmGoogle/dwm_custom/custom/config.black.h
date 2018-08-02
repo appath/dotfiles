@@ -1,7 +1,7 @@
 /* UPDATE
 * GitHub COPY Custom 3.8.2018
 * by https://github.com/appath/
-* See LICENSE file for copyright and license details. 
+* See LICENSE file for copyright and license details.
 */
 
 /* include modules */
