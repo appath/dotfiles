@@ -1,5 +1,5 @@
 /* UPDATE
-* GitHub COPY Custom 5.5.2018
+* GitHub COPY Custom 3.8.2018
 * by https://github.com/appath/
 * See LICENSE file for copyright and license details. 
 */
@@ -91,7 +91,7 @@ static const Layout layouts[] = {
 /* commands */
 /* dmenu custom */
 static char dmenumon[2] 		= "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", ".:Search", NULL }; /* dmenu 4.7 custom BLACK */
+static const char *dmenucmd[] 		= { "dmenu_run", "-i", "-p", "To Find", NULL }; /* dmenu 4.7 custom BLACK */
 static const char *termcmd[] 		= { "urxvt", NULL, };
 static const char *rubycmd[] 		= { "urxvt", "-name", "Ruby", "-geometry", "122x55", "-e", "irb", NULL, };
 static const char *lfmcmd[] 		= { "urxvt", "-name", "Total Commander", "-geometry", "95x45", "-e", "lfm", NULL, };
