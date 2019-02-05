@@ -75,3 +75,6 @@ alias grep="grep --colour=auto"
 #export PS1="+\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
 #USER
 #export PS1="\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
+
+PS1="$HC$FBLE┌─ $HC$FYEL\u: $RS\w\n$HC$FBLE└─ $RS"
+PS2="$FRED> $RS$HC$FMAG"
