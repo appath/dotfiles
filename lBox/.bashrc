@@ -81,7 +81,7 @@ alias grep="grep --colour=auto"
 #ROOT
 #PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fggreen:) root\n$hicolor$fgblue└─ $reset"
 #PS2="$fgred> $reset$hicolor$fgmagenta"
-# USER
+#USER
 #PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fgrred;( root\n$hicolor$fgblue└─ $reset"
 #PS2="$fgred> $reset$hicolor$fgmagenta"
 
