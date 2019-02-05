@@ -69,15 +69,21 @@ alias grep="grep --colour=auto"
 
 # ~/.bashrc COLORS PS1 and PS2
 # If you need to change the color scheme, you need to comment out (PS1 and PS2)
-hicolor="\[\033[1m\]"
-fgblue="\[\033[34m\]"
-fgyellow="\[\033[33m\]"
-reset="\[\033[0m\]"
-fgred="\[\033[31m\]"
-fgmagenta="\[\033[35m\]"
+#hicolor="\[\033[1m\]"
+#fgblue="\[\033[34m\]"
+#fgyellow="\[\033[33m\]"
+#reset="\[\033[0m\]"
+#fgred="\[\033[31m\]"
+#fgmagenta="\[\033[35m\]"
+#fgrred="\[\e[01;31m\]"
+#fggreen="\[\033[01;32m\]"
 
-PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w\n$hicolor$fgblue└─ $reset"
-PS2="$fgred> $reset$hicolor$fgmagenta"
+#ROOT
+#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fggreen:) root\n$hicolor$fgblue└─ $reset"
+#PS2="$fgred> $reset$hicolor$fgmagenta"
+# USER
+#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fgrred;( root\n$hicolor$fgblue└─ $reset"
+#PS2="$fgred> $reset$hicolor$fgmagenta"
 
 #PS1='[\u@\h \W]\$ '
 #PS1="==> \[\033[38;5;1m\]WARNING:\[$(tput sgr0)\] "
