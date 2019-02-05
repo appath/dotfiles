@@ -1,12 +1,12 @@
 #include </root/.terminal>
 *.dpi: 89
 *.letterSpace: -1
-*font: xft:Inconsolata:size=10
+*font: xft:PragmataPro:size=9
 *termName: rxvt-256color
 *.depth: 32
 *.scrollBar: False
 *.cursorBlink: True
-*.cursorColor: #292929
+*.cursorColor: #ffffff
 *colorUL: #8c9440
 *perl-ext-common: default,matcher
 *url-launcher: /usr/bin/xdg-open
