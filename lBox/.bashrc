@@ -66,6 +66,7 @@ export VISUAL="vim"
 alias ls='ls --color=auto'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
+
 #PS1='[\u@\h \W]\$ '
 #PS1="==> \[\033[38;5;1m\]WARNING:\[$(tput sgr0)\] "
 #PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
