@@ -67,6 +67,18 @@ alias ls='ls --color=auto'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
 
+# ~/.bashrc COLORS PS1 and PS2
+# If you need to change the color scheme, you need to comment out (PS1 and PS2)
+hicolor="\[\033[1m\]"
+fgblue="\[\033[34m\]"
+fgyellow="\[\033[33m\]"
+reset="\[\033[0m\]"
+fgred="\[\033[31m\]"
+fgmagenta="\[\033[35m\]"
+
+PS1="$hicolor$fgblue┌─ $hicolor$fgyellow\u: $reset\w\n$hicolor$fgblue└─ $reset"
+PS2="$fgred> $reset$hicolor$fgmagenta"
+
 #PS1='[\u@\h \W]\$ '
 #PS1="==> \[\033[38;5;1m\]WARNING:\[$(tput sgr0)\] "
 #PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
@@ -75,6 +87,3 @@ alias grep="grep --colour=auto"
 #export PS1="+\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
 #USER
 #export PS1="\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
-
-PS1="$HC$FBLE┌─ $HC$FYEL\u: $RS\w\n$HC$FBLE└─ $RS"
-PS2="$FRED> $RS$HC$FMAG"
