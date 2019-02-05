@@ -1,8 +1,5 @@
 
 5/5000
-
-![M0th](scrot/M0th.jpg)
-
 Night m0th
 
 Just a theme made for work, well, kind of hacking a bad kid and everything in the same spirit.
