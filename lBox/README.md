@@ -111,6 +111,7 @@ Easy Powerline BASH, VIM
 
      $ su
      $ pip install powerline-status
+     Installed powerline location
      $ pip show powerline-status
      $ powerline-daemon -q
      $ POWERLINE_BASH_CONTINUATION=1
