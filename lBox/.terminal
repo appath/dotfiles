@@ -1,5 +1,5 @@
-#define bg #000000
-#define fg #ffffff
+#define bg #181412
+#define fg #908169
 #define blk #000000
 #define bblk #474542
 #define red #a1423e
