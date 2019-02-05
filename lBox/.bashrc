@@ -2,7 +2,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Npack (.zip, .tar)
+# Npack (.zip, .tar) unpacker
 npack () {
   if [ -f $1 ] ; then
     case $1 in
