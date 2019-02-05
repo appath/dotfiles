@@ -79,7 +79,7 @@ alias grep="grep --colour=auto"
 #fggreen="\[\033[01;32m\]"
 
 #ROOT
-#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fggreen:) root\n$hicolor$fgblue└─ $reset"
+#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fggreen:) yes\n$hicolor$fgblue└─ $reset"
 #PS2="$fgred> $reset$hicolor$fgmagenta"
 #USER
 #PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fgrred;( root\n$hicolor$fgblue└─ $reset"
