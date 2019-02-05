@@ -1,4 +1,4 @@
-# .bashrc Kali Linux (M0th)
+# .bashrc Linux (M0th)
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -48,7 +48,7 @@ alias ls='ls --color=auto'
 #PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
 
 #ROOT
-#export PS1="+\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]> \[$(tput sgr0)\]"
+#export PS1="+\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
 #USER
-#export PS1="\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]> \[$(tput sgr0)\]"
+#export PS1="\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
 
