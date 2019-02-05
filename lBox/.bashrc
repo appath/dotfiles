@@ -27,7 +27,7 @@ npack () {
   fi
 }
 
-# CTERM=linux
+# CTERM
 if [ "$TERM" = "linux" ]; then
      echo -en "\e]P00a0f0d" #black
      echo -en "\e]P8567366" #darkgrey
@@ -74,4 +74,3 @@ alias grep="grep --colour=auto"
 #export PS1="+\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
 #USER
 #export PS1="\[\033[38;5;134m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\] >> \[$(tput sgr0)\]"
-
