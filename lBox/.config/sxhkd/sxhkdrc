@@ -15,10 +15,6 @@ alt + v
 alt + shift + 0
 	scrot -d 7 -c screenshots.png
 
-# HTTPS
-alt + g
-	firefox
-
 # terminal emulator
 alt + Return
 	urxvt
