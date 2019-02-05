@@ -76,7 +76,7 @@ reset="\[\033[0m\]"
 fgred="\[\033[31m\]"
 fgmagenta="\[\033[35m\]"
 
-PS1="$hicolor$fgblue┌─ $hicolor$fgyellow\u: $reset\w\n$hicolor$fgblue└─ $reset"
+PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w\n$hicolor$fgblue└─ $reset"
 PS2="$fgred> $reset$hicolor$fgmagenta"
 
 #PS1='[\u@\h \W]\$ '
