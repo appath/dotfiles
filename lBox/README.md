@@ -163,6 +163,6 @@ MOUNTING THE FILE
 -+TERM
 ![terminal](scrot/term.jpg)
 
-Cobra_2 [+ansi](https://raw.githubusercontent.com/appath/dotfiles/master/lBox/cobra_2.ansi.txt)
+=======================================
 
 .[git: powerline/powerline] 'https://github.com/powerline/powerline'
