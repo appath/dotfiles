@@ -57,9 +57,6 @@ fi
 #powerline-daemon -q
 #POWERLINE_BASH_CONTINUATION=1
 #POWERLINE_BASH_SELECT=1
-# Arch
-#. /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh
-# Kali
 #. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
 
 export VISUAL="vim"
@@ -82,9 +79,5 @@ alias grep="grep --colour=auto"
 #fgrred="\[\e[01;31m\]"
 #fggreen="\[\033[01;32m\]"
 
-#ROOT
-#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fggreen:) yes\n$hicolor$fgblue└─ $reset"
-#PS2="$fgred> $reset$hicolor$fgmagenta"
-#USER
-#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fgrred;( root\n$hicolor$fgblue└─ $reset"
+#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fgrred{}\n$hicolor$fgblue└─ $reset"
 #PS2="$fgred> $reset$hicolor$fgmagenta"
