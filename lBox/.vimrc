@@ -1,8 +1,4 @@
 " Powerline
-" Arch
-"let $PYTHONPATH='/usr/lib64/python3.6/site-packages'
-"set rtp+=/usr/lib64/python3.6/site-packages/powerline/bindings/vim/
-" Kali
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set laststatus=4
 set t_Co=256
