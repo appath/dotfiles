@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 sxhkd &
 urxvt &
 bspc monitor -d I II III IV V VI
