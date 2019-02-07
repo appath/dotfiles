@@ -9,6 +9,10 @@ alt + g + k
 # Visual Studio Code
 alt + v
 	code
+	
+# Browser
+alt + q
+	qutebrowser
 
 # scrot
 # screenshots
