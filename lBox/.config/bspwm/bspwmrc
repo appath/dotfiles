@@ -19,6 +19,7 @@ bspc config center_pseudo_tiled		true
 bspc config focused_border_color 	"#000000"
 bspc config normal_border_color		"#9ff88a"
 bspc rule -a URxvt follow=on
+bspc rule -a qutebrowser desktop='^2' state=floating
 bspc rule -a Tor desktop='^3' state=floating
 bspc rule -a Code desktop='^4' state=floating
 bspc rule -a GitKraken desktop='^4' follow=on
