@@ -1,0 +1,58 @@
+#!/bin/bash
+#A simple SCRIPT to $CHECK for system updates and cleaning.
+#Written by me for relief, it is simple.
+again='y'
+  while [ $again == 'y' ] || [ $again == 'Y' ] || [ $again == 'yes' ] || [ $again == 'YES' ];
+  do
+
+clear
+echo ""1." Checking for updates"
+echo ""2." Upgrade system"
+echo ""3." For cleaning from .deb packages that are no longer used"
+echo ""4." Remove non-removable dependencies from already deleted packages"
+echo ""5." Exit"
+echo ""
+echo "Enter in the console the desired action"
+echo "from 1 to 5 or EXIT script."
+echo -n -e '54L: '; tput sgr0
+read System
+
+if [ "$System"  == "1" ]; then
+        echo
+        sleep 3
+        sudo apt update
+        sleep 1
+
+elif [ "$System" == "2" ]; then
+        echo
+        sleep 3
+        sudo apt dist-upgrade
+        sleep 1
+
+elif [ "$System" == "3" ]; then
+        echo
+        sleep 3
+        sudo apt autoclean
+        sleep 1
+
+elif [ "$System" == "4" ]; then
+        echo
+        sleep 3
+        sudo apt autoremove
+        sleep 1
+
+elif [ "$System" == "5" ]; then
+        clear
+exit
+
+fi
+      echo
+      echo -n -e "Back [yes/no]: ";
+      read again;
+      while [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ] && [ $again != 'yes' ] && [ $again != 'YES' ] && [ $again != 'no' ] && [ $again != 'NO' ];
+      do
+      echo -n "Back [yes/no]: ";
+      read again;
+  done
+done
+#THEEND
