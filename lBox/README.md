@@ -19,16 +19,6 @@ Installing
 
 [Kali Linux](https://www.kali.org/) Minimal netboot/mini.iso [+ISO](http://http.kali.org/dists/kali-rolling/main/installer-amd64/current/images/)
 
-[Kernel Archives](https://www.kernel.org/)
-
-Compiling
-
-Tux [wikipedia](https://ru.wikipedia.org/wiki/Tux)
-
-         vga=0x318
-
-![Tux](scrot/kernel_tux.png)
-
 Kali Grub, Font Video Driver VirtualBox
       
       nano -w /etc/default/grub 
