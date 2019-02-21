@@ -13,9 +13,8 @@ GRAY BSPWM DESKTOP
 Installing
 
      Kali
-     apt install xorg python3.6 python-pip curl git wget sxhkd bspwm tmux vim-nox htop dfc mupdf rxvt-unicode lfm
-     nmap openssh-server bison build-essential dkms flex gcc g++ libncurses5-dev make fakeroot fontconfig glances 
-     qutebrowser hugo
+     apt install xorg python3.7 python-pip curl git wget sxhkd bspwm tmux vim-nox htop tree rxvt-unicode mc
+     openssh-server build-essential gcc g++ libncurses5-dev make fakeroot fontconfig qutebrowser
      
 
 [Kali Linux](https://www.kali.org/) Minimal netboot/mini.iso [+ISO](http://http.kali.org/dists/kali-rolling/main/installer-amd64/current/images/)
@@ -43,8 +42,16 @@ Kali Grub, Font Video Driver VirtualBox
       dpkg-reconfigure console-setup
       cd ~/.fonts && mkfontdir && mkfontscale && fc-cache -fv
       rm -f /etc/fonts/conf.d/70-no-bitmaps.conf
+      
+      VirtualBox:
       apt update && apt install -y linux-headers-$(uname -r)
       apt -y install virtualbox-guest-x11
+      or
+      Guest OS
+      mount /dev/sr0 /media
+      *VBoxLinuxAdditions.run
+      ./VBoxLinuxAdditions.run
+      umount /dev/sr0 /media
       reboot
 
 Kali +G_
