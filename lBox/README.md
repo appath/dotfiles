@@ -112,16 +112,11 @@ Add a couple bl.v.if
                и сохраним файл
                and save the file
      
-Easy Powerline BASH, VIM
+Easy Powerline VIM-NOX
 
-     $ su
      $ pip install powerline-status
-     Installed powerline location
-     $ pip show powerline-status
-     $ powerline-daemon -q
-     $ POWERLINE_BASH_CONTINUATION=1
-     $ POWERLINE_BASH_SELECT=1
-     $ . /usr/lib64/python3.6/site-packages/powerline/bindings/bash/powerline.sh | Key "TAB "Return
+     or
+     $ pip install --user powrline-status # ~/.local
  
 Screenshots [*1](scrot/screenshot_1.jpg), [*2](scrot/screenshot_2.jpg)
  
