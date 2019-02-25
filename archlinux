@@ -137,3 +137,7 @@ Yaourt Install [user!]
 
 $ useradd -m -g users -G audio,lp,optical,power,scanner,storage,video,wheel -s /bin/zsh (user name)
 $ passwd (user name)
+
+/root/.bash_profile
+. /etc/bash.bashrc
+. $HOME/.bashrc
