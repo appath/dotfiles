@@ -5,6 +5,11 @@ ARCH|Linux BTRFS SPEED --
 # systemctl start sshd.service
 # systemctl enable sshd.service
 # ip address
+# /etc/ssh/sshd_config
+# PermitRootLogin yes
+# Port: 22
+# PermitRootLogin yes
+# systemctl restart sshd
 
 Creating a partition and sub-sections
 # mkfs.btrfs -f -L VB /dev/sda (VB name Disk)
@@ -138,6 +143,6 @@ Yaourt Install [user!]
 $ useradd -m -g users -G audio,lp,optical,power,scanner,storage,video,wheel -s /bin/zsh (user name)
 $ passwd (user name)
 
-/root/.bash_profile
+# /root/.bash_profile
 . /etc/bash.bashrc
 . $HOME/.bashrc
