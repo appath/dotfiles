@@ -6,7 +6,6 @@ ARCH|Linux BTRFS SPEED --
 # systemctl enable sshd.service
 # ip address
 # /etc/ssh/sshd_config
-# PermitRootLogin yes
 # Port: 22
 # PermitRootLogin yes
 # systemctl restart sshd
