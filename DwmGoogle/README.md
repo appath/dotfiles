@@ -17,8 +17,8 @@ You will need to install Three packages with dependencies!
 
 dwm, dmenu and dwmstatus
 
-* xorg, xorg-xinit xorg-xsetroot, freetype2, libx11, libxft, libxinerama.
-
+pacman -S
+* xorg, xorg-xinit, xorg-xsetroot, freetype2, libx11, libxft, libxinerama.
 So I attached the fonts in the folder default
 
 #### dmenu Only you will need to fix to your screen resolution!
