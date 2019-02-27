@@ -17,7 +17,7 @@ You will need to install Three packages with dependencies!
 
 dwm, dmenu and dwmstatus
 
-* xorg-xsetroot, freetype2, libx11, libxft, libxinerama.
+* xorg, xorg-xinit xorg-xsetroot, freetype2, libx11, libxft, libxinerama.
 
 So I attached the fonts in the folder default
 
