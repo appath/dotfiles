@@ -135,6 +135,16 @@ Yaourt Install [user!]
 # cd yaourt && makepkg -si && cd
 # yaourt --help
 
+Install VirtualBox Guest Additions
+
+# pacman -S linux-headers
+# pacman -S virtualbox-guest-dkms
+# pacman -S virtualbox-guest-utils
+
+In order to load the VirtualBox kernel modules and synchronize time with the host machine
+
+# systemctl enable vboxservice.service
+
 ####
 ##	New user
 ####
