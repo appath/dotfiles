@@ -422,6 +422,7 @@
             \ ]
         let g:startify_custom_header = [
             \ '   A free text editor based on an older vi',
+            \ '   https://www.vim.org/',
             \ ''
             \ ]
         let g:startify_files_number = 5
