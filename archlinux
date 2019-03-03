@@ -148,10 +148,8 @@ vboxsf
 vboxvideo
 :save
 # systemctl enable vboxservice 
-
 In order to load the VirtualBox kernel modules and synchronize time with the host machine
 
-# systemctl enable vboxservice.service
 # }}}
 
 ####
