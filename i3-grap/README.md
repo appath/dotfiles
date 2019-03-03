@@ -13,18 +13,19 @@ install font
 
 git clone https://github.com/whitelynx/artwiz-fonts-wl
 
-% cd ./MAKEFILES/artwiz-fonts-wl
+#### % cd ./MAKEFILES/artwiz-fonts-wl
 
 Building Fonts
 
-% make
+#### % make
 
 Installing Fonts
 
-% make install
+#### % make install
 
 On Arch Linux, this file is named /etc/fonts/conf.d/70-no-bitmaps.conf, and the file /etc/fonts/conf.avail/70-yes-bitmaps.conf should be linked in its place:
 
-% rm /etc/fonts/conf.d/70-no-bitmaps.conf
+#### % rm /etc/fonts/conf.d/70-no-bitmaps.conf
 
-% ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf /etc/fonts/conf.d/
+#### % ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf /etc/fonts/conf.d/
+
