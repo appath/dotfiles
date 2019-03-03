@@ -44,8 +44,18 @@ On Arch Linux, this file is named /etc/fonts/conf.d/70-no-bitmaps.conf, and the 
 
 #### KeyMod
 ```bash
-Mod1+
-Mod1+Return > Terminal
+Mod1+Shift+r Restart WM (i3-grap)
+Mod1+Shift+q Exit WM (i3-grap)
+
+Mod+1 > Workspace 1
+(Four desktops 1,2,3 or 4)
+
+Mod1+b > PanelBar Bottom
+(Hide or Display)
+
+Mod1+Return > Terminal [rxvt-unicode]
+Mod1+e Kill (Terminal)
+
 Mod1+m > Mc (File Manager)
 Mod1+t > Tmux
 Mod1+g > nSnake (Game)
