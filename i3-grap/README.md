@@ -20,6 +20,18 @@ PKG pacman -S
 - mc 
 - fontconfig
 ```
+Games
+```bash
+Tetris:
+git clone https://github.com/vicgeralds/vitetris.git
+Snake
+git clone https://github.com/alexdantas/nSnake.git
+Building:
+make
+make install
+
+./tetris or ./nsnake
+```
 
 install font
 
