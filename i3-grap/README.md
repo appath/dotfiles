@@ -24,7 +24,7 @@ Games
 ```bash
 Tetris:
 git clone https://github.com/vicgeralds/vitetris.git
-Snake
+Snake:
 git clone https://github.com/alexdantas/nSnake.git
 Building:
 make
