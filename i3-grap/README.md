@@ -23,7 +23,7 @@ PKG pacman -S
 
 install font
 
-git clone https://github.com/whitelynx/artwiz-fonts-wl
+git clone https://github.com/whitelynx/artwiz-fonts-wl.git
 
 ```bash
 # cd ./MAKEFILES/artwiz-fonts-wl
