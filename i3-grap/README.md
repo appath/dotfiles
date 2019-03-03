@@ -63,6 +63,4 @@ Mod1+g > nSnake (Game)
 ```
 #### Exhaust
 ![i3](VirtualBox_i3-graps.jpg)
-<p align="center">
-  /* wm desktops i3-grap theme */
-</p>
+#### /* wm desktops i3-grap theme */
