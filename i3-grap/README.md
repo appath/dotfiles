@@ -64,5 +64,6 @@ Mod1+g > nSnake (Game)
 ![i3](VirtualBox_i3-graps.jpg)
 <p align="center">
   alt=desktops wm... 
-  @2019 | Appath
+  <br>
+  WM Desktops @2019, Appath
 </p>
