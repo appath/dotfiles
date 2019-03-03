@@ -23,12 +23,12 @@ PKG pacman -S
 Games
 ```bash
 Tetris:
-git clone https://github.com/vicgeralds/vitetris.git
+# git clone https://github.com/vicgeralds/vitetris.git
 Snake:
-git clone https://github.com/alexdantas/nSnake.git
+# git clone https://github.com/alexdantas/nSnake.git
 Building:
-make
-make install
+# make
+# make install
 ./tetris or ./nsnake
 ```
 
