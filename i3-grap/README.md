@@ -62,4 +62,7 @@ Mod1+g > nSnake (Game)
 ```
 #### Exhaust
 ![i3](VirtualBox_i3-graps.jpg)
-<center>@2019 appath</center>
+<p align="center">
+  alt=desktops wm... 
+  @2019 | Appath
+</p>
