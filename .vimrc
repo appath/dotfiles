@@ -421,7 +421,7 @@
             \ $HOME . '/.vimrc.last', $HOME . '/.vimrc.plugins'
             \ ]
         let g:startify_custom_header = [
-            \ '   http://github.com/timss/vimconf',
+            \ '   A free text editor based on an older vi',
             \ ''
             \ ]
         let g:startify_files_number = 5
