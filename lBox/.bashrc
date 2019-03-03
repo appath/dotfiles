@@ -53,20 +53,12 @@ fi
 #    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 #fi
 
-# Powerline BASH
-#powerline-daemon -q
-#POWERLINE_BASH_CONTINUATION=1
-#POWERLINE_BASH_SELECT=1
-#. /usr/local/lib/python2.7/dist-packages/powerline/bindings/bash/powerline.sh
-
 export VISUAL="vim"
 alias ls='ls --color=auto'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
 
-#PS1='[\u@\h \W]\$ '
-#PS1="==> \[\033[38;5;1m\]WARNING:\[$(tput sgr0)\] "
-#PS1="[\[\033[38;5;12m\]*\[$(tput sgr0)\]] "
+#PS1="\[\033[38;5;1m\]h\[$(tput sgr0)\] "
 
 # ~/.bashrc COLORS PS1 and PS2
 # If you need to change the color scheme, you need to comment out (PS1 and PS2)
