@@ -64,5 +64,5 @@ Mod1+g > nSnake (Game)
 #### Exhaust
 ![i3](VirtualBox_i3-graps.jpg)
 <p align="center">
-  WM Desktops @2019
+  /* wm desktops i3-grap theme */
 </p>
