@@ -7,7 +7,17 @@ git clone https://github.com/appath/dotfiles.git
 
 PKG pacman -S
 ```bash
-xorg xorg-xinit i3-gaps i3blocks rxvt-unicode tree git tmux vim mc fontconfig
+- xorg 
+- xorg-xinit 
+- i3-gaps 
+- i3blocks 
+- rxvt-unicode 
+- tree 
+- git 
+- tmux 
+- vim 
+- mc 
+- fontconfig
 ```
 
 install font
