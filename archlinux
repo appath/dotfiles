@@ -140,6 +140,14 @@ Yaourt Install [user!]
 # pacman -S linux-headers
 # pacman -S virtualbox-guest-dkms
 # pacman -S virtualbox-guest-utils
+# pacman -S virtualbox-host-modules-arch
+# modprobe -a vboxguest vboxsf vboxvideo
+/etc/modules-load.d/virtualbox.conf
+vboxguest
+vboxsf
+vboxvideo
+:save
+# systemctl enable vboxservice 
 
 In order to load the VirtualBox kernel modules and synchronize time with the host machine
 
