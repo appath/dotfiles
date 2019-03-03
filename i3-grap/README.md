@@ -61,4 +61,4 @@ Mod1+t > Tmux
 Mod1+g > nSnake (Game)
 ```
 #### Exhaust
-![i3](*.png)
+![i3](VirtualBox_i3-graps.jpg)
