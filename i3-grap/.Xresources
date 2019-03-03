@@ -1,0 +1,26 @@
+#include </root/.terminal>
+*.dpi: 89
+*.letterSpace: -1
+*termName: rxvt-256color
+*.depth: 32
+*.cursorBlink: True
+*.cursorColor: #ffffff
+*colorUL: #8c9440
+*perl-ext-common: default,matcher
+*url-launcher: /usr/bin/xdg-open
+*matcher.button: 1
+*geometry: 116x22
+*.internalBorder: 4
+*loginShell: True
+*.scrollBar: True
+*.scrollBar_right: True
+*.scrollstyle: Plain
+*.transparent: True
+*.tintColor: #0c0c0c
+
+// Fonts
+*font: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+*boldFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+*italicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+*bolditalicFont: -nucleus-marathonmod-medium-*-*-*-14-*-*-*-*-*-*-*
+

@@ -1,0 +1,113 @@
+# Settings {{{
+font -*-drift-medium-r-*-*-10-*-*-*-*-*-*-*
+
+set $mod Mod1
+gaps inner 2
+gaps outer -2
+
+for_window [class="^.*"] border normal 0
+for_window [class=".*"] title_format " #Window: %title "
+
+# NOTE: The '#f0f0f0' in the lines below is the color i3 will use if it colors.
+# class                   border     bg         text       indicat    child_border
+client.focused            #262626    #262626    #dddddd    #4F4F4F    #101110
+client.focused_inactive   #2f2f2f    #2f2f2f    #dddddd    #121212    #101110
+client.unfocused          #231417    #17212a    #68685b    #4F4F4F    #101107
+client.urgent             #23181a    #4a3d31    #6c777a    #1A1A1A    #1f1515
+client.background         #231417
+
+# }}}
+
+# Window Rules {{{
+for_window [class="Luakit"] floating enable
+# force floating for all new windows
+# for_window [class="[.]*"] floating enable
+
+# }}}
+
+# Workspace Display {{{
+set $workspace1 "  ++  "
+set $workspace2 "  DEVEL  "
+set $workspace3 "  PENTEST  "
+set $workspace4 "  MAKEFILES  "
+
+# }}}
+
+# Keybinds {{{
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+q exit
+bindsym $mod+e kill
+
+bindsym $mod+1 workspace $workspace1
+bindsym $mod+2 workspace $workspace2
+bindsym $mod+3 workspace $workspace3
+bindsym $mod+4 workspace $workspace4
+
+bindsym $mod+Tab workspace back_and_forth
+
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+bindsym Ctrl+$mod+l split h
+bindsym Ctrl+$mod+j split v
+
+bindsym $mod+s floating toggle
+
+mode "resize" {
+    bindsym Left resize shrink width 1 px or 1 ppt
+    bindsym Down resize grow height 1 px or 1 ppt
+    bindsym Up resize shrink height 1 px or 1 ppt
+    bindsym Right resize grow width 1 px or 1 ppt
+
+    bindsym h resize shrink width 1 px or 1 ppt
+    bindsym j resize grow height 1 px or 1 ppt
+    bindsym k resize shrink height 1 px or 1 ppt
+    bindsym l resize grow width 1 px or 1 ppt
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# {{{
+
+# Personal Shortcut {{{
+bindsym $mod+Return exec /usr/bin/urxvt
+bindsym $mod+m exec /usr/bin/urxvt -e mc
+bindsym $mod+t exec /usr/bin/urxvt -e tmux
+# Game nSnake
+bindsym $mod+g exec /usr/bin/urxvt -geometry 80x40 -e nsnake
+
+# {{{
+
+# Status Bar Bottom {{{
+bindsym $mod+b bar mode toggle
+
+bar {
+    colors {
+        statusline #FFFFFF
+        background #262626
+
+        #Title             #Border #BG     #FG
+        focused_workspace  #f0e8ce #eac2a3 #2e2e2e
+        active_workspace   #eac2a3 #2e2e2e #f0e8ce
+        inactive_workspace #2e2e2e #2e2e2e #f0e8ce
+        urgent_workspace   #f0e8ce #e1f5a9 #2e2e2e
+    }
+        status_command /usr/bin/i3blocks -c ~/.config/i3/i3blocks.conf
+        position bottom
+        workspace_buttons yes
+        tray_output none
+        font -*-drift-medium-r-*-*-10-*-*-*-*-*-*-*
+}
+
+# }}}

@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-fill '/usr/share/image/wallpapers/wallhaven-655492.jpg' 
