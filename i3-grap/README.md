@@ -3,6 +3,7 @@
 Install from the official repository, i3-grap directly window manager.
 
 Then we clone the theme files.
+
 git clone https://github.com/appath/dotfiles.git
 
 PKG pacman -S
