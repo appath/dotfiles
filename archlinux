@@ -156,3 +156,10 @@ $ passwd (user name)
 # /root/.bash_profile
 . /etc/bash.bashrc
 . $HOME/.bashrc
+
+# Git
+git add *
+git commit -m "create project"
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git push origin master
