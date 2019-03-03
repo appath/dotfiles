@@ -41,3 +41,13 @@ On Arch Linux, this file is named /etc/fonts/conf.d/70-no-bitmaps.conf, and the 
 # rm /etc/fonts/conf.d/70-no-bitmaps.conf
 # ln -s /etc/fonts/conf.avail/70-yes-bitmaps.conf /etc/fonts/conf.d/
 ```
+
+#### KeyMod
+Mod1+
+Mod1+Return > Terminal
+Mod1+m > Mc (File Manager)
+Mod1+t > Tmux
+Mod1+g > nSnake (Game)
+
+#### Exhaust
+![i3](*.png)
