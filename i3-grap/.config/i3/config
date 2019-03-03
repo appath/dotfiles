@@ -78,16 +78,20 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# {{{
+# }}}
 
 # Personal Shortcut {{{
 bindsym $mod+Return exec /usr/bin/urxvt
 bindsym $mod+m exec /usr/bin/urxvt -e mc
 bindsym $mod+t exec /usr/bin/urxvt -e tmux
-# Game nSnake
+
+# }}}
+
+# Game {{{
+bindsym $mod+Shift+t exec /usr/bin/urxvt -e tetris
 bindsym $mod+g exec /usr/bin/urxvt -geometry 80x40 -e nsnake
 
-# {{{
+# }}}
 
 # Status Bar Bottom {{{
 bindsym $mod+b bar mode toggle
