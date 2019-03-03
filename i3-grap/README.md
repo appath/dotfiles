@@ -53,7 +53,7 @@ Mod+1 > Workspace 1
 Mod1+b > PanelBar Bottom
 (Hide or Display)
 
-Mod1+Return > Terminal [rxvt-unicode]
+Mod1+Return > Terminal
 Mod1+e Kill (Terminal)
 
 Mod1+m > Mc (File Manager)
