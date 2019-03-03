@@ -29,7 +29,6 @@ git clone https://github.com/alexdantas/nSnake.git
 Building:
 make
 make install
-
 ./tetris or ./nsnake
 ```
 
