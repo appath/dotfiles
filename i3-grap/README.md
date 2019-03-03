@@ -3,10 +3,11 @@
 Install from the official repository, i3-grap directly window manager.
 
 Then we clone the theme files.
-
-git clone https://github.com/appath/dotfiles.git
-
-PKG pacman -S
+```bash
+# git clone https://github.com/appath/dotfiles.git
+```
+#### PKG 
+pacman -S
 ```bash
 - xorg 
 - xorg-xinit 
@@ -20,7 +21,7 @@ PKG pacman -S
 - mc 
 - fontconfig
 ```
-Games
+#### Games
 ```bash
 Tetris:
 # git clone https://github.com/vicgeralds/vitetris.git
@@ -32,22 +33,18 @@ Building:
 ./tetris or ./nsnake
 ```
 
-install font
-
-git clone https://github.com/whitelynx/artwiz-fonts-wl.git
-
+#### Install font
 ```bash
+# git clone https://github.com/whitelynx/artwiz-fonts-wl.git
 # cd ./MAKEFILES/artwiz-fonts-wl
 ```
 
-Building Fonts
+#### Building Fonts
 ```bash
 # make
-```
-Installing Fonts
-```bash
 # make install
 ```
+
 On Arch Linux, this file is named /etc/fonts/conf.d/70-no-bitmaps.conf, and the file /etc/fonts/conf.avail/70-yes-bitmaps.conf should be linked in its place:
 ```bash
 # rm /etc/fonts/conf.d/70-no-bitmaps.conf
@@ -71,6 +68,7 @@ Mod1+e Kill (Terminal)
 Mod1+m > Mc (File Manager)
 Mod1+t > Tmux
 Mod1+g > nSnake (Game)
+Mod1+Shift+t > Tetris (Game)
 ```
 #### Exhaust
 ![i3](VirtualBox_i3-graps.jpg)
