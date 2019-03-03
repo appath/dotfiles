@@ -94,7 +94,7 @@ bindsym $mod+b bar mode toggle
 
 bar {
     colors {
-        statusline #FFFFFF
+        statusline #ffffff
         background #262626
 
         #Title             #Border #BG     #FG
