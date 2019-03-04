@@ -89,7 +89,7 @@ bindsym $mod+t exec /usr/bin/urxvt -e tmux
 
 # Game {{{
 bindsym $mod+Shift+t exec /usr/bin/urxvt -e tetris
-bindsym $mod+g exec /usr/bin/urxvt -geometry 80x40 -e nsnake
+bindsym $mod+Shift+s exec /usr/bin/urxvt -geometry 80x40 -e nsnake
 
 # }}}
 
