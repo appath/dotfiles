@@ -19,7 +19,6 @@ pacman -S
 - tmux 
 - vim 
 - mc 
-- fontconfig
 ```
 #### Games
 ```bash
