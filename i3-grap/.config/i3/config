@@ -10,10 +10,10 @@ for_window [class=".*"] title_format " #Window: %title "
 
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if it colors.
 # class                   border     bg         text       indicat    child_border
-client.focused            #262626    #262626    #dddddd    #4F4F4F    #101110
+client.focused            #262626    #262626    #dddddd    #4f4f4f    #101110
 client.focused_inactive   #2f2f2f    #2f2f2f    #dddddd    #121212    #101110
-client.unfocused          #231417    #17212a    #68685b    #4F4F4F    #101107
-client.urgent             #23181a    #4a3d31    #6c777a    #1A1A1A    #1f1515
+client.unfocused          #231417    #17212a    #68685b    #4f4f4f    #101107
+client.urgent             #23181a    #4a3d31    #6c777a    #1a1a1a    #1f1515
 client.background         #231417
 
 # }}}
