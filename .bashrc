@@ -1,7 +1,3 @@
-#
-# ~/.bashrc custom 
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -34,4 +30,4 @@ if [ "$TERM" = "linux" ]; then
      clear #for background artifacting
 fi
 
-PS1='▲ '
+export PS1="▲ \w \[$(tput sgr0)\]"
