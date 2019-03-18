@@ -34,4 +34,4 @@ if [ "$TERM" = "linux" ]; then
      clear #for background artifacting
 fi
 
-PS1='# [\[\e[31m\]\u\[\e[m\]] '
+PS1='▲ '
