@@ -30,5 +30,4 @@ if [ "$TERM" = "linux" ]; then
      clear #for background artifacting
 fi
 
-# Font Arial
 export PS1="▲ \w/ \[$(tput sgr0)\]"
