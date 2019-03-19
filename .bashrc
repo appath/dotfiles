@@ -31,4 +31,4 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 # Font Arial
-export PS1="▲ \w \[$(tput sgr0)\]"
+export PS1="▲ \w/ \[$(tput sgr0)\]"
