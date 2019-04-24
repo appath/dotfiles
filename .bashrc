@@ -7,7 +7,7 @@
 #fi
 
 alias ls='ls --color=auto'
-alias cl='printf "\033c"'
+alias cls='printf "\033c"'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
 
