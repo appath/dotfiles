@@ -3,6 +3,7 @@
 again='y'
     while [ $again == 'y' ] || [ $again == 'Y' ] || [ $again == 'yes' ] || [ $again == 'YES' ];
     do
+
 clear
 echo
 echo -e " "1". Updating databases from the PKG List"
@@ -14,6 +15,7 @@ echo -e " Enter the value in the string, after your action will be executed the"
 echo -e " value you have chosen."
 echo -n -e ' #CMD: '; tput sgr0
 read Fedora
+
 if [ "$Fedora" == "1" ]; then
     sleep 2
     clear
@@ -45,7 +47,7 @@ fi
 done
 
 clear
-  
+
          echo
          echo -n -e "Come back? [Yes/No]: ";
          read again;
