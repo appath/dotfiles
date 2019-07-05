@@ -47,15 +47,3 @@ fi
 done
 
 clear
-
-         echo
-         echo -n -e "Come back? [Yes/No]: ";
-         read again;
-         while [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ] && [ $again != 'yes' ] && [ $again != 'YES' ] && [ $again != 'no' ] && [ $again != 'NO' ];
-         do
-         echo -n "Come back? [Yes/No]: ";
-         read again;
-      done
-  done
-  
-  clear  
