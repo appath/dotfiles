@@ -1,1 +1,59 @@
-@
+#!/usr/bin/env bash
+
+again='y'
+    while [ $again == 'y' ] || [ $again == 'Y' ] || [ $again == 'yes' ] || [ $again == 'YES' ];
+    do
+clear
+echo
+echo -e " "1". Updating databases from the PKG List"
+echo -e " "2". Updating installed PKGs"
+echo -e " "3". Clean up tails "
+echo -e " "4". Exit"
+echo
+echo -e " Enter the value in the string, after your action will be executed the"
+echo -e " value you have chosen."
+echo -n -e ' #CMD: '; tput sgr0
+read Fedora
+if [ "$Fedora" == "1" ]; then
+    sleep 2
+    clear
+    sudo dnf check-update
+elif [ "$Fedora" == "2" ]; then
+    sleep 2
+    clear
+       sudo dnf update
+
+   elif [ "$Fedora" == "3" ]; then
+       sleep 2
+       clear
+   sudo dnf clean all && sudo dnf distro-sync --refresh
+
+   elif [ $Fedora == "4" ]; then
+       clear
+exit
+
+fi
+
+       echo
+       echo -n -e "Come back? [Yes/No]: ";
+       read again;
+       while [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ] && [ $again != 'yes' ] && [ $again != 'YES' ] && [ $again != 'no' ] && [ $again != 'NO' ];
+       do
+       echo -n "Come back? [Yes/No]: ";
+       read again;
+    done
+done
+
+clear
+  
+         echo
+         echo -n -e "Come back? [Yes/No]: ";
+         read again;
+         while [ $again != 'y' ] && [ $again != 'Y' ] && [ $again != 'n' ] && [ $again != 'N' ] && [ $again != 'yes' ] && [ $again != 'YES' ] && [ $again != 'no' ] && [ $again != 'NO' ];
+         do
+         echo -n "Come back? [Yes/No]: ";
+         read again;
+      done
+  done
+  
+  clear  
