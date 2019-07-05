@@ -17,20 +17,21 @@ echo -n -e ' #CMD: '; tput sgr0
 read Fedora
 
 if [ "$Fedora" == "1" ]; then
-    sleep 2
-    clear
-    sudo dnf check-update
-elif [ "$Fedora" == "2" ]; then
-    sleep 2
-    clear
-       sudo dnf update
-
-   elif [ "$Fedora" == "3" ]; then
        sleep 2
        clear
-   sudo dnf clean all && sudo dnf distro-sync --refresh
+       sudo dnf check-update
 
-   elif [ $Fedora == "4" ]; then
+elif [ "$Fedora" == "2" ]; then
+       sleep 2
+       clear
+       sudo dnf update
+
+elif [ "$Fedora" == "3" ]; then
+       sleep 2
+       clear
+       sudo dnf clean all && sudo dnf distro-sync --refresh
+
+elif [ $Fedora == "4" ]; then
        clear
 exit
 
