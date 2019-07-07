@@ -31,4 +31,5 @@ if [ "$TERM" = "linux" ]; then
      clear #for background artifacting
 fi
 
-export PS1="▲ \W/ \[$(tput sgr0)\]"
+#export PS1="▲ \W/ \[$(tput sgr0)\]"
+export PS1=" \W |> "
