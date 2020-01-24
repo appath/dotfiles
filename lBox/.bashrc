@@ -27,27 +27,6 @@ npack () {
   fi
 }
 
-# CTERM
-if [ "$TERM" = "linux" ]; then
-     echo -en "\e]P00a0f0d" #black
-     echo -en "\e]P8567366" #darkgrey
-     echo -en "\e]P1134f4b" #darkred
-     echo -en "\e]P9134f4b" #red
-     echo -en "\e]P2fcfefe" #darkgreen
-     echo -en "\e]PAfcfefe" #green
-     echo -en "\e]P37ea298" #brown
-     echo -en "\e]PB7ea298" #yellow
-     echo -en "\e]P41E7D77" #darkblue
-     echo -en "\e]PC626E68" #blue
-     echo -en "\e]P5134f4b" #darkmagenta
-     echo -en "\e]PD1D7872" #magenta
-     echo -en "\e]P61db5a2" #darkcyan
-     echo -en "\e]PE1db5a2" #cyan
-     echo -en "\e]P7d0d1d2" #lightgrey
-     echo -en "\e]PFd0d1d2" #white
-     clear #for background artifacting
-fi
-
 # Ruby
 #if which ruby >/dev/null && which gem >/dev/null; then
 #    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
@@ -58,18 +37,5 @@ alias ls='ls --color=auto'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
 
-#PS1="\[\033[38;5;1m\]h\[$(tput sgr0)\] "
-
-# ~/.bashrc COLORS PS1 and PS2
-# If you need to change the color scheme, you need to comment out (PS1 and PS2)
-#hicolor="\[\033[1m\]"
-#fgblue="\[\033[34m\]"
-#fgyellow="\[\033[33m\]"
-#reset="\[\033[0m\]"
-#fgred="\[\033[31m\]"
-#fgmagenta="\[\033[35m\]"
-#fgrred="\[\e[01;31m\]"
-#fggreen="\[\033[01;32m\]"
-
-#PS1="$hicolor$fgblue┌─ $hicolor$fgyellow*\u \A $reset\w $fgrred{}\n$hicolor$fgblue└─ $reset"
-#PS2="$fgred> $reset$hicolor$fgmagenta"
+PROMPT_COMMAND='history -a;echo -en "\033[m\033[38;5;2m"$(( $(sed -nu "s/MemFree:[\t ]\+\([0-9]\+\) kB/\1/p" /proc/meminfo)/1024))"\033[38;5;22m/"$(($(sed -nu "s/MemTotal:[\t ]\+\([0-9]\+\) kB/\1/Ip" /proc/meminfo)/1024 ))MB"\t\033[m\033[38;5;55m$(< /proc/loadavg)\033[m"'
+PS1="# "
