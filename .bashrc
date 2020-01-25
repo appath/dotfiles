@@ -11,6 +11,8 @@ alias cls='printf "\033c"'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
 
+export LANG='en_US.UTF-8'
+
 if [ "$TERM" = "linux" ]; then
      echo -en "\e]P00a0f0d" #black
      echo -en "\e]P8567366" #darkgrey
@@ -36,7 +38,7 @@ fi
 
 # UID 0 is the root user
 if [[ $(id -u) -eq 0 ]];then
-    PS1="👿 [\u@\h \W]\$ "
+    PS1="👿 [\u@\h \W]\# "
 else
     PS1="[\u@\h \W]\$ "
 fi
