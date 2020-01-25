@@ -33,10 +33,9 @@ if [ "$TERM" = "linux" ]; then
      clear #for background artifacting
 fi
 
-#export PS1="▲ \W/ \[$(tput sgr0)\]"
-#export PS1=" \W |> "
+#PS1="▲ \W/ \[$(tput sgr0)\]"
+#PS1=" \W |> "
 
-# UID 0 is the root user
 if [[ $(id -u) -eq 0 ]];then
     PS1="👿 [\u@\h \W]\# "
 else
