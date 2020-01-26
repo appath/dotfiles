@@ -2,6 +2,7 @@
 
 while true; do
 
+	#Keyboard layout Ctrl+Shift
 	if [ "$(xset -q | grep "LED mask:" | awk '{ print $10 }')" == "00000000" ]; then
 		xsetroot -name "ENG  $(date +"%H:%M %p  ")"
 	else
