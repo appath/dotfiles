@@ -12,5 +12,3 @@ while true; do
 	#Update time every minute
 	sleep 1s
 done &
-
-
