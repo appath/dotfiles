@@ -33,9 +33,6 @@ if [ "$TERM" = "linux" ]; then
      clear #for background artifacting
 fi
 
-#PS1="▲ \W/ \[$(tput sgr0)\]"
-#PS1=" \W |> "
-
 if [[ $(id -u) -eq 0 ]];then
     PS1="😈[\u@\h \W]# "
 else
