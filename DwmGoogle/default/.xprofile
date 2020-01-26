@@ -8,8 +8,9 @@ while true; do
 	else
 		xsetroot -name "РУС  $(date +"%H:%M %p  ")"
 	fi
-
-sleep 1s
+	
+	#Update time every minute
+	sleep 1s
 done &
 
 
