@@ -6,7 +6,7 @@ while true; do
 	if [ "$(xset -q | grep "LED mask:" | awk '{ print $10 }')" == "00000000" ]; then
 		xsetroot -name "ENG  $(date +"%H:%M %p  ")"
 	else
-		xsetroot -name "ENG  $(date +"%H:%M %p  ")"
+		xsetroot -name "РУС  $(date +"%H:%M %p  ")"
 	fi
 
 sleep 1s
