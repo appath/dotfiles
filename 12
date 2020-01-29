@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 # Battery level warning script
 
 NOTIFIED=0
@@ -12,7 +12,7 @@ while true; do
     # notify user of battery level
     if [ $STATE == "Discharging" ] ; then
         echo "Discharging"
-        if [ $NOTIFIED -lt "1" && $BATTERY_LEVEL -lt "50" && $BATTERY_LEVEL -gt "10" ]; then
+        if [ "$NOTIFIED" -lt "1" ] && [ "$BATTERY_LEVEL" -lt "50" ] && [ "$BATTERY_LEVEL" -gt "10" ]; then
             echo "Battery >10%, < 50%"
             sudo -u korgan DISPLAY=:0 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus notify-send "Battery low warning" "Battery level is ${BATTERY_LEVEL}%" --icon=battery-low
             NOTIFIED=1
