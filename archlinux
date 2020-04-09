@@ -55,7 +55,7 @@ either allow pacman to delete these cached packages or run pacman -Sc to clean y
 you finish upgrading.
 
 Install basic packages
-# pacstrap /mnt base base-devel grub
+# pacstrap /mnt base base-devel grub linux linux-firmware vim dhcpcd
 
 Generate fstab
 # genfstab -p /mnt >> /mnt/etc/fstab
@@ -86,7 +86,7 @@ Check locale
 Ram-Disc (nano, vi or vim)
 	/etc/mkinitcpio.conf
 HOOKS= keymap, Remove fsck 
-# mkinitcpio -p linux
+# mkinitcpio -P
 # passwd root
 	*****
 	*****
