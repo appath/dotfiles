@@ -13,7 +13,7 @@ echo -e " "4". Exit"
 echo
 echo -e " Enter the value in the string, after your action will be executed the"
 echo -e " value you have chosen."
-echo -n -e ' #CMD: '; tput sgr0
+echo -n -e ' '; tput sgr0
 read Fedora
 
 if [ "$Fedora" == "1" ]; then
