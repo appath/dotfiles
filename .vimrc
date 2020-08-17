@@ -41,7 +41,7 @@
     call plug#begin('~/.vim/bundle')
     
     " Autocompletion
-    Plug 'davidhalter/jedi-vim'
+    Plug 'zxqfl/tabnine-vim'
     
     " Configuration status bar statusline vim
     Plug 'itchyny/lightline.vim'
