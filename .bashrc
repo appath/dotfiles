@@ -6,11 +6,13 @@
 #    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
 #fi
 
+# Node
+#PATH="/root/.build/node-v14.16.0/bin:$PATH"
+
 alias ls='ls --color=auto'
 alias cls='printf "\033c"'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
-
 export LANG='en_US.UTF-8'
 
 if [ "$TERM" = "linux" ]; then
@@ -34,7 +36,7 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 if [[ $(id -u) -eq 0 ]];then
-    PS1="😈[\u@\h \W]# "
+    PS1="./# "
 else
-    PS1="🙂[\u@\h \W]$ "
+    PS1="./$ "
 fi
