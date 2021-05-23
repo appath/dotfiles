@@ -1,18 +1,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Ruby
-#if which ruby >/dev/null && which gem >/dev/null; then
-#    PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-#fi
-
-# Node
+# NodeJS
 #PATH="/root/.build/node-v14.16.0/bin:$PATH"
 
 alias ls='ls --color=auto'
 alias cls='printf "\033c"'
 alias dir="dir --color=auto"
 alias grep="grep --colour=auto"
+
 export LANG='en_US.UTF-8'
 
 if [ "$TERM" = "linux" ]; then
@@ -36,7 +32,7 @@ if [ "$TERM" = "linux" ]; then
 fi
 
 if [[ $(id -u) -eq 0 ]];then
-    PS1="./# "
+    PS1="../# "
 else
     PS1="./$ "
 fi
